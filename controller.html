@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Steuerung - JavaScript Präsentation</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="icon" href="js.svg">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body slide="0" style="--slide: 0;">
+        <!-- Page 0 - Start & Open Controller -->
+        <center class="slide slide-0">
+            <h1>
+                Drücke 􀄫<br>
+                zum Starten
+            </h1>
+            <button id="open-controller-button" class="button" onclick="openController();">STEUERUNG ÖFFNEN 􀑍</button>
+            &nbsp;&nbsp;
+            <button id="fullscreen-button" class="button" onclick="toggleFullscreen();">VOLLBLID AKTIVIEREN 􀅊</button>
+        </center>
+        <!-- Page 1 - Title -->
+        <center class="slide slide-1" invisible>
+            <h1 id="slide-2-title-js" class="slide slide-2" invisible>
+                Was ist JavaScript und
+            </h1>
+            <h1 id="slide-2-title-popular" class="slide slide-2" invisible>
+                warum ist es so beliebt?
+            </h1>
+            <svg id="slide-2-js" class="slide slide-2" viewBox="0 0 50 50" invisible>
+                <path d="M25 1L40 1C45.53 1 49 4.47 49 10V40C49 45.53 45.53 49 40 49H10C4.47 49 1 45.53 1 40V10C1 4.47 4.47 1 10 1H25" fill="#FFD93200" stroke="#FFD932" stroke-width="0" stroke-dasharray="0 178">
+                    <animate attributeName="stroke-width" values="0;2" dur=".5s" fill="freeze" start="0" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="stroke-dasharray" values="0 178;178 0" dur=".5s" fill="freeze" start="0" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="fill" values="#FFD93200;#FFD932FF" dur=".3s" fill="freeze" start=".35" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </path>
+                <path d="M14.8 40.8Q16.8 44.2 20 44.2C22.9 44.2 24.7 42.4 24.7 39.5V22.9" fill="#0000" stroke="#000" stroke-width="0" stroke-dasharray="0 31">
+                    <animate attributeName="stroke-width" values="0;4.3" dur="1s" fill="freeze" start=".5" begin="" calcMode="spline" keySplines="0 0 .3 1"/>
+                    <animate attributeName="stroke-dasharray" values="0 31;31 0" dur="1s" fill="freeze" start=".5" begin="" calcMode="spline" keySplines="0 0 .3 1"/>
+                </path>
+                <path d="M43.1 27.5Q41.3 24.6 38.2 24.6C35.1 24.6 33.3 26.4 33.3 29.5Q33.3 33 38.6 34.5Q43.9 36 43.9 39.6C43.9 43 40.8 44.2 38.2 44.2Q33.9 44.2 31.6 40.3" fill="#0000" stroke="#000" stroke-width="0" stroke-dasharray="0 46">
+                    <animate attributeName="stroke-width" values="0;4.3" dur="1s" fill="freeze" start=".5" begin="" calcMode="spline" keySplines="0 0 .3 1"/>
+                    <animate attributeName="stroke-dasharray" values="0 46;46 0" dur=".9s" fill="freeze" start=".5" begin="" calcMode="spline" keySplines="0 0 .3 1"/>
+                </path>
+            </svg>
+            <svg id="slide-2-popular" class="slide slide-2" viewBox="0 0 100 72" invisible>
+                <text x="23" y="5" text-anchor="end" fill="#EEE" opacity="0" font-size="5" font-weight="200">
+                    JavaScript
+                    <animate attributeName="x" values="23;33" dur=".5s" fill="freeze" start="0" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="opacity" values="0;1" dur=".5s" fill="freeze" start="0" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </text>
+                <rect x="35" y="1" width="" height="5.5" rx="1" fill="#FFD932" opacity="0">
+                    <animate attributeName="width" values="0;63.61" dur=".5s" fill="freeze" start="0" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="opacity" values="0;1" dur=".8s" fill="freeze" start="0" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </rect>
+                <text x="40" y="5.5" text-anchor="end" fill="#000" font-size="5" font-weight="200">
+                    63,61%
+                    <animate attributeName="x" values="40;97.61" dur=".5s" fill="freeze" start="0" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </text>
+                <text x="23" y="15" text-anchor="end" fill="#EEEB" opacity="0" font-size="5" font-weight="200">
+                    HTML/CSS
+                    <animate attributeName="x" values="23;33" dur=".5s" fill="freeze" start=".1" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="opacity" values="0;1" dur=".5s" fill="freeze" start=".1" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </text>
+                <rect x="35" y="11" width="" height="5.5" rx="1" fill="#FFD932AA" opacity="0">
+                    <animate attributeName="width" values="0;52.97" dur=".5s" fill="freeze" start=".1" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="opacity" values="0;1" dur=".8s" fill="freeze" start=".1" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </rect>
+                <text x="40" y="15.5" text-anchor="end" fill="#000" font-size="5" font-weight="200">
+                    52,97%
+                    <animate attributeName="x" values="40;86.97" dur=".5s" fill="freeze" start=".1" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </text>
+                <text x="23" y="25" text-anchor="end" fill="#EEEB" opacity="0" font-size="5" font-weight="200">
+                    Python
+                    <animate attributeName="x" values="23;33" dur=".5s" fill="freeze" start=".2" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="opacity" values="0;1" dur=".5s" fill="freeze" start=".2" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </text>
+                <rect x="35" y="21" width="" height="5.5" rx="1" fill="#FFD932AA" opacity="0">
+                    <animate attributeName="width" values="0;49.28" dur=".5s" fill="freeze" start=".2" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="opacity" values="0;1" dur=".8s" fill="freeze" start=".2" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </rect>
+                <text x="40" y="25.5" text-anchor="end" fill="#000" font-size="5" font-weight="200">
+                    49,48%
+                    <animate attributeName="x" values="40;83.28" dur=".5s" fill="freeze" start=".2" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </text>
+                <text x="23" y="35" text-anchor="end" fill="#EEEB" opacity="0" font-size="5" font-weight="200">
+                    SQL
+                    <animate attributeName="x" values="23;33" dur=".5s" fill="freeze" start=".3" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="opacity" values="0;1" dur=".5s" fill="freeze" start=".3" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </text>
+                <rect x="35" y="31" width="" height="5.5" rx="1" fill="#FFD932AA" opacity="0">
+                    <animate attributeName="width" values="0;48.66" dur=".5s" fill="freeze" start=".3" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="opacity" values="0;1" dur=".8s" fill="freeze" start=".3" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </rect>
+                <text x="40" y="35.5" text-anchor="end" fill="#000" font-size="5" font-weight="200">
+                    48,66%
+                    <animate attributeName="x" values="40;82.66" dur=".5s" fill="freeze" start=".3" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </text>
+                <text x="23" y="45" text-anchor="end" fill="#EEEB" opacity="0" font-size="5" font-weight="200">
+                    TypeScript
+                    <animate attributeName="x" values="23;33" dur=".5s" fill="freeze" start=".4" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="opacity" values="0;1" dur=".5s" fill="freeze" start=".4" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </text>
+                <rect x="35" y="41" width="" height="5.5" rx="1" fill="#FFD932AA" opacity="0">
+                    <animate attributeName="width" values="0;38.87" dur=".5s" fill="freeze" start=".4" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="opacity" values="0;1" dur=".8s" fill="freeze" start=".4" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </rect>
+                <text x="40" y="45.5" text-anchor="end" fill="#000" font-size="5" font-weight="200">
+                    38,87%
+                    <animate attributeName="x" values="40;72.87" dur=".5s" fill="freeze" start=".4" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </text>
+                <text x="23" y="55" text-anchor="end" fill="#EEEB" opacity="0" font-size="5" font-weight="200">
+                    Shell
+                    <animate attributeName="x" values="23;33" dur=".5s" fill="freeze" start=".5" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="opacity" values="0;1" dur=".5s" fill="freeze" start=".5" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </text>
+                <rect x="35" y="51" width="" height="5.5" rx="1" fill="#FFD932AA" opacity="0">
+                    <animate attributeName="width" values="0;32.37" dur=".5s" fill="freeze" start=".5" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="opacity" values="0;1" dur=".8s" fill="freeze" start=".5" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </rect>
+                <text x="40" y="55.5" text-anchor="end" fill="#000" font-size="5" font-weight="200">
+                    32,37%
+                    <animate attributeName="x" values="40;66.37" dur=".5s" fill="freeze" start=".5" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </text>
+                <text x="23" y="65" text-anchor="end" fill="#EEEB" opacity="0" font-size="5" font-weight="200">
+                    Java
+                    <animate attributeName="x" values="23;33" dur=".5s" fill="freeze" start=".6" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="opacity" values="0;1" dur=".5s" fill="freeze" start=".6" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </text>
+                <rect x="35" y="61" width="" height="5.5" rx="1" fill="#FFD932AA" opacity="0">
+                    <animate attributeName="width" values="0;30.55" dur=".5s" fill="freeze" start=".6" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="opacity" values="0;1" dur=".8s" fill="freeze" start=".6" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </rect>
+                <text x="40" y="65.5" text-anchor="end" fill="#000" font-size="5" font-weight="200">
+                    30,55%
+                    <animate attributeName="x" values="40;64.55" dur=".5s" fill="freeze" start=".6" begin="" calcMode="spline" keySplines="0 0 .5 1"/>
+                </text>
+                <text x="11.5" y="50" text-anchor="start" fill="#EEE8" opacity="0" font-size="3" font-weight="300">
+                    survey.stackoverflow.co/2023/#technology-most-popular-technologies
+                    <animate attributeName="y" values="50;71.25" dur="1s" fill="freeze" start="0" begin="" calcMode="spline" keySplines="0 0 .25 1"/>
+                    <animate attributeName="opacity" values="0;1" dur="1s" fill="freeze" start="0" begin="" calcMode="spline" keySplines="0 0 .75 1"/>
+                </text>
+            </svg>
+        </center>
+    </body>
+    <script>
+        window.addEventListener("beforeunload", window.opener.closeController);
+        function toggleFullscreen() {
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+                document.getElementById("fullscreen-button").innerText = "VOLLBLID AKTIVIEREN 􀅊";
+            } else {
+                document.documentElement.requestFullscreen();
+                document.getElementById("fullscreen-button").innerText = "VOLLBLID DEAKTIVIEREN 􀅋";
+            }
+        }
+        window.opener.controller = document;
+        document.addEventListener("keydown", window.opener.onKeyPress);
+        document.addEventListener("click", window.opener.onMouseClick);
+        document.body.setAttribute("slide", window.opener.slide);
+        document.body.setAttribute("style", "--slide: " + window.opener.slide);
+        for (i = 0; i <= window.opener.slide; i++) {
+            document.querySelectorAll(".slide-" + i).forEach((element) => {
+                element.removeAttribute("invisible");
+                if (element.tagName == "svg") {
+                    window.opener.animate(element);
+                }
+                element.querySelectorAll("svg:not(.slide):not(.slide-" + i + " .slide *)").forEach((svg) => {
+                    window.opener. animate(svg);
+                })
+            });
+        }
+    </script>
+</html>
