@@ -60,58 +60,6 @@ function toggleFullscreen() {
 }
 
 var slide = 0;
-/* function displaySlide() {
-    if (document.querySelector(".slide-" + slide) == undefined) {
-        slide--;
-        return;
-    }
-    var slideClass = ".slide-" + slide;
-    document.body.setAttribute("slide", slide);
-    document.body.setAttribute("style", "--slide: " + slide);
-    if (controller != undefined) {
-        controller.body.setAttribute("slide", slide);
-        controller.body.setAttribute("style", "--slide: " + slide);
-    }
-     // Not Using :has(), Works For Older Browsers
-    for (var i = 0; i < slide; i++) {
-        querySelect(".slide-" + i).forEach((element) => {
-            element.setAttribute("gone", "");
-        });
-    }
-    // Using :has(), Does Not Work For Older Browsers
-    //querySelect(".slide:has(.slide-" + (slide - 1) + "), .slide-" + (slide - 1)).forEach((element) => {
-    //    element.setAttribute("gone", "");
-    //});
-    querySelect(".slide-" + slide).forEach((element) => {
-        element.removeAttribute("invisible");
-        element.removeAttribute("gone");
-        // Not Using :has(), Works For Older Browsers
-        var parent = element.parentNode;
-        while (parent != undefined && parent.tagName != "BODY") {
-            parent.removeAttribute("gone");
-            parent = parent.parentNode;
-        }
-        // Using :has(), Does Not Work For Older Browsers
-        //querySelect(".slide:has(.slide-" + slide + "), .slide-" + slide).forEach((element) => {
-        //    element.removeAttribute("gone");
-        //});
-        if (element.tagName == "svg") {
-            animate(element);
-        }
-        element.querySelectorAll("svg:not(.slide):not(" + slideClass + " .slide *)").forEach((svg) => {
-            animate(svg);
-        });
-    });
-    querySelect(".slide-" + (slide + 1)).forEach((element) => {
-        element.setAttribute("invisible", "");
-        if (element.tagName == "svg") {
-            resetAnimation(element);
-        }
-        element.querySelectorAll("svg:not(.slide):not(.slide-" + slide + " .slide *)").forEach((svg) => {
-            resetAnimation(svg);
-        });
-    });
-} */
 function nextSlide() {
     slide++;
     if (document.querySelector(".slide-" + slide) == undefined) {
@@ -180,7 +128,7 @@ function resetAnimation(svg) {
 }
 
 // Debug Options
-var startSlide = 73;
+var startSlide = 77;
 
 // Debug Code
 for (var i = 0; i < startSlide; i++) {

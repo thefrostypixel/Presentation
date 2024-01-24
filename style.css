@@ -86,6 +86,9 @@ body {
 *:not(svg text) {
     letter-spacing: calc(var(--scale) * .1);
 }
+svg {
+    background-color: #0000 !important;
+}
 svg text {
     letter-spacing: 0;
 }
@@ -1325,12 +1328,18 @@ div[gone] #slide-20-js {
 .slide-73[invisible] #slide-73-title {
     transform: translateX(calc(var(--scale) * -25));
 }
+.slide-73[gone] #slide-73-title {
+    transform: translateY(calc(var(--scale) * 10));
+}
 #slide-74-title {
     margin-top: calc(var(--scale) * 5);
     transition-duration: .5s;
 }
 #slide-74-title[invisible] {
     transform: translateX(calc(var(--scale) * 15));
+}
+#slide-74-title[gone] {
+    transform: translateY(calc(var(--scale) * 10));
 }
 #slide-73-checkbox {
     position: fixed;
@@ -1368,6 +1377,76 @@ div[gone] #slide-20-js {
 }
 #slide-73-button:not([gone]) {
     filter: saturate(0);
+}
+
+/* Page 25 - Slide 75-76 - Color Theme */
+.slide-75 {
+    background: #000;
+}
+#slide-75-background {
+    background: #FFF;
+    position: fixed;
+    z-index: -1;
+    left: calc(var(--h-padding) + var(--scale) * 15);
+    top: calc(var(--v-padding) + var(--scale) * 15);
+    width: calc(var(--scale) * 130);
+    height: calc(var(--scale) * 60);
+    box-shadow: 0 0 calc(var(--scale) * 5) calc(var(--scale) * 10) #FFF;
+}
+#slide-75-title {
+    margin-top: calc(var(--scale) * 15);
+    transition-duration: .5s;
+}
+.slide-75[invisible] #slide-75-title {
+    transform: translateY(calc(var(--scale) * -10));
+}
+.slide-75[gone] #slide-75-title {
+    transform: translateY(calc(var(--scale) * -5));
+}
+#slide-75-background:not([invisible]) + #slide-75-title {
+    color: #000;
+}
+#slide-76-title {
+    color: #000;
+    margin-top: calc(var(--scale) * 2);
+    transition-duration: .5s;
+}
+#slide-76-title[invisible] {
+    color: #FFF;
+    transform: translateX(calc(var(--scale) * -20));
+}
+.slide-75[gone] #slide-76-title {
+    transform: translateY(calc(var(--scale) * -14.2));
+}
+#slide-75-color-theme {
+    position: fixed;
+    left: calc(var(--h-padding) + var(--scale) * 60);
+    top: calc(var(--v-padding) + var(--scale) * 35);
+    width: calc(var(--scale) * 40);
+}
+#slide-75-color-theme[gone] {
+    transform: rotate(180deg);
+}
+#slide-76-color-theme {
+    position: fixed;
+    left: calc(var(--h-padding) + var(--scale) * 60);
+    top: calc(var(--v-padding) + var(--scale) * 35);
+    width: calc(var(--scale) * 40);
+}
+#slide-76-color-theme[invisible] {
+    transform: rotate(-180deg);
+}
+
+/* Page 26 - Slide 77-78 - Dynamic Loading */
+.slide-77 {
+    background: #000;
+}
+#slide-77-title {
+    margin-top: calc(var(--scale) * 10);
+    transition-duration: .5s;
+}
+.slide-77[invisible] #slide-77-title {
+    transform: translateY(calc(var(--scale) * 5));
 }
 
 /*
