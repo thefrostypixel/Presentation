@@ -31,10 +31,10 @@
         </center>
         <!-- Page 1 - Slide 1-2 - Title -->
         <center class="slide slide-1" invisible>
-            <h1 id="slide-2-title-js" class="slide slide-2" invisible>
+            <h1 id="slide-2-1" class="slide slide-2" invisible>
                 Was ist JavaScript und
             </h1>
-            <h1 id="slide-2-title-popular" class="slide slide-2" invisible>
+            <h1 id="slide-2-2" class="slide slide-2" invisible>
                 warum ist es so beliebt?
             </h1>
             <svg id="slide-2-js" class="slide slide-2" viewBox="0 0 50 50" invisible>
@@ -155,52 +155,22 @@
         <!-- THE CREATION OF JAVASCRIPT-->
         <!-- Page 2 - Slide 3-5 - Interactivity -->
         <center class="slide slide-3" invisible>
-            <h1 id="slide-3-title">
-                JavaScript ermöglicht Interaktivität
+            <h1 id="slide-3">
+                JavaScript, oft als JS abgekürzt,
             </h1>
-            <h1 class="slide slide-5" id="slide-5-title" invisible>
-                98,8% aller Internetseiten nutzen JS
+            <h1 class="slide slide-4" id="slide-4" invisible>
+                ermöglicht Seiten im Internet interaktivität
             </h1>
-            <svg class="slide slide-4" viewBox="0 0 100 60" invisible>
-                <path  d="M12.5 20H5V35H20Q25 35 27.5 30L30 25Q32.5 20 27.5 20H22.5L26.25 12.5Q27.5 10 26 10Q24.5 10 21.5 12.5L12.5 20V35" fill="#000" stroke="#000" stroke-width="1" stroke-linejoin="round" transform="translate(0 0) rotate(0 0 15)">
-                    <animate attributeName="opacity" values="0;1" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 .25"/>
-                    <animate attributeName="fill" values="#000;#CCC" dur=".25s" fill="freeze" start="2" begin="infinite" calcMode="spline" keySplines="0 0 .5 .25"/>
-                    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5" dur=".25s" fill="freeze" start="2" begin="infinite" calcMode="spline" keySplines=".5 0 .5 1"/>
-                    <animateTransform attributeName="transform" type="rotate" values="0 0 15;-10 0 15" dur=".25s" fill="freeze" start="2" begin="infinite" calcMode="spline" keySplines=".5 0 .5 1"/>
-                    <animateTransform attributeName="transform" type="translate" values="0 -5;0 0" dur=".25s" fill="freeze" start="2.25" begin="infinite" calcMode="spline" keySplines=".5 0 .5 1"/>
-                    <animateTransform attributeName="transform" type="rotate" values="-10 0 15;0 0 15" dur=".25s" fill="freeze" start="2.25" begin="infinite" calcMode="spline" keySplines=".5 0 .5 1"/>
-                </path>
-                <path  d="M12.5 20H5V35H20Q25 35 27.5 30L30 25Q32.5 20 27.5 20H22.5L26.25 12.5Q27.5 10 26 10Q24.5 10 21.5 12.5L12.5 20V35" fill="#0000" stroke="#888" stroke-width="0" stroke-dasharray="0 110" stroke-linejoin="round" transform="translate(0 0) rotate(0 0 15)">
-                    <animate attributeName="stroke-width" values="0;2" dur="1s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .3 1"/>
-                    <animate attributeName="stroke-dasharray" values="0 110;110 0" dur="1.5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 0 1"/>
-                    <animate attributeName="stroke" values="#888;#8880" dur=".5s" fill="freeze" start="2" begin="infinite" calcMode="spline" keySplines="0 0 .5 .25"/>
-                    <animate attributeName="stroke-width" values="2;5" dur=".25s" fill="freeze" start="2" begin="infinite" calcMode="spline" keySplines="0 0 .5 .25"/>
-                    <animateTransform attributeName="transform" type="translate" values="0 0;0 -5" dur=".25s" fill="freeze" start="2" begin="infinite" calcMode="spline" keySplines=".5 0 .5 1"/>
-                    <animateTransform attributeName="transform" type="rotate" values="0 0 15;-10 0 15" dur=".25s" fill="freeze" start="2" begin="infinite" calcMode="spline" keySplines=".5 0 .5 1"/>
-                    <animateTransform attributeName="transform" type="translate" values="0 -5;0 0" dur=".25s" fill="freeze" start="2.25" begin="infinite" calcMode="spline" keySplines=".5 0 .5 1"/>
-                    <animateTransform attributeName="transform" type="rotate" values="-10 0 15;0 0 15" dur=".25s" fill="freeze" start="2.25" begin="infinite" calcMode="spline" keySplines=".5 0 .5 1"/>
-                </path>
-                <path d="M0 11.25V0L15 15L10 17.5L12.5 22.5L7.5 25L5 20L0 22.5Z" fill="#000" stroke="#888" stroke-width="0" stroke-dasharray="0 75" opacity="1">
-                    <animate attributeName="stroke-width" values="0;2" dur="1s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .3 1"/>
-                    <animate attributeName="stroke-dasharray" values="0 75;75 0" dur="1.5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 0 1"/>
-                    <animateMotion id="slide-4-interactivity-ff-broken-animateMotion" path="M80 10Q70 10 60 21Q50 32 40 33Q30 33 22.5 30" dur="2s" fill="freeze" start="0" begin="infinite" calcMode="spline" keyTimes="0;1" keySplines=".25 1 1 1"/>
-                    <animate attributeName="opacity" values="1;0" dur=".5s" fill="freeze" start="2.5" begin="infinite" calcMode="spline" keySplines="0 0 .5 .25"/>
-                </path>
-            </svg>
-            <script>
-                if (navigator.userAgent.toLowerCase().indexOf("firefox") > -1) {
-                    console.log("Firefox detected, using alternative animation speeds for the mouse cursor in the interactivity slide because Firefox has a bug with <animateMotion calcMode=\"spline\">.");
-                    document.getElementById("slide-4-interactivity-ff-broken-animateMotion").setAttribute("keyTimes", "0;.25;.5;1");
-                    document.getElementById("slide-4-interactivity-ff-broken-animateMotion").setAttribute("keySplines", "0 0 1 1;0 0 1 1;.25 .5 .75 1");
-                }
-            </script>
+            <h1 class="slide slide-5" id="slide-5" invisible>
+                98,8% aller Internetseiten nutzen es
+            </h1>
         </center>
         <!-- Page 3 - Slide 6-9 - Mosaic -->
         <center class="slide slide-6" invisible>
-            <h1 id="slide-6-title-mosaic">
+            <h1 id="slide-6-mosaic">
                 Mosaic war 1993 der erste Browser,
             </h1>
-            <h1 id="slide-6-title-js-css">
+            <h1 id="slide-6-js-css">
                 hatte aber noch kein JavaScript
             </h1>
             <div class="slide slide-7" invisible>
@@ -224,13 +194,13 @@
         </center>
         <!-- Page 4 - Slide 10-12 - Netscape Navigator -->
         <center class="slide slide-10" invisible>
-            <h1 id="slide-10-title">
+            <h1 id="slide-10">
                 1994 erschien Netscape Navigator<a id="slide-11-comma" class="slide slide-11" invisible>,</a>
             </h1>
-            <h1 class="slide slide-11" id="slide-11-title" invisible>
+            <h1 class="slide slide-11" id="slide-11" invisible>
                 bekam 1995 Java Applets
             </h1>
-            <h1 class="slide slide-12" id="slide-12-title" invisible>
+            <h1 class="slide slide-12" id="slide-12" invisible>
                 und später JavaScript
             </h1>
             <svg id="slide-11-applet" class="slide slide-11" viewBox="0 0 50 50" invisible>
@@ -313,10 +283,10 @@
         </center>
         <!-- Page 5 - Slide 13-14 - LiveScript -->
         <center class="slide slide-13" invisible>
-            <h1 id="slide-13-title-js">
+            <h1 id="slide-13-js">
                 JavaScript, anfangs LiveScript genannt<a id="slide-14-comma" class="slide slide-14" invisible>,</a>
             </h1>
-            <h1 class="slide slide-14" id="slide-14-title" invisible>
+            <h1 class="slide slide-14" id="slide-14" invisible>
                 wurde wegen Javas Beliebtheit umbenannt
             </h1>
             <svg id="slide-13-ls" viewBox="0 0 50 50">
@@ -332,13 +302,13 @@
         </center>
         <!-- Page 6 - Slide 15-17 - IE -->
         <center class="slide slide-15" invisible>
-            <h1 id="slide-15-title-ie">
+            <h1 id="slide-15-ie">
                 1996 veröffentlichte Microsoft Internet Explorer
             </h1>
-            <h1 id="slide-15-title-jscript">
-                mit CSS & JScript (verändertes JavaScript)
+            <h1 id="slide-15-jscript">
+                mit CSS & JScript (umbenanntes JavaScript)
             </h1>
-            <h1 id="slide-17-title" class="slide slide-17" invisible>
+            <h1 id="slide-17" class="slide slide-17" invisible>
                 er wurde schnell der beliebteste
             </h1>
             <div class="slide slide-16" id="slide-16-button" invisible>
@@ -403,67 +373,49 @@
         </center>
         <!-- Page 7 - Slide 18-20 - ECMAScript -->
         <center class="slide slide-18" invisible>
-            <h1 id="slide-18-title">
-                1997 wurde JavaScript als ECMAScript standardisiert
+            <h1 id="slide-18-1">
+                1997 wurde JavaScript von ECMA
             </h1>
-            <h1 id="slide-19-title" class="slide slide-19" invisible>
-                Microsoft ignorierte es und blieb bei JScript
+            <h1 id="slide-18-2">
+                als ECMAScript standardisiert
             </h1>
-            <div class="slide slide-20" invisible>
-                <h1 id="slide-20-title">
-                    das erschwerte die Erstellung von Seiten
-                </h1>
-                <div id="slide-20-jscript">
-                    <h4 class="slide-20-title">
-                        JScript
-                    </h4>
-                    <p class="slide-20-code code">
-                        <a style="color: #C792EA;">var</a> meinKnopf = document<a style="color: #89DDFF;">.</a>all<a style="color: #89DDFF;">[</a><a style="color: #FFF0A0;">"meineKnopfID"</a><a style="color: #89DDFF;">];</a><br>
-                        meinKnopf<a style="color: #89DDFF;">.</a><a style="color: #82AAFF;">attachEvent</a><a style="color: #89DDFF;">(</a><a style="color: #FFF0A0;">"onclick"</a><a style="color: #89DDFF;">,()=>{</a><br>
-                        &nbsp;&nbsp;<a style="color: #82AAFF;">info</a><a style="color: #89DDFF;">(</a><a style="color: #FFF0A0;">"Hallo Welt!"</a><a style="color: #89DDFF;">);</a><br>
-                        <a style="color: #89DDFF;">});</a>
-                    </p>
-                </div>
-                <div id="slide-20-js">
-                    <h4 class="slide-20-title">
-                        JavaScript
-                    </h4>
-                    <p class="slide-20-code code">
-                        <a style="color: #C792EA;"> var</a> meinKnopf = document<a style="color: #89DDFF;">.</a><a style="color: #82AAFF;">getElementById</a><a style="color: #89DDFF;">(</a><a style="color: #FFF0A0;">"meineKnopfID"</a><a style="color: #89DDFF;">);</a><br>
-                        meinKnopf<a style="color: #89DDFF;">.</a><a style="color: #82AAFF;">addEventListener</a><a style="color: #89DDFF;">(</a><a style="color: #FFF0A0;">"onclick"</a><a style="color: #89DDFF;">,()=>{</a><br>
-                        &nbsp;&nbsp;<a style="color: #82AAFF;">info</a><a style="color: #89DDFF;">(</a><a style="color: #FFF0A0;">"Hallo Welt!"</a><a style="color: #89DDFF;">);</a><br>
-                        <a style="color: #89DDFF;">});</a>
-                    </p>
-                </div>
-            </div>
+            <h1 id="slide-19-1" class="slide slide-19" invisible>
+                so kann JavaScript in jedem
+            </h1>
+            <h1 id="slide-19-2" class="slide slide-19" invisible>
+                Browser gleich funktionieren
+            </h1>
+            <h1 id="slide-20" class="slide slide-20" invisible>
+                ECMA entwickelte es weiter
+            </h1>
         </center>
         <!-- Page 8 - Slide 21-26 - ECMAScript 2 & 3 -->
         <center class="slide slide-21" invisible>
-            <h1 id="slide-21-title">
+            <h1 id="slide-21">
                 1998 erschien ECMAScript 2
             </h1>
-            <h1 id="slide-22-title" class="slide slide-22" invisible>
+            <h1 id="slide-22" class="slide slide-22" invisible>
                 mit dem Modul-System
             </h1>
-            <h1 id="slide-23-title" class="slide slide-23" invisible>
+            <h1 id="slide-23" class="slide slide-23" invisible>
                 und Try, Catch & Finally
             </h1>
-            <h1 id="slide-24-title" class="slide slide-24" invisible>
+            <h1 id="slide-24" class="slide slide-24" invisible>
                 1999 erschien ECMAScript 3
             </h1>
-            <h1 id="slide-25-title" class="slide slide-25" invisible>
+            <h1 id="slide-25" class="slide slide-25" invisible>
                 mit JavaScript Object Notation
             </h1>
-            <h1 id="slide-26-title" class="slide slide-26" invisible>
+            <h1 id="slide-26" class="slide slide-26" invisible>
                 und neuen Datentypen
             </h1>
         </center>
         <!-- Page 9 - Slide 27-30 - Firefox -->
         <center class="slide slide-27" invisible>
-            <h1 id="slide-27-title">
+            <h1 id="slide-27">
                 Mozilla veröffentlichte 2004 Firefox
             </h1>
-            <h1 id="slide-28-title" class="slide slide-28" invisible>
+            <h1 id="slide-28" class="slide slide-28" invisible>
                 welcher 2005 ECMAScript unterstützte
             </h1>
             <svg id="slide-27-firefox" viewBox="0 0 77.42 79.97">
@@ -574,19 +526,19 @@
                     <path d="m74.62 26.83c-1.684-4.052-5.1-8.427-7.775-9.81a40.27 40.27 0 0 1 3.925 11.76l7e-3 0.065c-4.382-10.92-11.81-15.33-17.88-24.92-0.307-0.485-0.614-0.971-0.913-1.484-0.171-0.293-0.308-0.557-0.427-0.8a7.053 7.053 0 0 1-0.578-1.535 0.1 0.1 0 0 0-0.088-0.1 0.138 0.138 0 0 0-0.073 0c-5e-3 0-0.013 9e-3 -0.019 0.011s-0.019 0.011-0.028 0.015l0.015-0.026c-9.735 5.7-13.04 16.25-13.34 21.53 0.452-0.031 0.9-0.069 1.362-0.069a19.56 19.56 0 0 1 16.98 9.917 13.38 13.38 0 0 0-9.345-2.269c13.94 6.97 10.2 30.97-9.119 30.07a17.24 17.24 0 0 1-5.043-0.973q-0.569-0.213-1.138-0.466c-0.219-0.1-0.438-0.2-0.654-0.312l0.027 0.017q-0.282-0.135-0.564-0.281c0.181 0.087 0.351 0.181 0.537 0.264-4.733-2.446-8.641-7.07-9.129-12.68 0 0 1.789-6.667 12.81-6.667 1.191 0 4.6-3.325 4.661-4.289-0.015-0.315-6.76-3-9.39-5.59-1.405-1.385-2.072-2.052-2.663-2.553a11.59 11.59 0 0 0-1-0.758 17.97 17.97 0 0 1-0.109-9.473 28.7 28.7 0 0 0-9.329 7.21h-0.018c-1.536-1.947-1.428-8.367-1.34-9.708a6.928 6.928 0 0 0-1.294 0.687 28.22 28.22 0 0 0-3.788 3.245 33.84 33.84 0 0 0-3.623 4.347v6e-3 -7e-3a32.73 32.73 0 0 0-5.2 11.74l-0.052 0.256c-0.073 0.341-0.4 2.073-0.447 2.445a45.09 45.09 0 0 0-0.572 5.403v0.2a38.76 38.76 0 0 0 76.95 6.554c0.065-0.5 0.118-0.995 0.176-1.5a39.86 39.86 0 0 0-2.514-19.47zm-3.845 1.991 7e-3 0.041z" fill="url(#firefox-l)"/>
                 </g>
             </svg>
-            <h1 id="slide-29-title" class="slide slide-29" invisible>
+            <h1 id="slide-29" class="slide slide-29" invisible>
                 Mozilla & Adobe arbeiteten an ECMAScript 4
             </h1>
-            <h1 id="slide-30-title" class="slide slide-30" invisible>
+            <h1 id="slide-30" class="slide slide-30" invisible>
                 jedoch wurde es nie veröffentlicht
             </h1>
         </center>
         <!-- Page 10 - Slide 31-34 - Chrome -->
         <center class="slide slide-31" invisible>
-            <h1 id="slide-31-title">
+            <h1 id="slide-31">
                 2008 veröffentlichte Google Chrome
             </h1>
-            <h1 id="slide-32-title" class="slide slide-32" invisible>
+            <h1 id="slide-32" class="slide slide-32" invisible>
                 der durch die V8 Engine sehr schnell war
             </h1>
             <svg id="slide-31-chrome" viewBox="0 0 48 48">
@@ -611,37 +563,37 @@
                 <circle cx="24" cy="24" r="12" style="fill:#fff"/>
                 <circle cx="24" cy="24" r="9.5" style="fill:#1a73e8"/>
             </svg>
-            <h1 id="slide-33-title-1" class="slide slide-33" invisible>
+            <h1 id="slide-33-1" class="slide slide-33" invisible>
                 Googles neue Engine kompilierte
             </h1>
-            <h1 id="slide-33-title-2" class="slide slide-33" invisible>
+            <h1 id="slide-33-2" class="slide slide-33" invisible>
                 während ältere Engines interpretierten
             </h1>
-            <h1 id="slide-34-title" class="slide slide-34" invisible>
+            <h1 id="slide-34" class="slide slide-34" invisible>
                 um mitzuhalten, wechselten viele zu V8,<br>
                 oder verbesserten ihre eigenen Engines
             </h1>
         </center>
         <!-- Page 11 - Slide 35-37 - IE ECMA -->
         <center class="slide slide-35" invisible>
-            <h1 id="slide-35-title">
-                IE erhielt langsam ECMAScript unterstützung
+            <h1 id="slide-35">
+                2020 wurde Internet Explorer eingestellt
             </h1>
-            <h1 id="slide-36-title" class="slide slide-36" invisible>
-                jedoch es funktionierte nie vollständig
+            <h1 id="slide-36" class="slide slide-36" invisible>
+                und von Microsoft durch Edge ersetzt
             </h1>
-            <h1 id="slide-37-title" class="slide slide-37" invisible>
-                bis er 2022 schließlich eingestellt wurde
+            <h1 id="slide-37" class="slide slide-37" invisible>
+                welcher ebenfalls auf V8 basiert
             </h1>
         </center>
 
         <!-- SYNTAX AND SPECIALTIES -->
         <!-- Page 12 - Slide 38-39 - OOP -->
         <center class="slide slide-38" invisible>
-            <h1 id="slide-38-title">
+            <h1 id="slide-38">
                 JavaScript ist Objekt Orientiert
             </h1>
-            <h1 id="slide-39-title" class="slide slide-39" invisible>
+            <h1 id="slide-39" class="slide slide-39" invisible>
                 Objekte haben Werte und Funktionen
             </h1>
             <p id="slide-39-code" class="slide slide-39 code" invisible>
@@ -656,57 +608,57 @@
         </center>
         <!-- Page 13 - Slide 40-44 - Event-Model -->
         <center class="slide slide-40" invisible>
-            <h1 id="slide-40-title">
+            <h1 id="slide-40">
                 JavaScripts Ereignis Modell
             </h1>
             <div class="slide slide-41" invisible>
-                <h1 id="slide-41-title">
+                <h1 id="slide-41">
                     andere Sprachen fragen ständig nach Ereignissen
                 </h1>
-                <h1 id="slide-42-title" class="slide slide-42" invisible>
+                <h1 id="slide-42" class="slide slide-42" invisible>
                     in JavaScript kann einfach darauf gewartet werden
                 </h1>
             </div>
             <div class="slide slide-43" invisible>
-                <h1 id="slide-43-title-1">
+                <h1 id="slide-43-1">
                     Funktionen können auch nach einer
                 </h1>
-                <h1 id="slide-43-title-2" class="slide slide-43" invisible>
+                <h1 id="slide-43-2" class="slide slide-43" invisible>
                     bestimmten Zeit ausgeführt werden
                 </h1>
-                <h1 id="slide-44-title-1" class="slide slide-44" invisible>
+                <h1 id="slide-44-1" class="slide slide-44" invisible>
                     oder in
                 </h1>
-                <h1 id="slide-44-title-2" class="slide slide-44" invisible>
+                <h1 id="slide-44-2" class="slide slide-44" invisible>
                     einem Intervall ausgeführt werden
                 </h1>
             </div>
         </center>
         <!-- Page 14 - Slide 45-47 - Single Thread -->
         <center class="slide slide-45" invisible>
-            <h1 id="slide-45-title">
+            <h1 id="slide-45">
                 JavaScripts nutzt nur einen Thread
             </h1>
-            <h1 id="slide-46-title" class="slide slide-46" invisible>
+            <h1 id="slide-46" class="slide slide-46" invisible>
                 deshalb können mehrere Aufgaben<br>
                 nicht gleichzeitig machen
             </h1>
-            <h1 id="slide-47-title-1" class="slide slide-47" invisible>
+            <h1 id="slide-47-1" class="slide slide-47" invisible>
                 dieser Thread ist für alles zuständig
             </h1>
-            <h1 id="slide-47-title-2" class="slide slide-47" invisible>
+            <h1 id="slide-47-2" class="slide slide-47" invisible>
                 langsame Programme halten alles auf
             </h1>
         </center>
         <!-- Page 15 - Slide 48-52 - Weakly Typed -->
         <center class="slide slide-48" invisible>
-            <h1 id="slide-48-title">
+            <h1 id="slide-48">
                 JavaScripts hat keine Typisierung
             </h1>
-            <h1 id="slide-49-title" class="slide slide-49" invisible>
+            <h1 id="slide-49" class="slide slide-49" invisible>
                 falsche Wert-Typen könne ein Problem sein
             </h1>
-            <h1 id="slide-52-title" class="slide slide-52" invisible>
+            <h1 id="slide-52" class="slide slide-52" invisible>
                 TypeScript fügt Typisierung hinzu
             </h1>
             <div id="slide-50-code" class="slide slide-50 code" invisible>
@@ -723,10 +675,10 @@
         </center>
         <!-- Page 16 - Slide 53-54 - Functions As Values -->
         <center class="slide slide-53" invisible>
-            <h1 id="slide-53-title">
+            <h1 id="slide-53">
                 Funktionen können wie Werte behandelt werden
             </h1>
-            <h1 id="slide-54-title" class="slide slide-54" invisible>
+            <h1 id="slide-54" class="slide slide-54" invisible>
                 sie können gespeichert oder weiter gegeben werden
             </h1>
             <div id="slide-54-code" class="slide slide-54 code" invisible>
@@ -740,13 +692,13 @@
         <!-- ROLE IN THE INTERNET -->
         <!-- Page 17 - Slide 55-56 - Canvas -->
         <center class="slide slide-55" invisible>
-            <h1 id="slide-55-title">
+            <h1 id="slide-55">
                 Leinwände ermöglichen freies Zeichnen
             </h1>
-            <h1 id="slide-56-title-1" class="slide slide-56" invisible>
+            <h1 id="slide-56-1" class="slide slide-56" invisible>
                 das ermöglicht zum Beispiel
             </h1>
-            <h1 id="slide-56-title-2" class="slide slide-56" invisible>
+            <h1 id="slide-56-2" class="slide slide-56" invisible>
                 Grafik Rechner oder 3D Spiele
             </h1>
             <canvas id="slide-55-canvas" class="slide slide-55" width="1000" height="1000" invisible>
@@ -793,10 +745,10 @@
         </center>
         <!-- Page 18 - Slide 57-58 - Video & Audio -->
         <center class="slide slide-57" invisible>
-            <h1 id="slide-57-title">
+            <h1 id="slide-57">
                 Audios und Videos können abgespielt werden
             </h1>
-            <h1 id="slide-58-title" class="slide slide-58" invisible>
+            <h1 id="slide-58" class="slide slide-58" invisible>
                 und JavaScript ermöglicht es, sie steuern
             </h1>
             <svg id="slide-57-audio" class="slide slide-57" viewBox="0 0 50 50" invisible>
@@ -860,10 +812,10 @@
         </center>
         <!-- Page 19 - Slide 59-60 - IFrame -->
         <center class="slide slide-59" invisible>
-            <h1 id="slide-59-title">
+            <h1 id="slide-59">
                 IFrames erlauben, Webseiten einzubetten
             </h1>
-            <h1 id="slide-60-title" class="slide slide-60" invisible>
+            <h1 id="slide-60" class="slide slide-60" invisible>
                 zum Beispiel Karten oder Videos
             </h1>
             <svg id="slide-60-iframe" class="slide slide-60" viewBox="0 0 60 50" invisible>
@@ -904,13 +856,13 @@
         </center>
         <!-- Page 20 - Slide 61-63 - Cookies -->
         <center class="slide slide-61" invisible>
-            <h1 id="slide-61-title">
+            <h1 id="slide-61">
                 Cookies können Informationen speichern
             </h1>
-            <h1 id="slide-62-title" class="slide slide-62" invisible>
+            <h1 id="slide-62" class="slide slide-62" invisible>
                 zum Beispiel Anmeldedaten
             </h1>
-            <h1 id="slide-63-title" class="slide slide-63" invisible>
+            <h1 id="slide-63" class="slide slide-63" invisible>
                 aber auch Unerwünschtes
             </h1>
             <h5 id="slide-62-cookie" class="slide slide-62" invisible>
@@ -922,15 +874,15 @@
                 Standort: Deutschland
             </h5>
         </center>
-        <!-- Page 21 - Slide 64-65 - Werbung -->
+        <!-- Page 21 - Slide 64-65 - Ads -->
         <center class="slide slide-64" invisible>
-            <h1 id="slide-64-title">
+            <h1 id="slide-64">
                 JavaScript ermöglicht aber auch Werbung
             </h1>
-            <h1 id="slide-65-title-1" class="slide slide-65" invisible>
+            <h1 id="slide-65-1" class="slide slide-65" invisible>
                 indem es diese von einem Anbieter lädt
             </h1>
-            <h1 id="slide-65-title-2" class="slide slide-65" invisible>
+            <h1 id="slide-65-2" class="slide slide-65" invisible>
                 und in die Seite einbettet
             </h1>
             <svg id="slide-65-ad" class="slide slide-65" viewBox="0 0 72.5 20" invisible>
@@ -958,13 +910,13 @@
         <!-- DOM-MANIPULATION AND EVENT HANDLING -->
         <!-- Page 22 - Slide 66-70 - DOM-Manipulation -->
         <center class="slide slide-66" invisible>
-            <h1 id="slide-66-title">
+            <h1 id="slide-66">
                 JavaScript kann Elemente
             </h1>
-            <h1 id="slide-67-title" class="slide slide-67" invisible>
-                finden<a id="slide-68-title" class="slide slide-68" invisible>, verändern</a> <a id="slide-69-title" class="slide slide-69" invisible>und löschen</a>
+            <h1 id="slide-67" class="slide slide-67" invisible>
+                finden<a id="slide-68" class="slide slide-68" invisible>, verändern</a> <a id="slide-69" class="slide slide-69" invisible>und löschen</a>
             </h1>
-            <h1 id="slide-70-title" class="slide slide-70" invisible>
+            <h1 id="slide-70" class="slide slide-70" invisible>
                 und neue Elemente erstellen
             </h1>
             <div id="slide-66-dom-manipulation" class="code">
@@ -990,13 +942,13 @@
         </center>
         <!-- Page 23 - Slide 71-72 - Switching -->
         <center class="slide slide-71" invisible>
-            <h1 id="slide-71-title">
+            <h1 id="slide-71">
                 So können Panels gewechselt werden
             </h1>
-            <h1 id="slide-72-title-1" class="slide slide-72" invisible>
+            <h1 id="slide-72-1" class="slide slide-72" invisible>
                 indem eines versteckt und
             </h1>
-            <h1 id="slide-72-title-2" class="slide slide-72" invisible>
+            <h1 id="slide-72-2" class="slide slide-72" invisible>
                 das andere gezeigt wird
             </h1>
             <svg id="slide-71-switching" class="slide slide-71" viewBox="0 0 50 50" invisible>
@@ -1115,19 +1067,19 @@
                     beginnend mit lorem ipsum…, da das Wort dolorem
                 </text>
                 <text x="2.25" y="45" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    getrennt umbrochen wurde. Der erste Absatz besteh
+                    getrennt umbrochen wurde. Der erste Absatz besteht
                 </text>
                 <text x="2.25" y="47.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    t in einer gängigen Form aus folgenden Wörtern:
+                    in einer gängigen Form aus folgenden Wörtern:
                 </text>
             </svg>
         </center>
         <!-- Page 24 - Slide 73-74 - Enabling -->
         <center class="slide slide-73" invisible>
-            <h1 id="slide-73-title">
+            <h1 id="slide-73">
                 Oder Knöpfe funktionieren nur
             </h1>
-            <h1 id="slide-74-title" class="slide slide-74" invisible>
+            <h1 id="slide-74" class="slide slide-74" invisible>
                 wenn ein Kästchen angekreuzt ist
             </h1>
             <svg id="slide-73-checkbox" class="slide slide-73" viewBox="0 0 50 10" invisible>
@@ -1163,10 +1115,10 @@
         <center class="slide slide-75" invisible>
             <div id="slide-75-background" class="slide slide-76" invisible>
             </div>
-            <h1 id="slide-75-title">
+            <h1 id="slide-75">
                 JavaScript ermöglicht Anpassungsfähigkeit
             </h1>
-            <h1 id="slide-76-title" class="slide slide-76" invisible>
+            <h1 id="slide-76" class="slide slide-76" invisible>
                 zum Beispiel mit einem Themen-Knopf
             </h1>
             <svg id="slide-75-color-theme" class="slide slide-75" viewBox="0 0 50 50" invisible>
@@ -1179,31 +1131,490 @@
                 </path>
             </svg>
             <svg id="slide-76-color-theme" class="slide slide-76" viewBox="0 0 50 50" invisible>
-                <g transform="rotate(0)" transform-origin="25 25">
-                    <path  d="M25 5A20 20 0 1 1 25 45A20 20 0 1 1 25 5V45" fill="#FFF" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
-                    </path>
-                    <path  d="M25 5A20 20 0 1 1 25 45Z" fill="#000"/>
-                    <!-- <animateTransform attributeName="transform" type="rotate" values="0;180" dur="1s" fill="freeze" start=".5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/> -->
-                </g>
+                <path  d="M25 5A20 20 0 1 1 25 45A20 20 0 1 1 25 5V45" fill="#FFF" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path  d="M25 5A20 20 0 1 1 25 45Z" fill="#000"/>
             </svg>
         </center>
         <!-- Page 26 - Slide 77-78 - Dynamic Loading -->
         <center class="slide slide-77" invisible>
-            <h1 id="slide-77-title">
+            <h1 id="slide-77">
                 Dynamisches Laden von Inhalten
             </h1>
-            <h1 id="slide-78-title" class="slide slide-76" invisible>
+            <h1 id="slide-78-1" class="slide slide-78" invisible>
                 ermöglicht Seiten wie TikTok
             </h1>
-            <!-- <svg id="slide-78-color-theme" class="slide slide-78" viewBox="0 0 50 50" invisible>
-                <path  d="M25 5A20 20 0 1 1 25 45A20 20 0 1 1 25 5V45" fill="#0000" stroke="#FFF" stroke-width="0" stroke-linecap="round" stroke-linejoin="round">
-                    <animate attributeName="stroke-width" values="0;5" dur="1s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
-                    <animate attributeName="stroke-dasharray" values="0 170;170 0" dur="1s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+            <h1 id="slide-78-2" class="slide slide-78" invisible>
+                die unendlich Rollen können
+            </h1>
+            <svg id="slide-78-tiktok" class="slide slide-78" viewBox="0 0 27 93" invisible>
+                <mask id="slide-78-tiktok-mask">
+                    <rect x="2" y="2" width="23" height="98" rx="5" fill="#FFF"/>
+                </mask>
+                <g mask="url(#slide-78-tiktok-mask)">
+                    <g transform="translate(0, 0)">
+                        <g transform="scale(0)" transform-origin="12.5 71">
+                            <rect x="2.9" y="48.9" width="21.2" height="44.2" rx="4" fill="#468"/>
+                            <path d="M10 66L17 71L10 76Z" fill="#DDD" stroke="#DDD" stroke-width="2" stroke-linejoin="round"/>
+                            <animateTransform id="slide-78-tiktok-animation" attributeName="transform" type="scale" values="0;1" dur=".5s" fill="freeze" start="1" begin="slide-78-tiktok-animation.begin+4s"/>
+                            <animateTransform attributeName="transform" type="scale" values="1;0" dur=".5s" fill="freeze" start="4" begin="slide-78-tiktok-animation.begin+3s"/>
+                        </g>
+                        <animateTransform attributeName="transform" type="translate" values="0 0;0 -138" dur="3s" start="1.5" begin="slide-78-tiktok-animation.begin+4.5s"/>
+                    </g>
+                    <g transform="translate(0, 0)">
+                        <g transform="scale(0)" transform-origin="12.5 71">
+                            <rect x="2.9" y="48.9" width="21.2" height="44.2" rx="4" fill="#844"/>
+                            <path d="M10 66L17 71L10 76Z" fill="#DDD" stroke="#DDD" stroke-width="2" stroke-linejoin="round"/>
+                            <animateTransform attributeName="transform" type="scale" values="0;1" dur=".5s" fill="freeze" start="2" begin="slide-78-tiktok-animation.begin+5s"/>
+                            <animateTransform attributeName="transform" type="scale" values="1;0" dur=".5s" fill="freeze" start="5" begin="slide-78-tiktok-animation.begin+4s"/>
+                        </g>
+                        <animateTransform attributeName="transform" type="translate" values="0 0;0 -138" dur="3s" start="2.5" begin="slide-78-tiktok-animation.begin+5.5s"/>
+                    </g>
+                    <g transform="translate(0, 0)">
+                        <g transform="scale(0)" transform-origin="12.5 71">
+                            <rect x="2.9" y="48.9" width="21.2" height="44.2" rx="4" fill="#484"/>
+                            <path d="M10 66L17 71L10 76Z" fill="#DDD" stroke="#DDD" stroke-width="2" stroke-linejoin="round"/>
+                            <animateTransform attributeName="transform" type="scale" values="0;1" dur=".5s" fill="freeze" start="3" begin="slide-78-tiktok-animation.begin+6s"/>
+                            <animateTransform attributeName="transform" type="scale" values="1;0" dur=".5s" fill="freeze" start="6" begin="slide-78-tiktok-animation.begin+5s"/>
+                        </g>
+                        <animateTransform attributeName="transform" type="translate" values="0 0;0 -138" dur="3s" start="3.5" begin="slide-78-tiktok-animation.begin+6.5s"/>
+                    </g>
+                    <g transform="translate(0, 0)">
+                        <g transform="scale(0)" transform-origin="12.5 71">
+                            <rect x="2.9" y="48.9" width="21.2" height="44.2" rx="4" fill="#848"/>
+                            <path d="M10 66L17 71L10 76Z" fill="#DDD" stroke="#DDD" stroke-width="2" stroke-linejoin="round"/>
+                            <animateTransform attributeName="transform" type="scale" values="0;1" dur=".5s" fill="freeze" start="4" begin="slide-78-tiktok-animation.begin+7s"/>
+                            <animateTransform attributeName="transform" type="scale" values="1;0" dur=".5s" fill="freeze" start="7" begin="slide-78-tiktok-animation.begin+6s"/>
+                        </g>
+                        <animateTransform attributeName="transform" type="translate" values="0 0;0 -138" dur="3s" start="4.5" begin="slide-78-tiktok-animation.begin+7.5s"/>
+                    </g>
+                </g>
+                <path  d="M2 15V7A5 5 0 0 1 7 2H20A5 5 0 0 1 25 7V43A5 5 0 0 1 20 48H7A5 5 0 0 1 2 43Z" fill="#0000" stroke="#FFF" stroke-width="0" stroke-linecap="round" stroke-linejoin="round">
+                    <animate attributeName="stroke-width" values="0;2" dur=".25s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="stroke-dasharray" values="0 160;160 0" dur="1.5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </path>
-                <path  d="M25 5A20 20 0 1 1 25 45Z" fill="#FFF0">
-                    <animate attributeName="fill" values="#FFF0;#FFF" dur=".25s" fill="freeze" start=".825" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                <path  d="M8 2A2 2 0 0 1 10 4H17A2 2 0 0 1 19 2" fill="#0000" stroke="#FFF" stroke-width="0" stroke-linecap="round" stroke-linejoin="round">
+                    <animate attributeName="stroke-width" values="2.05;2.05" dur=".5s" fill="freeze" start=".8" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="stroke-dasharray" values="0 15;15 0" dur=".5s" fill="freeze" start=".8" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </path>
-            </svg> -->
+                <path  d="M18 45H9" fill="#0000" stroke="#FFF" stroke-width="0" stroke-linecap="round" stroke-linejoin="round">
+                    <animate attributeName="stroke-width" values="0;1" dur=".5s" fill="freeze" start="1" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="stroke-dasharray" values="0 14;14 0" dur=".5s" fill="freeze" start="1" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                </path>
+            </svg>
+        </center>
+
+        <!-- JAVASCRIPT-ENGINES AND THE IMPORTANCE OF BROWSER COMPATIBILITY -->
+        <!-- Page 27 - Slide 79-83 - JS-Engines -->
+        <center class="slide slide-79" invisible>
+            <h1 id="slide-79">
+                Es gibt viele JavaScript-Engines
+            </h1>
+            <h1 id="slide-80" class="slide slide-80" invisible>
+                Firefox nutzt SpiderMonkey
+            </h1>
+            <h1 id="slide-81" class="slide slide-81" invisible>
+                Safari nutzt JavaScriptCore
+            </h1>
+            <h1 id="slide-82" class="slide slide-82" invisible>
+                Internet Explorer nutzte Chakra
+            </h1>
+            <h1 id="slide-83-1" class="slide slide-83" invisible>
+                alle anderen wie Opera, Brave
+            </h1>
+            <h1 id="slide-83-2" class="slide slide-83" invisible>
+                und Edge nutzen Chromes V8
+            </h1>
+        </center>
+        <!-- Page 28 - Slide 84-87 - Browser Compatibility -->
+        <center class="slide slide-84" invisible>
+            <h1 id="slide-84-1">
+                Es gibt viele JavaScript-Engines
+            </h1>
+            <h1 id="slide-84-2">
+                die alle gleich funktionieren sollen
+            </h1>
+            <h1 id="slide-85" class="slide slide-85" invisible>
+                IE hatte lange Zeit andere Funktionen
+            </h1>
+            <h1 id="slide-86-1" class="slide slide-86" invisible>
+                doch das hatte auch Gutes, da
+            </h1>
+            <h1 id="slide-86-2" class="slide slide-86" invisible>
+                Vorteile übernommen wurden
+            </h1>
+            <h1 id="slide-87-1" class="slide slide-87" invisible>
+                Heutzutage sind die einzigen Unterschiede
+            </h1>
+            <h1 id="slide-87-2" class="slide slide-87" invisible>
+                Geschwindigkeit und Arbeitsspeicher Verbrauch
+            </h1>
+        </center>
+        <!-- Page 29 - Slide 88-90 - Mobile -->
+        <center class="slide slide-88" invisible>
+            <h1 id="slide-88">
+                Handys werden immer beliebter
+            </h1>
+            <h1 id="slide-89" class="slide slide-89" invisible>
+                rund die Hälfte aller Nutzer nutzen sie
+            </h1>
+            <h1 id="slide-90-1" class="slide slide-90" invisible>
+                kleine Bildschirme und Touchscreens
+            </h1>
+            <h1 id="slide-90-2" class="slide slide-90" invisible>
+                müssen daher auch unterstützt werden
+            </h1>
+        </center>
+
+        <!-- THE ECOSYSTEM: FRAMEWORKS AND LIBRARIES -->
+        <!-- Page 30 - Slide 91-93 - Frameworks & Libs Title -->
+        <center class="slide slide-91" invisible>
+            <h1 id="slide-91">
+                Frameworks & Bibliotheken
+            </h1>
+            <h1 id="slide-92" class="slide slide-92" invisible>
+                Frameworks sind strukturierte Grundlagen
+            </h1>
+            <h1 id="slide-93" class="slide slide-93" invisible>
+                Bibliotheken enthalten nützliche Funktionen
+            </h1>
+        </center>
+        <!-- Page 31 - Slide 94-102 - Frameworks & Libs -->
+        <center class="slide slide-94" invisible>
+            <h1 id="slide-99" class="slide slide-99" invisible>
+                Bibliotheken
+            </h1>
+            <h1 id="slide-94">
+                Frameworks
+            </h1>
+            <div class="slide slide-94 scrolling-box" invisible>
+                <svg viewBox="-10.5 -9.45 21 18.9">
+                    <circle cx="0" cy="0" r="2" fill="#149ECA"/>
+                    <g stroke="#149ECA" stroke-width="1" fill="none">
+                        <ellipse rx="10" ry="4.5"/>
+                        <ellipse rx="10" ry="4.5" transform="rotate(60)"/>
+                        <ellipse rx="10" ry="4.5" transform="rotate(120)"/>
+                    </g>
+                </svg>
+                <h3>React</h3>
+                <h6>- Ist das beliebteste Framework</h6>
+                <h6>- Nutzt ein modulares System</h6>
+                <h6>- Wird von Facebook entwickelt</h6>
+                <h6>- Der Quelltext ist frei verfügbar</h6>
+                <h6>- Nutzt JSX für Benutzeroberflächen</h6>
+                <h6>- Hat ein Ökosystem mit vielen<br>&nbsp;&nbsp;&nbsp;Bibliotheken und Werkzeugen</h6>
+            </div>
+            <div class="slide slide-95 scrolling-box" invisible>
+                <svg style="transform: scale(1.3);" viewBox="0 0 250 250">
+                    <g>
+                        <polygon fill="#FF0031" points="125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2"/>
+                        <polygon fill="#C3002F" points="125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30"/>
+                        <path fill="#FFF" d="M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1L125,52.1z M142,135.4H108l17-40.9L142,135.4z"/>
+                    </g>
+                </svg>
+                <h3>Angular</h3>
+                <h6>- Wird von Google entwickelt</h6>
+                <h6>- Hat viele integrierte Funktionen und<br>&nbsp;&nbsp;&nbsp;hilfreiche Werkzeuge</h6>
+                <h6>- Ist für Anwendungen mit nur einer Seite</h6>
+                <h6>- Nutzt hauptsächlich TypeScript</h6>
+                <h6>- Nutzt Dekoratoren und Annotationen für<br>&nbsp;&nbsp;&nbsp;die Konfiguration von Komponenten</h6>
+            </div>
+            <div class="slide slide-96 scrolling-box" invisible>
+                <svg viewBox="0 0 128 128">
+                    <path fill="#42b883" d="M78.8,10L64,35.4L49.2,10H0l64,110l64-110C128,10,78.8,10,78.8,10z"/>
+                    <path fill="#35495e" d="M78.8,10L64,35.4L49.2,10H25.6L64,76l38.4-66H78.8z"/>
+                </svg>
+                <h3>Vue.js</h3>
+                <h6>- Sehr kompakt und leichtgewichtig</h6>
+                <h6>- Ist sehr leicht zu lernen</h6>
+                <h6>- Kann schrittweise integriert werden</h6>
+                <h6>- Benutzt ebenfalls Komponente</h6>
+                <h6>- Der Server kann leicht mit dem<br>&nbsp;&nbsp;&nbsp;Terminal bedient werden</h6>
+            </div>
+            <div class="slide slide-97 scrolling-box" invisible>
+                <svg viewBox="0 0 93.224 112">
+                    <path fill="#FF3E00" d="M87.269,14.819C76.869-.066,56.328-4.478,41.477,4.984L15.4,21.608A29.921,29.921,0,0,0,1.876,41.651,31.514,31.514,0,0,0,4.984,61.882,30.006,30.006,0,0,0,.507,73.065,31.892,31.892,0,0,0,5.955,97.181c10.4,14.887,30.942,19.3,45.791,9.835L77.829,90.392A29.915,29.915,0,0,0,91.347,70.349a31.522,31.522,0,0,0-3.1-20.232,30.019,30.019,0,0,0,4.474-11.182,31.878,31.878,0,0,0-5.447-24.116"/>
+                    <path fill="#FFF" d="M38.929,98.582a20.72,20.72,0,0,1-22.237-8.243,19.176,19.176,0,0,1-3.276-14.5,18.143,18.143,0,0,1,.623-2.435l.491-1.5,1.337.981a33.633,33.633,0,0,0,10.2,5.1l.969.294-.089.968A5.844,5.844,0,0,0,28,83.122a6.24,6.24,0,0,0,6.7,2.485,5.748,5.748,0,0,0,1.6-.7L62.382,68.281a5.43,5.43,0,0,0,2.451-3.631,5.794,5.794,0,0,0-.988-4.371,6.244,6.244,0,0,0-6.7-2.487,5.755,5.755,0,0,0-1.6.7l-9.953,6.345a19.06,19.06,0,0,1-5.3,2.326,20.719,20.719,0,0,1-22.237-8.243,19.171,19.171,0,0,1-3.277-14.5A17.992,17.992,0,0,1,22.915,32.37L49,15.747a19.03,19.03,0,0,1,5.3-2.329,20.72,20.72,0,0,1,22.237,8.243,19.176,19.176,0,0,1,3.277,14.5,18.453,18.453,0,0,1-.624,2.435l-.491,1.5-1.336-.979a33.616,33.616,0,0,0-10.2-5.1l-.97-.294.09-.968a5.859,5.859,0,0,0-1.052-3.878,6.241,6.241,0,0,0-6.7-2.485,5.748,5.748,0,0,0-1.6.7L30.842,43.719a5.421,5.421,0,0,0-2.449,3.63,5.79,5.79,0,0,0,.986,4.372,6.245,6.245,0,0,0,6.7,2.487,5.773,5.773,0,0,0,1.6-.7l9.952-6.342a18.978,18.978,0,0,1,5.3-2.328,20.718,20.718,0,0,1,22.236,8.243,19.171,19.171,0,0,1,3.277,14.5,18,18,0,0,1-8.13,12.054L44.229,96.253a19.017,19.017,0,0,1-5.3,2.329"/>
+                </svg>
+                <h3>Svelte</h3>
+                <h6>- Wird kompiliert, wodurch es schneller<br>&nbsp;&nbsp;&nbsp;und leichtgewichtiger ist</h6>
+                <h6>- Erleichter das Erstellen von Animationen</h6>
+                <h6>- Hat einen sehr kompakten Syntax</h6>
+                <h6>- Vereinfacht das Teilen von Quelltext<br>&nbsp;&nbsp;&nbsp;in kleinere Module</h6>
+            </div>
+            <div class="slide slide-98 scrolling-box" invisible>
+                <svg style="background: #000 !important; border-radius: calc(var(--scale) * 10); outline: 2px solid #FFF; outline-offset: -1px; filter: invert(1); transform: scale(1.5); margin-right: calc(var(--scale) * 7.5);" viewBox=".5 -.2 1023 1024.1">
+                    <path fill="#FFF" d="m478.5.6c-2.2.2-9.2.9-15.5 1.4-145.3 13.1-281.4 91.5-367.6 212-48 67-78.7 143-90.3 223.5-4.1 28.1-4.6 36.4-4.6 74.5s.5 46.4 4.6 74.5c27.8 192.1 164.5 353.5 349.9 413.3 33.2 10.7 68.2 18 108 22.4 15.5 1.7 82.5 1.7 98 0 68.7-7.6 126.9-24.6 184.3-53.9 8.8-4.5 10.5-5.7 9.3-6.7-.8-.6-38.3-50.9-83.3-111.7l-81.8-110.5-102.5-151.7c-56.4-83.4-102.8-151.6-103.2-151.6-.4-.1-.8 67.3-1 149.6-.3 144.1-.4 149.9-2.2 153.3-2.6 4.9-4.6 6.9-8.8 9.1-3.2 1.6-6 1.9-21.1 1.9h-17.3l-4.6-2.9c-3-1.9-5.2-4.4-6.7-7.3l-2.1-4.5.2-200.5.3-200.6 3.1-3.9c1.6-2.1 5-4.8 7.4-6.1 4.1-2 5.7-2.2 23-2.2 20.4 0 23.8.8 29.1 6.6 1.5 1.6 57 85.2 123.4 185.9s157.2 238.2 201.8 305.7l81 122.7 4.1-2.7c36.3-23.6 74.7-57.2 105.1-92.2 64.7-74.3 106.4-164.9 120.4-261.5 4.1-28.1 4.6-36.4 4.6-74.5s-.5-46.4-4.6-74.5c-27.8-192.1-164.5-353.5-349.9-413.3-32.7-10.6-67.5-17.9-106.5-22.3-9.6-1-75.7-2.1-84-1.3zm209.4 309.4c4.8 2.4 8.7 7 10.1 11.8.8 2.6 1 58.2.8 183.5l-.3 179.8-31.7-48.6-31.8-48.6v-130.7c0-84.5.4-132 1-134.3 1.6-5.6 5.1-10 9.9-12.6 4.1-2.1 5.6-2.3 21.3-2.3 14.8 0 17.4.2 20.7 2z"/>
+                </svg>
+                <svg viewBox="0 0 300 200">
+                    <path d="M168 200H279C282.542 200 285.932 198.756 289 197C292.068 195.244 295.23 193.041 297 190C298.77 186.959 300.002 183.51 300 179.999C299.998 176.488 298.773 173.04 297 170.001L222 41C220.23 37.96 218.067 35.7552 215 34C211.933 32.2448 207.542 31 204 31C200.458 31 197.067 32.2448 194 34C190.933 35.7552 188.77 37.96 187 41L168 74L130 9.99764C128.228 6.95784 126.068 3.75491 123 2C119.932 0.245087 116.542 0 113 0C109.458 0 106.068 0.245087 103 2C99.9323 3.75491 96.7717 6.95784 95 9.99764L2 170.001C0.226979 173.04 0.00154312 176.488 1.90993e-06 179.999C-0.0015393 183.51 0.229648 186.959 2 190C3.77035 193.04 6.93245 195.244 10 197C13.0675 198.756 16.4578 200 20 200H90C117.737 200 137.925 187.558 152 164L186 105L204 74L259 168H186L168 200ZM89 168H40L113 42L150 105L125.491 147.725C116.144 163.01 105.488 168 89 168Z" fill="#00DC82"/>
+                </svg>
+                <h3>Next.js & Nuxt.js</h3>
+                <h6>- Next.js erleichtert die Nutzung von React,</h6>
+                <h6>&nbsp;&nbsp;&nbsp;Nuxt.js hingegen vereinfacht Vue.js</h6>
+                <h6>- Können die Seite als eine Datei liefern</h6>
+                <h6>- Sind durch Erweiterungen anpassbar</h6>
+                <h6>- Komprimieren den JavaScript Quelltext</h6>
+                <h6>- Ermöglichen komplexe URLs, die unter<br>&nbsp;&nbsp;&nbsp;anderem Variablen enthalten können</h6>
+            </div>
+            <div class="slide slide-99 scrolling-box" invisible>
+                <svg viewBox="0 0 32 32" fill="#0868ac">
+                    <path d="M2.144 7.705c-2.83 4.07-2.48 9.364-.316 13.7.05.104.105.206.158.308l.1.195c.02.038.042.075.063.112.037.07.075.134.113.202l.207.354.118.194.24.375.102.158c.113.168.228.336.347.5l.068.092a16.39 16.39 0 0 0 .316.42l.12.152.292.36.112.134c.133.157.27.313.407.465.014.015.02.02.024.026a20.44 20.44 0 0 0 .414.436l.133.134.33.324.135.13a16.98 16.98 0 0 0 .453.412l.496.42.17.136.343.268.183.14.385.276.18.127c.123.085.248.166.374.247l.162.108a20.81 20.81 0 0 0 .585.358l.162.1.44.246c.08.043.162.084.243.125l.314.163.073.035.13.062.498.23.105.047a17.83 17.83 0 0 0 .581.241l.14.056.548.203.07.024a21.72 21.72 0 0 0 .61.2l.148.044c.2.063.416.14.63.178 13.694 2.497 17.67-8.23 17.67-8.23-3.34 4.352-9.27 5.5-14.9 4.222-.213-.048-.42-.114-.627-.176l-.156-.047a18.62 18.62 0 0 1-.604-.197l-.083-.03a20.87 20.87 0 0 1-.532-.197l-.15-.06a15.16 15.16 0 0 1-.575-.24l-.115-.05-.485-.226-.14-.067c-.126-.06-.25-.127-.375-.2l-.25-.13c-.152-.08-.3-.166-.45-.252l-.152-.085a21.76 21.76 0 0 1-.585-.358c-.053-.034-.105-.07-.158-.105l-.416-.277c-.046-.03-.1-.064-.134-.094l-.394-.285-.175-.132-.355-.278-.158-.127-.442-.373a.73.73 0 0 0-.05-.04l-.465-.423-.13-.126-.332-.33-.13-.13c-.14-.143-.276-.287-.4-.434-.007-.007-.014-.014-.02-.022a16.98 16.98 0 0 1-.416-.474l-.1-.13-.3-.37-.1-.137-.346-.46C2.982 15.6 1.86 9.722 4.354 4.902m6.58-.625c-2.048 2.947-1.937 6.9-.34 10.008a13.06 13.06 0 0 0 .906 1.512c.307.44.647.963 1.054 1.316.148.163.302.32.46.477l.12.12a13.41 13.41 0 0 0 .469.436c.007.005.012.012.02.017.182.16.366.3.553.458l.124.097a13.46 13.46 0 0 0 .574.419l.017.012c.086.06.174.115.262.173.042.027.082.056.124.082a11.64 11.64 0 0 0 .425.26l.06.035.376.2c.044.025.1.046.134.07l.263.136c.013.007.027.012.04.018a11.39 11.39 0 0 0 .548.255l.12.05a14.16 14.16 0 0 0 .45.182l.192.07a14.26 14.26 0 0 0 .413.143l.187.06c.197.06.4.14.597.173 10.573 1.752 13.014-6.4 13.014-6.4-2.2 3.17-6.46 4.68-11.008 3.5a13.06 13.06 0 0 1-.599-.173c-.06-.018-.12-.038-.18-.058l-.42-.144-.2-.07a15.08 15.08 0 0 1-.45-.182l-.122-.05a12.58 12.58 0 0 1-.552-.256l-.277-.14-.16-.082a13.16 13.16 0 0 1-.35-.197l-.084-.047a12.34 12.34 0 0 1-.424-.26c-.043-.027-.085-.057-.128-.085l-.275-.182a13.24 13.24 0 0 1-.57-.418l-.13-.1c-2-1.572-3.568-3.72-4.318-6.154-.786-2.525-.617-5.36.745-7.66m5.732-.183C17.12 3.5 17 5.698 17.838 7.66c.883 2.083 2.693 3.716 4.806 4.5l.262.1.116.036.377.1c5.838 1.128 7.42-2.996 7.843-3.603-1.387 1.997-3.718 2.476-6.578 1.782-.226-.055-.474-.137-.692-.214a8.46 8.46 0 0 1-.822-.341 8.5 8.5 0 0 1-1.441-.879C19.15 7.2 17.56 3.486 19.23.47"/>
+                </svg>
+                <h3>jQuery</h3>
+                <h6>- Vereinfacht DOM-Manipulation<br>&nbsp;&nbsp;&nbsp;und Ereignis-Verarbeitung</h6>
+                <h6>- Reduziert Schreibaufwand und Quelltext</h6>
+                <h6>- Unterstützt CSS-Selektoren</h6>
+                <h6>- Ermöglicht asynchrone Kommunikation<br>&nbsp;&nbsp;&nbsp;mit dem Server</h6>
+                <h6>- Vielen Frameworks enthalten Ähnliches</h6>
+            </div>
+            <div class="slide slide-100 scrolling-box" invisible>
+                <svg viewBox="-10 -10 116 111">
+                    <clipPath id="d3js-logo-clip">
+                        <path d="M0,0h7.75a45.5,45.5 0 1 1 0,91h-7.75v-20h7.75a25.5,25.5 0 1 0 0,-51h-7.75zm36.2510,0h32a27.75,27.75 0 0 1 21.331,45.5a27.75,27.75 0 0 1 -21.331,45.5h-32a53.6895,53.6895 0 0 0 18.7464,-20h13.2526a7.75,7.75 0 1 0 0,-15.5h-7.75a53.6895,53.6895 0 0 0 0,-20h7.75a7.75,7.75 0 1 0 0,-15.5h-13.2526a53.6895,53.6895 0 0 0 -18.7464,-20z"/>
+                    </clipPath>
+                    <linearGradient id="d3js-logo-gradient-1" gradientUnits="userSpaceOnUse" x1="7" y1="64" x2="50" y2="107">
+                        <stop offset="0" stop-color="#f9a03c"/>
+                        <stop offset="1" stop-color="#f7974e"/>
+                    </linearGradient>
+                    <linearGradient id="d3js-logo-gradient-2" gradientUnits="userSpaceOnUse" x1="2" y1="-2" x2="87" y2="84">
+                        <stop offset="0" stop-color="#f26d58"/>
+                        <stop offset="1" stop-color="#f9a03c"/>
+                    </linearGradient>
+                    <linearGradient id="d3js-logo-gradient-3" gradientUnits="userSpaceOnUse" x1="45" y1="-10" x2="108" y2="53">
+                        <stop offset="0" stop-color="#b84e51"/>
+                        <stop offset="1" stop-color="#f68e48"/>
+                    </linearGradient>
+                    <g clip-path="url(#d3js-logo-clip)">
+                        <path d="M-100,-102m-28,0v300h300z" fill="url(#d3js-logo-gradient-1)"/>
+                        <path d="M-100,-102m28,0h300v300z" fill="url(#d3js-logo-gradient-3)"/>
+                        <path d="M-100,-102l300,300" fill="none" stroke="url(#d3js-logo-gradient-2)" stroke-width="40"/>
+                    </g>
+                </svg>
+                <h3>D3.js</h3>
+                <h6>- Ermöglicht Visualisierung von Daten</h6>
+                <h6>- Kann Elemente mit Daten verknüpfen</h6>
+                <h6>- Kann die Daten als SVGs darstellen</h6>
+                <h6>- Enthält hilfreiche Werkzeuge für<br>&nbsp;&nbsp;&nbsp;das Arbeiten mit Daten</h6>
+                <h6>- Sehr kompakt und leichtgewichtig</h6>
+                <h6>- Der Quelltext ist frei verfügbar</h6>
+            </div>
+            <div class="slide slide-101 scrolling-box" invisible>
+                <svg viewBox="0 0 2500 2500">
+                    <path d="M70 188.5h220v1460h870v180H70v-1640zm1776 396c-225-3-450 140-520 357-100 250-54 564 142 755 190 158 476 170 690 58 147-78 240-233 260-396 26-170 13-356-70-510-98-164-290-270-480-263l-22-3zm20 174c165 0 313 126 340 288 50 183 20 407-130 536-140 114-365 98-480-43-140-150-140-380-68-560 50-130 183-223 323-220h18z" fill="#FFF"/>
+                    <path d="M70 2061.5h2360v250H70v-250z" fill="#3492ff"/>
+                </svg>
+                <h3>Lodash</h3>
+                <h6>- Erleichtert die Arbeit mit Datenstrukturen<br>&nbsp;&nbsp;&nbsp;wie Listen und Objekte</h6>
+                <h6>- Sehr schnell und effizient</h6>
+                <h6>- Besteht aus Modulen, die einzeln<br>&nbsp;&nbsp;&nbsp;genutzt werden können</h6>
+                <h6>- Mehrere Funktionen für Objekte können<br>&nbsp;&nbsp;&nbsp;aneinander gereiht werden</h6>
+            </div>
+            <div class="slide slide-102 scrolling-box" invisible>
+                <svg style="transform: scale(1.2);" viewBox="0 0 226.77 226.77">
+                    <g transform="translate(8.964 4.2527)" fill-rule="evenodd" stroke="#FFF" stroke-linecap="butt" stroke-linejoin="round" stroke-width="4">
+                        <path d="m63.02 200.61-43.213-174.94 173.23 49.874z"/>
+                        <path d="m106.39 50.612 21.591 87.496-86.567-24.945z"/>
+                        <path d="m84.91 125.03-10.724-43.465 43.008 12.346z"/>
+                        <path d="m63.458 38.153 10.724 43.465-43.008-12.346z"/>
+                        <path d="m149.47 62.93 10.724 43.465-43.008-12.346z"/>
+                        <path d="m84.915 125.06 10.724 43.465-43.008-12.346z"/>
+                    </g>
+                </svg>
+                <h3>Three.js</h3>
+                <h6>- Ermöglicht die Darstellung von<br>&nbsp;&nbsp;&nbsp;3D Objekten im Webbrowser</h6>
+                <h6>- Kann Modelle aus einer Datei Laden</h6>
+                <h6>- Erlaubt das Abspielen von Animationen</h6>
+                <h6>- Unterstützt komplexe Texturen</h6>
+                <h6>- Nutzt WebGL und damit die deutlich<br>&nbsp;&nbsp;&nbsp;schnellere Grafikkarte</h6>
+            </div>
+        </center>
+
+        <!-- GRAPHICAL AND SERVER SIDE APPLICATIONS -->
+        <!-- Page 32 - Slide 103-107 - Electron -->
+        <center class="slide slide-103" invisible>
+            <h1 id="slide-103-1">
+                Electron ermöglicht es, aus Webseiten
+            </h1>
+            <h1 id="slide-103-2">
+                Desktop Anwendungen zu erstellen
+            </h1>
+            <h1 id="slide-104" class="slide slide-104" invisible>
+                diese funktionieren auf allen Betriebssystemen
+            </h1>
+            <h1 id="slide-105" class="slide slide-105" invisible>
+                und können zum Beispiel auf Dateien zugreifen
+            </h1>
+            <h1 id="slide-106" class="slide slide-106" invisible>
+                Allerdings ist Electron langsamer und ineffizienter
+            </h1>
+            <h1 id="slide-107" class="slide slide-107" invisible>
+                und jedes Programm enthält Google Chrome
+            </h1>
+        </center>
+        <!-- Page 33 - Slide 108-110 - Node.js -->
+        <center class="slide slide-108" invisible>
+            <h1 id="slide-108-1">
+                Node.js ermöglicht es, JavaScript und
+            </h1>
+            <h1 id="slide-108-2">
+                TypeScript auf einem Server auszuführen
+            </h1>
+            <h1 id="slide-109" class="slide slide-109" invisible>
+                es wird über die Konsole gesteuert
+            </h1>
+            <svg id="slide-108-node" viewBox="0 0 111 33">
+                <g clip-path="url(#slide-108-node-clip0_8323_10753)">
+                    <path d="M97.6894 32.7407C97.4024 32.7407 97.1345 32.6637 96.8858 32.5289L94.3412 31.0081C93.9586 30.7963 94.1499 30.7193 94.2647 30.6808C94.7813 30.5075 94.8769 30.469 95.4126 30.161C95.47 30.1225 95.5466 30.1418 95.604 30.1803L97.5555 31.3546C97.632 31.3931 97.7276 31.3931 97.785 31.3546L105.419 26.9075C105.495 26.869 105.534 26.792 105.534 26.6958V17.8209C105.534 17.7247 105.495 17.6477 105.419 17.6092L97.785 13.1814C97.7085 13.1429 97.6128 13.1429 97.5555 13.1814L89.9217 17.6092C89.8451 17.6477 89.8069 17.7439 89.8069 17.8209V26.6958C89.8069 26.7728 89.8451 26.869 89.9217 26.9075L92.0071 28.1204C93.1359 28.6979 93.8438 28.0241 93.8438 27.3503V18.591C93.8438 18.4755 93.9394 18.36 94.0734 18.36H95.0491C95.1639 18.36 95.2787 18.4562 95.2787 18.591V27.3503C95.2787 28.8712 94.456 29.7567 93.0211 29.7567C92.5811 29.7567 92.2367 29.7567 91.2609 29.2755L89.252 28.1204C88.7546 27.8316 88.4485 27.2926 88.4485 26.715V17.8402C88.4485 17.2626 88.7546 16.7236 89.252 16.4348L96.8858 11.9878C97.3641 11.7183 98.0146 11.7183 98.4929 11.9878L106.127 16.4348C106.624 16.7236 106.93 17.2626 106.93 17.8402V26.715C106.93 27.2926 106.624 27.8316 106.127 28.1204L98.4929 32.5674C98.2633 32.6637 97.9764 32.7407 97.6894 32.7407Z" fill="#5FA04E"/>
+                    <path d="M100.062 26.6379C96.7134 26.6379 96.0247 25.0978 96.0247 23.7887C96.0247 23.6732 96.1203 23.5577 96.2542 23.5577H97.2491C97.3639 23.5577 97.4596 23.6347 97.4596 23.7502C97.6126 24.7705 98.0527 25.2711 100.081 25.2711C101.688 25.2711 102.377 24.9053 102.377 24.039C102.377 23.5385 102.185 23.1727 99.6789 22.9224C97.5935 22.7106 96.2925 22.2486 96.2925 20.5737C96.2925 19.0144 97.5935 18.0903 99.7746 18.0903C102.224 18.0903 103.429 18.9374 103.582 20.7855C103.582 20.8433 103.563 20.901 103.525 20.9588C103.486 20.9973 103.429 21.0358 103.371 21.0358H102.357C102.262 21.0358 102.166 20.9588 102.147 20.8625C101.917 19.8037 101.324 19.4572 99.7555 19.4572C97.9953 19.4572 97.7848 20.0732 97.7848 20.5352C97.7848 21.0935 98.0335 21.2668 100.406 21.5748C102.759 21.8828 103.869 22.3256 103.869 23.9812C103.869 25.6753 102.472 26.6379 100.062 26.6379Z" fill="#5FA04E"/>
+                    <path d="M111.083 17.3202C111.083 18.1288 110.413 18.8026 109.609 18.8026C108.806 18.8026 108.136 18.148 108.136 17.3202C108.136 16.4732 108.825 15.8379 109.609 15.8379C110.394 15.8379 111.083 16.4924 111.083 17.3202ZM108.366 17.3202C108.366 18.0133 108.921 18.5716 109.59 18.5716C110.279 18.5716 110.834 17.994 110.834 17.3202C110.834 16.6272 110.279 16.0882 109.59 16.0882C108.94 16.0882 108.366 16.6272 108.366 17.3202ZM109.055 16.4924H109.629C109.82 16.4924 110.203 16.4924 110.203 16.9352C110.203 17.2432 110.011 17.301 109.896 17.3395C110.126 17.3587 110.145 17.5128 110.164 17.7245C110.183 17.8593 110.203 18.0903 110.241 18.1673H109.896C109.896 18.0903 109.839 17.6668 109.839 17.6475C109.82 17.5513 109.782 17.5128 109.667 17.5128H109.38V18.1865H109.055V16.4924ZM109.361 17.224H109.609C109.82 17.224 109.858 17.07 109.858 16.993C109.858 16.762 109.705 16.762 109.609 16.762H109.342V17.224H109.361Z" fill="#5FA04E"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1565 17.4415C18.1565 17.095 17.9652 16.7678 17.6591 16.5945L9.56614 11.8779C9.43221 11.8009 9.27915 11.7624 9.12609 11.7432C9.10696 11.7432 9.04956 11.7432 9.04956 11.7432C8.89651 11.7432 8.74345 11.8009 8.60952 11.8779L0.497439 16.5752C0.191323 16.7485 0 17.0758 0 17.4415L0.0191323 30.0704C0.0191323 30.2437 0.114794 30.4169 0.267852 30.4939C0.42091 30.5902 0.612233 30.5902 0.746159 30.4939L5.56749 27.7217C5.87361 27.5485 6.06493 27.2212 6.06493 26.8747V20.9645C6.06493 20.618 6.25625 20.2907 6.56237 20.1175L8.60952 18.9239C8.76258 18.8276 8.93477 18.7891 9.10696 18.7891C9.27915 18.7891 9.45134 18.8276 9.58527 18.9239L11.6324 20.1175C11.9385 20.2907 12.1299 20.618 12.1299 20.9645V26.8747C12.1299 27.2212 12.3212 27.5485 12.6273 27.7217L17.4104 30.4939C17.5634 30.5902 17.7547 30.5902 17.9078 30.4939C18.0609 30.4169 18.1565 30.2437 18.1565 30.0704V17.4415Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M57.1482 0.0577539C56.9951 -0.0192513 56.8038 -0.0192513 56.6698 0.0577539C56.5168 0.15401 56.4211 0.308021 56.4211 0.481283V12.9946C56.4211 13.1101 56.3637 13.2256 56.2489 13.3027C56.1341 13.3604 56.0194 13.3604 55.9046 13.3027L53.8765 12.1283C53.5704 11.9551 53.2069 11.9551 52.9008 12.1283L44.7887 16.8449C44.4826 17.0182 44.2913 17.3454 44.2913 17.6919V27.1058C44.2913 27.4524 44.4826 27.7796 44.7887 27.9529L52.9008 32.6695C53.2069 32.8427 53.5704 32.8427 53.8765 32.6695L61.9886 27.9529C62.2947 27.7796 62.4861 27.4524 62.4861 27.1058V3.6385C62.4861 3.27272 62.2947 2.94545 61.9886 2.77219L57.1482 0.0577539ZM56.402 24.0064C56.402 24.1026 56.3637 24.1796 56.2872 24.2181L53.513 25.8353C53.4365 25.8738 53.3408 25.8738 53.2643 25.8353L50.4901 24.2181C50.4136 24.1796 50.3753 24.0834 50.3753 24.0064V20.7722C50.3753 20.6759 50.4136 20.5989 50.4901 20.5604L53.2643 18.9433C53.3408 18.9048 53.4365 18.9048 53.513 18.9433L56.2872 20.5604C56.3637 20.5989 56.402 20.6952 56.402 20.7722V24.0064Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M84.1431 20.6951C84.4493 20.5218 84.6214 20.1946 84.6214 19.848V17.5571C84.6214 17.2106 84.4301 16.8833 84.1431 16.7101L76.0884 12.0128C75.7823 11.8395 75.4188 11.8395 75.1127 12.0128L67.0006 16.7293C66.6945 16.9026 66.5032 17.2299 66.5032 17.5764V26.9903C66.5032 27.3368 66.6945 27.6641 67.0006 27.8373L75.0553 32.4576C75.3614 32.6309 75.7249 32.6309 76.0119 32.4576L80.8906 29.724C81.0437 29.647 81.1394 29.4737 81.1394 29.3004C81.1394 29.1272 81.0437 28.9539 80.8906 28.8769L72.7403 24.1603C72.5872 24.0641 72.4916 23.9101 72.4916 23.7368V20.7914C72.4916 20.6181 72.5872 20.4448 72.7403 20.3678L75.2849 18.9047C75.438 18.8085 75.6293 18.8085 75.7823 18.9047L78.3269 20.3678C78.48 20.4641 78.5756 20.6181 78.5756 20.7914V23.1015C78.5756 23.2748 78.6713 23.448 78.8244 23.525C78.9774 23.6213 79.1687 23.6213 79.3218 23.525L84.1431 20.6951Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M75.4764 20.2525C75.5338 20.214 75.6104 20.214 75.6678 20.2525L77.2175 21.1573C77.2749 21.1958 77.3131 21.2536 77.3131 21.3306V23.1402C77.3131 23.2172 77.2749 23.275 77.2175 23.3135L75.6678 24.2183C75.6104 24.2568 75.5338 24.2568 75.4764 24.2183L73.9267 23.3135C73.8693 23.275 73.8311 23.2172 73.8311 23.1402V21.3306C73.8311 21.2536 73.8693 21.1958 73.9267 21.1573L75.4764 20.2525Z" fill="#5FA04E"/>
+                    <path d="M31.7207 12.0513C31.4145 11.8781 31.051 11.8781 30.7449 12.0513L22.6902 16.7294C22.3841 16.9027 22.2119 17.2299 22.2119 17.5765V26.9518C22.2119 27.2984 22.4032 27.6256 22.6902 27.7989L30.7449 32.477C31.051 32.6502 31.4145 32.6502 31.7207 32.477L39.7753 27.7989C40.0815 27.6256 40.2536 27.2984 40.2536 26.9518V17.5765C40.2536 17.2299 40.0623 16.9027 39.7753 16.7294L31.7207 12.0513Z" fill="url(#slide-108-node-paint0_linear_8323_10753)"/>
+                    <path d="M39.7946 16.7294L31.7017 12.0513C31.6252 12.0128 31.5295 11.9743 31.453 11.9551L22.3843 27.5679C22.4608 27.6641 22.5565 27.7411 22.6521 27.7989L30.7451 32.477C30.9747 32.6117 31.2425 32.6502 31.4912 32.5732L40.0051 16.9027C39.9477 16.8257 39.8712 16.7679 39.7946 16.7294Z" fill="url(#slide-108-node-paint1_linear_8323_10753)"/>
+                    <path d="M39.7947 27.7986C40.0243 27.6638 40.1965 27.4328 40.273 27.1825L31.4147 11.9355C31.1852 11.897 30.9364 11.9162 30.726 12.051L22.6904 16.7098L31.3573 32.6114C31.4721 32.5921 31.6061 32.5536 31.7209 32.4959L39.7947 27.7986Z" fill="url(#slide-108-node-paint2_linear_8323_10753)"/>
+                </g>
+                <defs>
+                    <linearGradient id="slide-108-node-paint0_linear_8323_10753" x1="34.5132" y1="15.5354" x2="27.1574" y2="30.4484" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#3F873F"/>
+                        <stop offset="0.3296" stop-color="#3F8B3D"/>
+                        <stop offset="0.6367" stop-color="#3E9638"/>
+                        <stop offset="0.9341" stop-color="#3DA92E"/>
+                        <stop offset="1" stop-color="#3DAE2B"/>
+                    </linearGradient>
+                    <linearGradient id="slide-108-node-paint1_linear_8323_10753" x1="30.0088" y1="23.3589" x2="50.5328" y2="8.28841" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.1376" stop-color="#3F873F"/>
+                        <stop offset="0.4016" stop-color="#52A044"/>
+                        <stop offset="0.7129" stop-color="#64B749"/>
+                        <stop offset="0.9081" stop-color="#6ABF4B"/>
+                    </linearGradient>
+                    <linearGradient id="slide-108-node-paint2_linear_8323_10753" x1="21.9168" y1="22.2608" x2="40.5549" y2="22.2608" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.0919165" stop-color="#6ABF4B"/>
+                        <stop offset="0.2871" stop-color="#64B749"/>
+                        <stop offset="0.5984" stop-color="#52A044"/>
+                        <stop offset="0.8624" stop-color="#3F873F"/>
+                    </linearGradient>
+                    <clipPath id="slide-108-node-clip0_8323_10753">
+                        <rect width="111" height="33" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+            <h1 id="slide-110" class="slide slide-110" invisible>
+                und nutzt Googles V8 Engine
+            </h1>
+        </center>
+        <!-- Page 34 - Slide 111-114 - npm -->
+        <center class="slide slide-111" invisible>
+            <h1 id="slide-111">
+                Ein wichtiger Teil von Node.js ist npm
+            </h1>
+            <h1 id="slide-112" class="slide slide-112" invisible>
+                der Node Package Manager
+            </h1>
+            <h1 id="slide-113" class="slide slide-113" invisible>
+                Nutzer können Module hochladen
+            </h1>
+            <h1 id="slide-114-1" class="slide slide-114" invisible>
+                und Andere können diese nutzen
+            </h1>
+            <h1 id="slide-114-2" class="slide slide-114" invisible>
+                wodurch sie sich Arbeit sparen
+            </h1>
+        </center>
+        <!-- Page 35 - Slide 115-119 - Bun -->
+        <center class="slide slide-115" invisible>
+            <h1 id="slide-115">
+                Kürzlich wurde Bun veröffentlicht
+            </h1>
+            <h1 id="slide-116" class="slide slide-116" invisible>
+                welches eine Alternative zu Node.js ist
+            </h1>
+            <svg id="slide-115-bun" viewBox="0 0 80 70">
+                <path d="M71.09,20.74c-.16-.17-.33-.34-.5-.5s-.33-.34-.5-.5-.33-.34-.5-.5-.33-.34-.5-.5-.33-.34-.5-.5-.33-.34-.5-.5-.33-.34-.5-.5A26.46,26.46,0,0,1,75.5,35.7c0,16.57-16.82,30.05-37.5,30.05-11.58,0-21.94-4.23-28.83-10.86l.5.5.5.5.5.5.5.5.5.5.5.5.5.5C19.55,65.3,30.14,69.75,42,69.75c20.68,0,37.5-13.48,37.5-30C79.5,32.69,76.46,26,71.09,20.74Z"/>
+                <path d="M73,35.7c0,15.21-15.67,27.54-35,27.54S3,50.91,3,35.7C3,26.27,9,17.94,18.22,13S33.18,3,38,3s8.94,4.13,19.78,10C67,17.94,73,26.27,73,35.7Z" fill="#FBF0DF"/>
+                <path d="M73,35.7a21.67,21.67,0,0,0-.8-5.78c-2.73,33.3-43.35,34.9-59.32,24.94A40,40,0,0,0,38,63.24C57.3,63.24,73,50.89,73,35.7Z" fill="#F6DECE"/>
+                <path d="M24.53,11.17C29,8.49,34.94,3.46,40.78,3.45A9.29,9.29,0,0,0,38,3c-2.42,0-5,1.25-8.25,3.13-1.13.66-2.3,1.39-3.54,2.15-2.33,1.44-5,3.07-8,4.7C8.69,18.13,3,26.62,3,35.7c0,.4,0,.8,0,1.19C9.06,15.48,20.07,13.85,24.53,11.17Z" fill="#FFFEFC"/>
+                <path d="M35.12,5.53A16.41,16.41,0,0,1,29.49,18c-.28.25-.06.73.3.59,3.37-1.31,7.92-5.23,6-13.14C35.71,5,35.12,5.12,35.12,5.53Zm2.27,0A16.24,16.24,0,0,1,39,19c-.12.35.31.65.55.36C41.74,16.56,43.65,11,37.93,5,37.64,4.74,37.19,5.14,37.39,5.49Zm2.76-.17A16.42,16.42,0,0,1,47,17.12a.33.33,0,0,0,.65.11c.92-3.49.4-9.44-7.17-12.53C40.08,4.54,39.82,5.08,40.15,5.32ZM21.69,15.76a16.94,16.94,0,0,0,10.47-9c.18-.36.75-.22.66.18-1.73,8-7.52,9.67-11.12,9.45C21.32,16.4,21.33,15.87,21.69,15.76Z" fill="#CCBEA7" fill-rule="evenodd"/>
+                <path d="M38,65.75C17.32,65.75.5,52.27.5,35.7c0-10,6.18-19.33,16.53-24.92,3-1.6,5.57-3.21,7.86-4.62,1.26-.78,2.45-1.51,3.6-2.19C32,1.89,35,.5,38,.5s5.62,1.2,8.9,3.14c1,.57,2,1.19,3.07,1.87,2.49,1.54,5.3,3.28,9,5.27C69.32,16.37,75.5,25.69,75.5,35.7,75.5,52.27,58.68,65.75,38,65.75ZM38,3c-2.42,0-5,1.25-8.25,3.13-1.13.66-2.3,1.39-3.54,2.15-2.33,1.44-5,3.07-8,4.7C8.69,18.13,3,26.62,3,35.7,3,50.89,18.7,63.25,38,63.25S73,50.89,73,35.7C73,26.62,67.31,18.13,57.78,13,54,11,51.05,9.12,48.66,7.64c-1.09-.67-2.09-1.29-3-1.84C42.63,4,40.42,3,38,3Z"/>
+                <path d="M45.05,43a8.93,8.93,0,0,1-2.92,4.71,6.81,6.81,0,0,1-4,1.88A6.84,6.84,0,0,1,34,47.71,8.93,8.93,0,0,1,31.12,43a.72.72,0,0,1,.8-.81H44.26A.72.72,0,0,1,45.05,43Z" fill="#B71422"/>
+                <path d="M34,47.79a6.91,6.91,0,0,0,4.12,1.9,6.91,6.91,0,0,0,4.11-1.9,10.63,10.63,0,0,0,1-1.07,6.83,6.83,0,0,0-4.9-2.31,6.15,6.15,0,0,0-5,2.78C33.56,47.4,33.76,47.6,34,47.79Z" fill="#FF6164"/>
+                <path d="M34.26,47.1a5.36,5.36,0,0,1,4.19-2.08,6,6,0,0,1,4,1.69c.23-.25.45-.51.66-.77a7,7,0,0,0-4.71-1.93,6.36,6.36,0,0,0-4.89,2.36A9.53,9.53,0,0,0,34.16,47Z"/>
+                <path d="M38.09,50.19a7.42,7.42,0,0,1-4.45-2,9.52,9.52,0,0,1-3.11-5.05,1.2,1.2,0,0,1,.26-1,1.41,1.41,0,0,1,1.13-.51H44.26a1.44,1.44,0,0,1,1.13.51,1.19,1.19,0,0,1,.25,1h0a9.52,9.52,0,0,1-3.11,5.05A7.42,7.42,0,0,1,38.09,50.19Zm-6.17-7.4c-.16,0-.2.07-.21.09a8.29,8.29,0,0,0,2.73,4.37A6.23,6.23,0,0,0,38.09,49a6.28,6.28,0,0,0,3.65-1.73,8.3,8.3,0,0,0,2.72-4.37.21.21,0,0,0-.2-.09Z"/>
+                <ellipse cx="53.22" cy="40.18" rx="5.85" ry="3.44" fill="#FEBBD0"/>
+                <ellipse cx="22.95" cy="40.18" rx="5.85" ry="3.44" fill="#FEBBD0"/>
+                <path d="M25.7,38.8a5.51,5.51,0,1,0-5.5-5.51A5.51,5.51,0,0,0,25.7,38.8Zm24.77,0A5.51,5.51,0,1,0,45,33.29,5.5,5.5,0,0,0,50.47,38.8Z" fill-rule="evenodd"/>
+                <path d="M24,33.64a2.07,2.07,0,1,0-2.06-2.07A2.07,2.07,0,0,0,24,33.64Zm24.77,0a2.07,2.07,0,1,0-2.06-2.07A2.07,2.07,0,0,0,48.75,33.64Z" fill="#FFF" fill-rule="evenodd"/>
+            </svg>
+            <h1 id="slide-117" class="slide slide-117" invisible>
+                und Apples JavaScriptCore nutzt
+            </h1>
+            <h1 id="slide-118" class="slide slide-118" invisible>
+                Es enthält eine eigene, oft einfachere, API
+            </h1>
+            <h1 id="slide-119" class="slide slide-119" invisible>
+                und einen eigenen Package Manager
+            </h1>
+        </center>
+
+        <!-- SUMMARY -->
+        <!-- Page 36 - Slide 120-130 - Summary -->
+        <center class="slide slide-120" invisible>
+            <a class="slide slide-124" invisible>
+            </a>
+            <a class="slide slide-126" invisible>
+            </a>
+            <a class="slide slide-129" invisible>
+            </a>
+            <a>
+                <h1 id="slide-120">
+                    JavaScript wurde 1995 entwickelt
+                </h1>
+                <h1 id="slide-121" class="slide slide-121" invisible>
+                    um Webseiten interaktiv zu gestalten
+                </h1>
+                <h1 id="slide-122" class="slide slide-122" invisible>
+                    es kann den Inhalt von Seiten ändern
+                </h1>
+                <h1 id="slide-123" class="slide slide-123" invisible>
+                    und auf Ereignisse reagieren
+                </h1>
+                <h1 id="slide-124-1" class="slide slide-124" invisible>
+                    es kann für reguläre Anwendungen
+                </h1>
+                <h1 id="slide-124-2" class="slide slide-124" invisible>
+                    und Server genutzt werden
+                </h1>
+                <h1 id="slide-125" class="slide slide-125" invisible>
+                    es gibt viele Frameworks & Bibliotheken
+                </h1>
+                <h1 id="slide-126" class="slide slide-126" invisible>
+                    die das Entwickeln vereinfachen
+                </h1>
+                <h1 id="slide-127" class="slide slide-127" invisible>
+                    aber es hat auch viele Nachteile
+                </h1>
+                <h1 id="slide-128" class="slide slide-128" invisible>
+                    wie dass es viel Arbeitsspeicher braucht
+                </h1>
+                <h1 id="slide-129" class="slide slide-129" invisible>
+                    und keine Typisierung hat
+                </h1>
+                <h1 id="slide-130-1" class="slide slide-130" invisible>
+                    trotzdem war JavaScript in den
+                </h1>
+                <h1 id="slide-130-2" class="slide slide-130" invisible>
+                    letzten Jahren die beliebteste Sprache
+                </h1>
+            </a>
+        </center>
+
+        <!-- OPINION     -->
+        <!-- Page 37 - Slide 131-131 - OPINION -->
+        <center class="slide slide-131" invisible>
+            <h1 id="slide-131">
+                Eigene Meinung
+            </h1>
         </center>
     </body>
     <script src="script.js"></script>
