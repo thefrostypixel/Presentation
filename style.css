@@ -1050,7 +1050,7 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
     position: fixed;
     left: calc(var(--h-padding) + var(--scale) * 60);
     top: calc(var(--v-padding) + var(--scale) * 35);
-    height: calc(var(--scale) * 40);
+    width: calc(var(--scale) * 40);
 }
 
 /* Page 20 - Slide 61-63 - Cookies */
