@@ -2081,7 +2081,7 @@ body .slide-120 .slide-129[gone] + a *:not(#slide-124-1, #slide-124-2) {
 
 
 /* OPINION */
-/* Page 37 - Slide 131-131 - Opinion */
+/* Page 37 - Slide 131-133 - Opinion JS */
 .slide-131 {
     background: #000;
 }
@@ -2091,4 +2091,39 @@ body .slide-120 .slide-129[gone] + a *:not(#slide-124-1, #slide-124-2) {
 }
 .slide-131[invisible] #slide-131 {
     transform: scale(0);
+}
+#slide-132 {
+    margin-top: calc(var(--scale) * 3.5);
+    transition-duration: .5s;
+}
+#slide-132[invisible] {
+    transform: translateY(calc(var(--scale) * 10));
+}
+.slide-131[gone] #slide-132 {
+    transform: translateY(calc(var(--scale) * -15));
+}
+#slide-133 {
+    margin-top: calc(var(--scale) * 3.5);
+    transition-duration: .5s;
+}
+#slide-133[invisible] {
+    transform: translateY(calc(var(--scale) * 10));
+}
+.slide-131[gone] #slide-132 {
+    transform: translateY(calc(var(--scale) * -30));
+}
+
+/* Page 38 - Slide 134-134 - Opinion Electron */
+.slide-134 {
+    background: #000;
+}
+#slide-134-1 {
+    margin-top: calc(var(--scale) * 10);
+}
+#slide-134-2 {
+    margin-top: calc(var(--scale) * 10);
+    transition-duration: .5s;
+}
+.slide-134[gone] #slide-134-2 {
+    transform: translateY(calc(var(--scale) * 30));
 }
