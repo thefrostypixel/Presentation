@@ -1,3 +1,24 @@
+/* Body */
+body {
+    --scale: min(10vw / 16, 10vh / 9);
+    --h-size: calc(var(--scale) * 160);
+    --v-size: calc(var(--scale) * 90);
+    --h-padding: calc(50vw - var(--scale) * 80);
+    --v-padding: calc(50vh - var(--scale) * 45);
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    width: calc(var(--scale) * 160);
+    height: calc(var(--scale) * 90);
+    padding: 0;
+    margin: var(--v-padding) var(--h-padding);
+    font-weight: 300;
+    font-size: calc(var(--scale) * 2);
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Text */
 @font-face {
     font-family: "Font";
     font-weight: 100;
@@ -43,54 +64,11 @@
     font-weight: 900;
     src: url(font/900.otf);
 }
-
-body {
-    --contrast-color: #09E;
-    /*--link-color: #5AF;
-    --link-hover-color: #6BF;*/
-    /*--aqua: #09B;
-    --blue: #05A;
-    --purple: #A2A;
-    --red: #B20;
-    --orange: #C70;
-    --yellow: #CA0;
-    --lime: #8A0;
-    --green: #090;*/
-    --scale: min(10vw / 16, 10vh / 9);
-    --h-size: calc(var(--scale) * 160);
-    --v-size: calc(var(--scale) * 90);
-    --h-padding: calc(50vw - var(--scale) * 80);
-    --v-padding: calc(50vh - var(--scale) * 45);
-    background-color: #000;
-    color: #FFF;
-    text-align: center;
-    width: calc(var(--scale) * 160);
-    height: calc(var(--scale) * 90);
-    padding: 0;
-    margin: var(--v-padding) var(--h-padding);
-    font-weight: 300;
-    font-size: calc(var(--scale) * 2);
-    user-select: none;
-    -webkit-user-select: none;
-}
-/*center.slide:not(.slide-0, .slide-1:not([invisible])) {
-    pointer-events: none;
-}
-.slide-1 {
-    cursor: none;
-}*/
-
 * {
     font-family: "Font";
 }
 *:not(svg text) {
     letter-spacing: calc(var(--scale) * .1);
-}
-svg {
-    background-color: #0000 !important;
-}
-svg text {
-    letter-spacing: 0;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -119,41 +97,19 @@ h6 {
     font-weight: 200;
     font-size: calc(var(--scale) * 3);
 }
-.button {
-    background: linear-gradient(to right, var(--contrast-color) 40%, #0000 60%);
-    color: #EEE !important;
-    text-decoration: none;
-    border: calc(var(--scale) / 6) solid var(--contrast-color);
-    border-radius: calc(var(--scale) * 1.25);
-    outline: none;
+
+/* Slide */
+.slide {
     transition-duration: .5s;
-    transition-property: background-position, border-color, box-shadow;
-    background-size: 300% 100%;
-    background-position: 100% 0;
-    box-shadow: 0 0 0 0 var(--contrast-color);
-    display: inline-block;
-    width: fit-content;
-    padding: var(--scale) calc(var(--scale) * 3);
-    margin: calc(var(--scale) * 8) 0 calc(var(--scale) * 3) 0;
-    font-size: calc(var(--scale) * 2);
-    font-weight: 300;
-    user-select: none;
-    -webkit-user-select: none;
-    cursor: pointer;
 }
-.button:active {
-    background-position: 0 0;
-    border-color: #CCC;
-    box-shadow: 0 0 20px 5px var(--contrast-color);
+.slide[invisible] {
+    pointer-events: none;
+    opacity: 0;
 }
-@media (pointer: fine) {
-    .button:hover {
-        background-position: 0 0;
-        border-color: #CCC;
-        box-shadow: 0 0 calc(var(--scale) * 2) calc(var(--scale) * .5) var(--contrast-color);
-    }
-}
+
+/* Page */
 center.slide {
+    background-color: #000;
     position: fixed;
     display: block;
     left: var(--h-padding);
@@ -161,21 +117,61 @@ center.slide {
     width: var(--h-size);
     height: calc(var(--v-size));
 }
-center.slide[invisible] {
-    opacity: 0;
-}
 center.slide[invisible] + center.slide[invisible], [long-gone] {
     display: none !important;
 }
-:not(center).slide[invisible] {
-    opacity: 0;
+center.slide:not(.slide-0, [invisible]) {
+    cursor: none;
 }
-.slide {
+
+/* Button */
+.button {
+    background: linear-gradient(to right, #09E 40%, #0000 60%);
+    color: #EEE !important;
+    text-decoration: none;
+    border: calc(var(--scale) / 6) solid #09E;
+    border-radius: calc(var(--scale) * 1.25);
+    outline: none;
     transition-duration: .5s;
+    transition-property: background-position, border-color, box-shadow;
+    background-size: 300% 100%;
+    background-position: 100% 0;
+    box-shadow: 0 0 0 0 #09E;
+    display: inline-block;
+    width: fit-content;
+    padding: var(--scale) calc(var(--scale) * 3);
+    margin: calc(var(--scale) * 0) calc(var(--scale) * 1) calc(var(--scale) * 3)calc(var(--scale) * 1);
+    font-size: calc(var(--scale) * 2);
+    font-weight: 300;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
 }
-.slide:not([invisible]) {
-    opacity: 1;
+.button:first-of-type {
+    margin-top: calc(var(--scale) * 8);
 }
+.button:active {
+    background-position: 0 0;
+    border-color: #CCC;
+    box-shadow: 0 0 20px 5px #09E;
+}
+@media (pointer: fine) {
+    .button:hover {
+        background-position: 0 0;
+        border-color: #CCC;
+        box-shadow: 0 0 calc(var(--scale) * 2) calc(var(--scale) * .5) #09E;
+    }
+}
+
+/* SVG */
+svg {
+    background-color: #0000 !important;
+}
+svg text {
+    letter-spacing: 0;
+}
+
+/* Code */
 .code {
     text-align: left;
     font-weight: 400;
@@ -190,6 +186,9 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 /* START */
 
 /* Page 0 - Slide 0 - Start */
+.slide-0 {
+    pointer-events: all;
+}
 .slide-0[gone] {
     transform: translateY(calc(var(--scale) * -30));
     opacity: 0;
@@ -226,9 +225,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 /* THE CREATION OF JAVASCRIPT */
 
 /* Page 2 - Slide 3-5 - Interactivity */
-.slide-3 {
-    background: #000;
-}
 #slide-3 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -257,11 +253,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 3 - Slide 6-9 - Mosaic */
-.slide-6 {
-    background-color: #000;
-    transition-duration: .5s;
-    transition-property: opacity;
-}
 #slide-6-mosaic {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -323,10 +314,7 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
     filter: saturate(0);
 }
 
-/* Page 4 - Slide 10-12 - Netscapes */
-.slide-10 {
-    background: #000;
-}
+/* Page 4 - Slide 10-12 - Netscape Navigator */
 #slide-10 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -373,9 +361,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 5 - Slide 13-14 - LiveScript */
-.slide-13 {
-    background: #000;
-}
 #slide-13-js {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -403,9 +388,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 6 - Slide 13-17 - IE */
-.slide-15 {
-    background: #000;
-}
 #slide-15-ie {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -472,9 +454,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 7 - Slide 18-20 - ECMAScript */
-.slide-18 {
-    background: #000;
-}
 .slide-18[gone] h1 {
     transform: translateY(calc(var(--scale) * 10));
 }
@@ -515,9 +494,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 8 - Slide 21-26 - ECMAScript 2 & 3 */
-.slide-21 {
-    background: #000;
-}
 #slide-21 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -558,9 +534,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 9 - Slide 27-30 - Firefox */
-.slide-27 {
-    background: #000;
-}
 #slide-27 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -611,9 +584,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 10 - Slide 31-34 - Chrome */
-.slide-31 {
-    background: #000;
-}
 #slide-31 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -664,10 +634,7 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
     transform: translateY(calc(var(--scale) * 10));
 }
 
-/* Page 11 - Slide 35-37 - IE ECMA */
-.slide-35 {
-    background: #000;
-}
+/* Page 11 - Slide 35-37 - Edge */
 #slide-35 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -701,9 +668,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 
 /* SYNTAX AND SPECIALTIES */
 /* Page 12 - Slide 38-39 - OOP */
-.slide-38 {
-    background: #000;
-}
 #slide-38 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -728,9 +692,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 13 - Slide 40-44 - Event-Model */
-.slide-40 {
-    background: #000;
-}
 #slide-40 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -799,9 +760,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 14 - Slide 45-47 - Single Thread */
-.slide-45 {
-    background: #000;
-}
 #slide-45 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -832,9 +790,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 15 - Slide 48-52 - Weakly Typed */
-.slide-48 {
-    background: #000;
-}
 #slide-48 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -910,9 +865,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 16 - Slide 53-54 - Functions As Values */
-.slide-53 {
-    background: #000;
-}
 #slide-53 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -940,15 +892,12 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 
 /* ROLE IN THE INTERNET */
 /* Page 17 - Slide 55-56 - Canvas */
-.slide-55 {
-    background: #000;
-}
 #slide-55 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
 }
 .slide-55[invisible] #slide-55 {
-    transform: translateX(calc(var(--scale) * 25));
+    transform: translateY(calc(var(--scale) * -10));
 }
 #slide-56-1 {
     margin-top: calc(var(--scale) * 5);
@@ -977,9 +926,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 18 - Slide 57-58 - Video & Audio */
-.slide-57 {
-    background: #000;
-}
 #slide-57 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -1026,9 +972,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 19 - Slide 59-60 - IFrame */
-.slide-59 {
-    background: #000;
-}
 #slide-59 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -1054,9 +997,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 20 - Slide 61-63 - Cookies */
-.slide-61 {
-    background: #000;
-}
 #slide-61 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -1097,9 +1037,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 21 - Slide 64-65 - Werbung */
-.slide-64 {
-    background: #000;
-}
 #slide-64 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -1136,9 +1073,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 
 /* DOM-MANIPULATION AND EVENT HANDLING */
 /* Page 22 - Slide 66-70 - DOM-Manipulation */
-.slide-66 {
-    background: #000;
-}
 #slide-66 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -1208,7 +1142,7 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 #slide-66-dom-manipulation-highlight {
     position: fixed;
-    background-color: #89DDFF66;
+    background-color: #8DF4;
     border-radius: var(--scale);
     left: calc(var(--h-padding) + var(--scale) * 69.6);
     top: calc(var(--v-padding) + var(--scale) * 47.7);
@@ -1244,9 +1178,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 23 - Slide 71-72 - Switching */
-.slide-71 {
-    background: #000;
-}
 #slide-71 {
     margin-top: calc(var(--scale) * 5);
     transition-duration: .5s;
@@ -1298,9 +1229,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 24 - Slide 73-74 - Enabling */
-.slide-73 {
-    background: #000;
-}
 #slide-73 {
     margin-top: calc(var(--scale) * 5);
     transition-duration: .5s;
@@ -1360,9 +1288,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 25 - Slide 75-76 - Color Theme */
-.slide-75 {
-    background: #000;
-}
 #slide-75-background {
     background: #FFF;
     position: fixed;
@@ -1421,9 +1346,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 26 - Slide 77-78 - Dynamic Loading */
-.slide-77 {
-    background: #000;
-}
 #slide-77 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -1462,9 +1384,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 
 /* JAVASCRIPT-ENGINES AND THE IMPORTANCE OF BROWSER COMPATIBILITY */
 /* Page 27 - Slide 79-83 - JS-Engines */
-.slide-79 {
-    background: #000;
-}
 #slide-79 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -1524,9 +1443,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 28 - Slide 84-87 - Browser Compatibility */
-.slide-84 {
-    background: #000;
-}
 .slide-84[gone] h1 {
     transform: translateY(calc(var(--scale) * 10));
 }
@@ -1578,9 +1494,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 29 - Slide 88-90 - Mobile */
-.slide-88 {
-    background: #000;
-}
 #slide-88 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -1623,9 +1536,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 30 - Slide 91-93 - Frameworks & Libs Title */
-.slide-91 {
-    background: #000;
-}
 #slide-91 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -1658,9 +1568,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 31 - Slide 94-102 - Frameworks & Libs */
-.slide-94 {
-    background: #000;
-}
 #slide-99 {
     margin-top: calc(var(--scale) * 13.6);
     line-height: 0;
@@ -1730,9 +1637,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 32 - Slide 103-107 - Electron */
-.slide-103 {
-    background: #000;
-}
 #slide-103-1 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -1795,9 +1699,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 33 - Slide 108-110 - Node.js */
-.slide-108 {
-    background: #000;
-}
 #slide-108-1 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -1854,9 +1755,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 34 - Slide 111-114 - npm */
-.slide-111 {
-    background: #000;
-}
 #slide-111 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -1909,9 +1807,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 }
 
 /* Page 35 - Slide 115-119 - Bun */
-.slide-115 {
-    background: #000;
-}
 #slide-115 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -1966,9 +1861,6 @@ center.slide[invisible] + center.slide[invisible], [long-gone] {
 
 /* SUMMARY */
 /* Page 36 - Slide 120-130 - Summary */
-.slide-120 {
-    background: #000;
-}
 .slide-120 h1 {
     transition-duration: .5s;
 }
@@ -2082,9 +1974,6 @@ body .slide-120 .slide-129[gone] + a *:not(#slide-124-1, #slide-124-2) {
 
 /* OPINION */
 /* Page 37 - Slide 131-133 - Opinion JS */
-.slide-131 {
-    background: #000;
-}
 #slide-131 {
     margin-top: calc(var(--scale) * 10);
     transition-duration: .5s;
@@ -2111,18 +2000,15 @@ body .slide-120 .slide-129[gone] + a *:not(#slide-124-1, #slide-124-2) {
 }
 
 /* Page 38 - Slide 134-136 - Opinion Electron */
-.slide-134 {
-    background: #000;
-}
 #slide-134-1 {
     margin-top: calc(var(--scale) * 10);
 }
 #slide-134-2 {
-    margin-top: calc(var(--scale) * 10);
+    margin-top: calc(var(--scale) * 3.5);
     transition-duration: .5s;
 }
-.slide-134[gone] #slide-134-2 {
-    transform: translateY(calc(var(--scale) * 30));
+.slide-134[invisible] #slide-134-2 {
+    transform: translateY(calc(var(--scale) * 10.8));
 }
 #slide-135 {
     margin-top: calc(var(--scale) * 3.5);
@@ -2145,19 +2031,16 @@ body .slide-120 .slide-129[gone] + a *:not(#slide-124-1, #slide-124-2) {
     transform: translateY(calc(var(--scale) * -21.6));
 }
 
-/* Page 39 - Slide 137-137 - Opinion Frameworks & Libs */
-.slide-137 {
-    background: #000;
-}
+/* Page 39 - Slide 137-138 - Opinion Frameworks & Libs */
 #slide-137-1 {
     margin-top: calc(var(--scale) * 10);
 }
 #slide-137-2 {
-    margin-top: calc(var(--scale) * 10);
+    margin-top: calc(var(--scale) * 3.5);
     transition-duration: .5s;
 }
-.slide-137[gone] #slide-174-2 {
-    transform: translateY(calc(var(--scale) * 30));
+.slide-137[invisible] #slide-137-2 {
+    transform: translateY(calc(var(--scale) * 21.6));
 }
 #slide-138 {
     margin-top: calc(var(--scale) * 3.5);
@@ -2168,4 +2051,69 @@ body .slide-120 .slide-129[gone] + a *:not(#slide-124-1, #slide-124-2) {
 }
 .slide-137[gone] #slide-138 {
     transform: translateY(calc(var(--scale) * -10.8));
+}
+
+/* Page 40 - Slide 139-141 - Opinion Summary */
+#slide-139-1 {
+    margin-top: calc(var(--scale) * 10);
+}
+#slide-139-2 {
+    margin-top: calc(var(--scale) * 3.5);
+    transition-duration: .5s;
+}
+.slide-139[invisible] #slide-139-2 {
+    transform: translateY(calc(var(--scale) * 10.8));
+}
+#slide-140 {
+    margin-top: calc(var(--scale) * 3.5);
+    transition-duration: .5s;
+}
+.slide-141[invisible] + #slide-140[invisible] {
+    transform: translate(calc(var(--scale) * 5.4), calc(var(--scale) * 10));
+}
+.slide-141[invisible] + #slide-140 {
+    transform: translateX(calc(var(--scale) * 5.4));
+}
+#slide-141 {
+    margin-top: calc(var(--scale) * 3.5);
+    transition-duration: .5s;
+}
+#slide-141[invisible] {
+    transform: translateY(calc(var(--scale) * 10));
+}
+
+
+
+/* END */
+/* Page 37 - Slide 142-142 - Thanks For Listening */
+#slide-142 {
+    position: fixed;
+    left: var(--h-padding);
+    top: var(--v-padding);
+    width: calc(var(--scale) * 160);
+    height: calc(var(--scale) * 90);
+    transition-duration: .5s;
+}
+.slide-142[invisible] #slide-142 {
+    transform: scale(0);
+}
+#slide-142-background {
+    position: fixed;
+    left: calc(var(--h-padding) + var(--scale) * 30);
+    top: calc(var(--v-padding) + var(--scale) * 15);
+    width: calc(var(--scale) * 100);
+    height: calc(var(--scale) * 60);
+    z-index: -1;
+    transition-duration: 10s;
+}
+.slide-142[invisible] #slide-142-background {
+    transition-duration: 0s;
+    opacity: 0;
+}
+#slide-142-1 {
+    margin-top: calc(var(--scale) * 35.4);
+    font-size: calc(var(--scale) * 8);
+}
+#slide-142-2 {
+    font-size: calc(var(--scale) * 8);
 }

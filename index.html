@@ -25,11 +25,10 @@
                 Drücke 􀄫<br>
                 zum Starten
             </h1>
-            <button id="open-controller-button" class="button" onclick="openController();">STEUERUNG ÖFFNEN 􀑍</button>
-            &nbsp;&nbsp;
-            <button id="fullscreen-button" class="button" onclick="toggleFullscreen();">VOLLBILD AKTIVIEREN 􀅊</button>
+            <button id="controller-button" class="button" onclick="main.openController();">STEUERUNG ÖFFNEN 􀑍</button>
+            <button id="fullscreen-button" class="button" onclick="main.toggleFullscreen(document);">VOLLBILD AKTIVIEREN 􀅊</button>
             <br>
-            <button id="open-controller-button" class="button" onclick="nextSlide();">PRÄSENTATION STARTEN 􀄫</button>
+            <button id="start-button" class="button" onclick="main.nextSlide(); event.stopPropagation();">PRÄSENTATION STARTEN 􁉆</button>
         </center>
         <!-- Page 1 - Slide 1-2 - Title -->
         <center class="slide slide-1" invisible>
@@ -541,7 +540,7 @@
                 2008 veröffentlichte Google Chrome
             </h1>
             <h1 id="slide-32" class="slide slide-32" invisible>
-                der durch die V8 Engine sehr schnell war
+                der durch ihre V8 Engine sehr schnell war
             </h1>
             <svg id="slide-31-chrome" viewBox="0 0 48 48">
                 <defs>
@@ -576,10 +575,10 @@
                 oder verbesserten ihre eigenen Engines
             </h1>
         </center>
-        <!-- Page 11 - Slide 35-37 - IE ECMA -->
+        <!-- Page 11 - Slide 35-37 - Edge -->
         <center class="slide slide-35" invisible>
             <h1 id="slide-35">
-                2020 wurde Internet Explorer eingestellt
+                2022 wurde Internet Explorer eingestellt
             </h1>
             <h1 id="slide-36" class="slide slide-36" invisible>
                 und von Microsoft durch Edge ersetzt
@@ -708,7 +707,7 @@
             <script>
                 setInterval(() => {
                     var rotation = new Date().getTime() / 15 % 90 - 45;
-                    var scale = document.getElementById("slide-55-canvas").getBoundingClientRect().width;
+                    var scale = Math.max(1000, document.getElementById("slide-55-canvas").getBoundingClientRect().width);
                     var scale2 = .2 * scale;
                     var scale25 = .25 * scale;
                     var scale4 = .4 * scale;
@@ -954,11 +953,11 @@
                 das andere gezeigt wird
             </h1>
             <svg id="slide-71-switching" class="slide slide-71" viewBox="0 0 50 50" invisible>
-                <path  d="M1 7V2C1 1.5 1.5 1 2 1H48C48.5 1 49 1.5 49 2V48C49 48.5 48.5 49 48 49H2C1.5 49 1 48.5 1 48Z" fill="#000" stroke="#F88" stroke-width="0">
+                <path  d="M1 7V2C1 1.5 1.5 1 2 1H48C48.5 1 49 1.5 49 2V48C49 48.5 48.5 49 48 49H2C1.5 49 1 48.5 1 48Z" fill="#000" stroke="#F87" stroke-width="0">
                     <animate attributeName="stroke-width" values="0;1.25" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="stroke-dasharray" values="0 190;190 0" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </path>
-                <rect x="1.5" y="1.5" width="0" height="47" rx=".5" fill="#FBB" opacity="0">
+                <rect x="1.5" y="1.5" width="0" height="47" rx=".5" fill="#FBA" opacity="0">
                     <animate attributeName="opacity" values="0;1" dur=".25s" fill="freeze" start=".5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="width" values="0;47" dur="1s" fill="freeze" start=".5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </rect>
@@ -1018,8 +1017,8 @@
                 </text>
             </svg>
             <svg id="slide-72-switching" class="slide slide-72" viewBox="0 0 50 50" invisible>
-                <path  d="M1 7V2C1 1.5 1.5 1 2 1H48C48.5 1 49 1.5 49 2V48C49 48.5 48.5 49 48 49H2C1.5 49 1 48.5 1 48Z" fill="#000" stroke="#8F8" stroke-width="1.25"/>
-                <rect x="1.5" y="1.5" width="47" height="47" rx=".5" fill="#BFB"/>
+                <path  d="M1 7V2C1 1.5 1.5 1 2 1H48C48.5 1 49 1.5 49 2V48C49 48.5 48.5 49 48 49H2C1.5 49 1 48.5 1 48Z" fill="#000" stroke="#7C7" stroke-width="1.25"/>
+                <rect x="1.5" y="1.5" width="47" height="47" rx=".5" fill="#AEA"/>
                 <text x="2.25" y="5" text-anchor="start" fill="#000" font-size="3.5" font-weight="300">
                     Mein zweites Panel
                 </text>
@@ -1195,8 +1194,12 @@
                     <animate attributeName="stroke-dasharray" values="0 160;160 0" dur="1.5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </path>
                 <path  d="M8 2A2 2 0 0 1 10 4H17A2 2 0 0 1 19 2" fill="#0000" stroke="#FFF" stroke-width="0" stroke-linecap="round" stroke-linejoin="round">
-                    <animate attributeName="stroke-width" values="2.05;2.05" dur=".5s" fill="freeze" start=".8" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="stroke-width" values="2;2" dur=".5s" fill="freeze" start=".8" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="stroke-dasharray" values="0 15;15 0" dur=".5s" fill="freeze" start=".8" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                </path>
+                <path  d="M11 3H16" fill="#0000" stroke="#FFF" stroke-width="0" stroke-linecap="round" stroke-linejoin="round">
+                    <animate attributeName="stroke-width" values="2;2" dur=".5s" fill="freeze" start=".95" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="stroke-dasharray" values="0 6;6 0" dur=".2s" fill="freeze" start=".95" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </path>
                 <path  d="M18 45H9" fill="#0000" stroke="#FFF" stroke-width="0" stroke-linecap="round" stroke-linejoin="round">
                     <animate attributeName="stroke-width" values="0;1" dur=".5s" fill="freeze" start="1" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
@@ -1611,7 +1614,7 @@
             </a>
         </center>
 
-        <!-- OPINION     -->
+        <!-- OPINION -->
         <!-- Page 37 - Slide 131-133 - Opinion JS -->
         <center class="slide slide-131" invisible>
             <h1 id="slide-131">
@@ -1639,18 +1642,75 @@
                 aber ich verstehe, warum Entwickler sie nutzen
             </h1>
         </center>
-        <!-- Page 39 - Slide 137-137 - Opinion Frameworks & Libs -->
+        <!-- Page 39 - Slide 137-138 - Opinion Frameworks & Libs -->
         <center class="slide slide-137" invisible>
             <h1 id="slide-137-1">
                 Eigene Meinung
             </h1>
             <h1 id="slide-137-2">
-                Frameworks und Bibliotheken finde ich sehr gut
+                Es gibt viele nützliche Frameworks & Bibliotheken
             </h1>
             <h1 id="slide-138" class="slide slide-138" invisible>
                 aber die große Anzahl kann für Anfänger zu viel sein
             </h1>
         </center>
+        <!-- Page 40 - Slide 139-141 - Opinion Summary -->
+        <center class="slide slide-139" invisible>
+            <h1 id="slide-139-1">
+                Eigene Meinung
+            </h1>
+            <h1 id="slide-139-2">
+                Insgesamt finde ich JavaScript gut geeignet
+            </h1>
+            <a class="slide slide-141" invisible></a>
+            <h1 id="slide-140" class="slide slide-140" invisible>
+                da es viel kann und einfach zu lernen ist <a class="slide slide-141" invisible>und</a>
+            </h1>
+            <h1 id="slide-141" class="slide slide-141" invisible>
+                Internetseiten oft nicht viel Leistung brauchen
+            </h1>
+        </center>
+
+        <!-- END -->
+        <!-- Page 41 - Slide 142-142 - Thanks For Listening -->
+        <center class="slide slide-142" invisible>
+            <div id="slide-142">
+                <svg id="slide-142-background" viewBox="0 0 100 60">
+                    <path d="" fill="#034" opacity="0" transform="scale(0)" transform-origin="50 30">
+                        <animate attributeName="d" values="M67.5 1.5C60.3 -1 53.5 3 48 3.5C42.5 4 34.5 0 28 2.4C21.5 4.9 19.5 9 12.5 11C5.5 13 0.5 21 0.5 30C0.5 39 6.5 48.5 14.5 48.5C22.5 48.5 22.5 54.5 31 57C39.5 59.5 40.5 52.5 48 53C55.5 53.5 57.5 57 63 57.5C68.5 58 73 56.5 77.5 51.5C82 46.5 88.5 49 93.5 45C98.5 41 100 35.5 99 28C98 20.5 93 12.5 85.5 11.5C78 10.5 74.7357 3.9 67.5 1.5Z;M65.5 6C58.5 5 54.5 0.5 48 0.5C41.5 0.5 37 4 30.5 6.5C24 9 17.5 7.5 12.5 10.5C7.5 13.5 1 20.5 1.5 29C2 37.5 5.5 45 12 49C18.5 53 20.3 49 30.5 52C40.7 55 38.5 58 47.5 58.5C56.5 59 59.5 55 66 53C72.5 51 78 55.5 83.5 52C89 48.5 88 46 91 41.5C94 37 99.5 37.5 99.5 30C99.5 22.5 92 11 85 8.5C78 6 72.5 7 65.5 6Z" dur="5s" start="0" begin="infinite" repeatCount="indefinite" calcMode="spline" keySplines=".25 0 .75 1"/>
+                        <animate attributeName="opacity" values="1;1;0" dur="5s" start="0" begin="infinite" repeatCount="indefinite" calcMode="spline" keySplines="0 0 1 1;.5 0 1 .75"/>
+                        <animateTransform attributeName="transform" type="scale" values=".35;1" dur="5s" start="0" begin="infinite" repeatCount="indefinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                    </path>
+                    <g transform="rotate(180)" transform-origin="50 30">
+                        <path d="" fill="#034" opacity="0" transform="scale(0)" transform-origin="50 30">
+                            <animate attributeName="d" values="M67.5 1.5C60.3 -1 53.5 3 48 3.5C42.5 4 34.5 0 28 2.4C21.5 4.9 19.5 9 12.5 11C5.5 13 0.5 21 0.5 30C0.5 39 6.5 48.5 14.5 48.5C22.5 48.5 22.5 54.5 31 57C39.5 59.5 40.5 52.5 48 53C55.5 53.5 57.5 57 63 57.5C68.5 58 73 56.5 77.5 51.5C82 46.5 88.5 49 93.5 45C98.5 41 100 35.5 99 28C98 20.5 93 12.5 85.5 11.5C78 10.5 74.7357 3.9 67.5 1.5Z;M65.5 6C58.5 5 54.5 0.5 48 0.5C41.5 0.5 37 4 30.5 6.5C24 9 17.5 7.5 12.5 10.5C7.5 13.5 1 20.5 1.5 29C2 37.5 5.5 45 12 49C18.5 53 20.3 49 30.5 52C40.7 55 38.5 58 47.5 58.5C56.5 59 59.5 55 66 53C72.5 51 78 55.5 83.5 52C89 48.5 88 46 91 41.5C94 37 99.5 37.5 99.5 30C99.5 22.5 92 11 85 8.5C78 6 72.5 7 65.5 6Z" dur="5s" start="1.25" begin="infinite" repeatCount="indefinite" calcMode="spline" keySplines=".25 0 .75 1"/>
+                            <animate attributeName="opacity" values="1;1;0" dur="5s" start="1.25" begin="infinite" repeatCount="indefinite" calcMode="spline" keySplines="0 0 1 1;.5 0 1 .75"/>
+                            <animateTransform attributeName="transform" type="scale" values=".35;1" dur="5s" start="1.25" begin="infinite" repeatCount="indefinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                        </path>
+                    </g>
+                    <path d="" fill="#034" opacity="0" transform="scale(0)" transform-origin="50 30">
+                        <animate attributeName="d" values="M67.5 1.5C60.3 -1 53.5 3 48 3.5C42.5 4 34.5 0 28 2.4C21.5 4.9 19.5 9 12.5 11C5.5 13 0.5 21 0.5 30C0.5 39 6.5 48.5 14.5 48.5C22.5 48.5 22.5 54.5 31 57C39.5 59.5 40.5 52.5 48 53C55.5 53.5 57.5 57 63 57.5C68.5 58 73 56.5 77.5 51.5C82 46.5 88.5 49 93.5 45C98.5 41 100 35.5 99 28C98 20.5 93 12.5 85.5 11.5C78 10.5 74.7357 3.9 67.5 1.5Z;M65.5 6C58.5 5 54.5 0.5 48 0.5C41.5 0.5 37 4 30.5 6.5C24 9 17.5 7.5 12.5 10.5C7.5 13.5 1 20.5 1.5 29C2 37.5 5.5 45 12 49C18.5 53 20.3 49 30.5 52C40.7 55 38.5 58 47.5 58.5C56.5 59 59.5 55 66 53C72.5 51 78 55.5 83.5 52C89 48.5 88 46 91 41.5C94 37 99.5 37.5 99.5 30C99.5 22.5 92 11 85 8.5C78 6 72.5 7 65.5 6Z" dur="5s" start="2.5" begin="infinite" repeatCount="indefinite" calcMode="spline" keySplines=".25 0 .75 1"/>
+                        <animate attributeName="opacity" values="1;1;0" dur="5s" start="2.5" begin="infinite" repeatCount="indefinite" calcMode="spline" keySplines="0 0 1 1;.5 0 1 .75"/>
+                        <animateTransform attributeName="transform" type="scale" values=".35;1" dur="5s" start="2.5" begin="infinite" repeatCount="indefinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                    </path>
+                    <g transform="rotate(180)" transform-origin="50 30">
+                        <path d="" fill="#034" opacity="0" transform="scale(0)" transform-origin="50 30">
+                            <animate attributeName="d" values="M67.5 1.5C60.3 -1 53.5 3 48 3.5C42.5 4 34.5 0 28 2.4C21.5 4.9 19.5 9 12.5 11C5.5 13 0.5 21 0.5 30C0.5 39 6.5 48.5 14.5 48.5C22.5 48.5 22.5 54.5 31 57C39.5 59.5 40.5 52.5 48 53C55.5 53.5 57.5 57 63 57.5C68.5 58 73 56.5 77.5 51.5C82 46.5 88.5 49 93.5 45C98.5 41 100 35.5 99 28C98 20.5 93 12.5 85.5 11.5C78 10.5 74.7357 3.9 67.5 1.5Z;M65.5 6C58.5 5 54.5 0.5 48 0.5C41.5 0.5 37 4 30.5 6.5C24 9 17.5 7.5 12.5 10.5C7.5 13.5 1 20.5 1.5 29C2 37.5 5.5 45 12 49C18.5 53 20.3 49 30.5 52C40.7 55 38.5 58 47.5 58.5C56.5 59 59.5 55 66 53C72.5 51 78 55.5 83.5 52C89 48.5 88 46 91 41.5C94 37 99.5 37.5 99.5 30C99.5 22.5 92 11 85 8.5C78 6 72.5 7 65.5 6Z" dur="5s" start="3.75" begin="infinite" repeatCount="indefinite" calcMode="spline" keySplines=".25 0 .75 1"/>
+                            <animate attributeName="opacity" values="1;1;0" dur="5s" start="3.75" begin="infinite" repeatCount="indefinite" calcMode="spline" keySplines="0 0 1 1;.5 0 1 .75"/>
+                            <animateTransform attributeName="transform" type="scale" values=".35;1" dur="5s" start="3.75" begin="infinite" repeatCount="indefinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                        </path>
+                    </g>
+                </svg>
+                <h1 id="slide-142-1">
+                    Vielen Dank für
+                </h1>
+                <h1 id="slide-142-2">
+                    Ihre Aufmerksamkeit
+                </h1>
+            </div>
+        </center>
+
+        <!-- Main Script -->
+        <script src="script.js"></script>
     </body>
-    <script src="script.js"></script>
 </html>
