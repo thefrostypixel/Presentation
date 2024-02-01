@@ -12,8 +12,11 @@
         <!-- Setup Script -->
         <script>
             var main = window.opener;
-            document.body.innerHTML = main.document.body.innerHTML;
-            window.addEventListener("beforeunload", main.closeController);
+            document.body.outerHTML = main.document.body.outerHTML + "<div id='time-info'></div>";
+            window.addEventListener("beforeunload", () => {
+                main.closeController();
+                clearInterval(updateTimeInfoInterval);
+            });
             document.addEventListener("keydown", main.onKeyPress);
             document.addEventListener("click", main.onMouseClick);
             document.querySelectorAll("svg:not([invisible])").forEach((svg) => {
@@ -22,6 +25,14 @@
             document.body.querySelectorAll("script").forEach((script) => {
                 eval(script.innerText);
             });
+            var updateTimeInfoInterval = setInterval(() => {
+                if (main.slide > 1) {
+                    var time = Math.floor(new Date().getTime() / 1000) - main.startTime;
+                    document.getElementById("time-info").innerText = "#" + (main.slide - 1) + " " + Math.floor(time / 60) + ":" + (time % 60).toString().padStart(2, "0") + main.timeOffset;
+                } else {
+                    document.getElementById("time-info").innerText = "";
+                }
+            }, 1000);
         </script>
     </body>
 </html>

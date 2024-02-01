@@ -25,9 +25,10 @@
                 Drücke 􀄫<br>
                 zum Starten
             </h1>
-            <button id="controller-button" class="button" onclick="main.openController();">STEUERUNG ÖFFNEN 􀑍</button>
+            <button id="controller-button" class="button" onclick="main.openController();">STEUERUNG ÖFFNEN 􀑨</button>
             <button id="fullscreen-button" class="button" onclick="main.toggleFullscreen(document);">VOLLBILD AKTIVIEREN 􀅊</button>
             <br>
+            <button id="test-screen-button" class="button" onclick="main.toggleTestScreen();">TEST-BILD ZEIGEN 􀑍</button>
             <button id="start-button" class="button" onclick="main.nextSlide(); event.stopPropagation();">PRÄSENTATION STARTEN 􁉆</button>
         </center>
         <!-- Page 1 - Slide 1-2 - Title -->
@@ -700,7 +701,7 @@
                 das ermöglicht zum Beispiel
             </h1>
             <h1 id="slide-56-2" class="slide slide-56" invisible>
-                Grafik Rechner oder 3D Spiele
+                Grafik-Rechner oder 3D-Spiele
             </h1>
             <canvas id="slide-55-canvas" class="slide slide-55" width="1000" height="1000" invisible>
             </canvas>
@@ -750,7 +751,7 @@
                 Audios und Videos können abgespielt werden
             </h1>
             <h1 id="slide-58" class="slide slide-58" invisible>
-                und JavaScript ermöglicht es, sie steuern
+                und JavaScript ermöglicht es, sie zu steuern
             </h1>
             <svg id="slide-57-audio" class="slide slide-57" viewBox="0 0 50 50" invisible>
                 <rect x="0" y="25" width="3" height="0" rx="1.5" fill="#DDD">
@@ -1023,55 +1024,55 @@
                     Mein zweites Panel
                 </text>
                 <text x="2.25" y="7.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    Hier is plötzlich ein ganz anderer Text, der über das
+                    JavaScript ist eine Objekt-Orientierte
                 </text>
                 <text x="2.25" y="10" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    Lorem Ipsum handelt. Es ist ein Blindtext, der nichts
+                    Programmiersprache was bedeutet, dass Programme
                 </text>
                 <text x="2.25" y="12.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    bedeuten soll, sondern als Platzhalter im Layout
+                    in JavaScript hauptsächlich aus Objekten bestehen.
                 </text>
                 <text x="2.25" y="15" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    verwendet wird, um einen Eindruck vom fertigen
+                    Diese Objekte enthalten sowohl Werte, die für jedes
                 </text>
                 <text x="2.25" y="17.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    Schriftstück zu erhalten. Die Verteilung der Buchstaben
+                    Objekt einer Objektart, auch Klasse genannt,
                 </text>
                 <text x="2.25" y="20" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    und der Wortlängen des pseudo-lateinischen Textes
+                    unterschiedlich sein können, als auch Funktionen, die
                 </text>
                 <text x="2.25" y="22.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    entspricht in etwa der natürlichen lateinischen Sprache.
+                    auf diese Werte zugreifen können. Zusätzlich zeichnet
                 </text>
                 <text x="2.25" y="25" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    Der Text ist absichtlich unverständlich, damit der
+                    sich JavaScript durch sein Ereignis-Modell aus. Im
                 </text>
                 <text x="2.25" y="27.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    Betrachter nicht durch den Inhalt abgelenkt wird. Über
+                    Gegensatz zu anderen Programmiersprachen, in denen
                 </text>
                 <text x="2.25" y="30" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    die Herkunft des Textes lässt sich keine Klarheit mehr
+                    alle Paar Millisekunden überprüft werden muss, ob
                 </text>
                 <text x="2.25" y="32.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    gewinnen. Auch finden sich viele leicht voneinander
+                    etwas passiert ist, werden in JavaScript sogenannte
                 </text>
                 <text x="2.25" y="35" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    abweichende Varianten dieses Textes. In der 1914
+                    „Ereignishörer“ registriert, die der Browser erst dann
                 </text>
                 <text x="2.25" y="37.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    herausgegebenen lateinisch-englischen Cicero-
+                    aufruft, wenn das jeweilige Ereignis aufgetreten ist, wie
                 </text>
                 <text x="2.25" y="40" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    Werkausgabe findet sich der Text auf Seite 36 oben
+                    zum Beispiel, dass ein Nutzer auf einen Knopf drückt
                 </text>
                 <text x="2.25" y="42.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    beginnend mit lorem ipsum…, da das Wort dolorem
+                    oder etwas eintippt. Es können auch sogenannte
                 </text>
                 <text x="2.25" y="45" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    getrennt umbrochen wurde. Der erste Absatz besteht
+                    Auszeiten registriert werden, die eine Funktion nach
                 </text>
                 <text x="2.25" y="47.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    in einer gängigen Form aus folgenden Wörtern:
+                    einer bestimmten Zeitspanne ausführen.
                 </text>
             </svg>
         </center>
@@ -1674,7 +1675,7 @@
         <!-- END -->
         <!-- Page 41 - Slide 142-142 - Thanks For Listening -->
         <center class="slide slide-142" invisible>
-            <div id="slide-142">
+            <div id="slide-142-title">
                 <svg id="slide-142-background" viewBox="0 0 100 60">
                     <path d="" fill="#034" opacity="0" transform="scale(0)" transform-origin="50 30">
                         <animate attributeName="d" values="M67.5 1.5C60.3 -1 53.5 3 48 3.5C42.5 4 34.5 0 28 2.4C21.5 4.9 19.5 9 12.5 11C5.5 13 0.5 21 0.5 30C0.5 39 6.5 48.5 14.5 48.5C22.5 48.5 22.5 54.5 31 57C39.5 59.5 40.5 52.5 48 53C55.5 53.5 57.5 57 63 57.5C68.5 58 73 56.5 77.5 51.5C82 46.5 88.5 49 93.5 45C98.5 41 100 35.5 99 28C98 20.5 93 12.5 85.5 11.5C78 10.5 74.7357 3.9 67.5 1.5Z;M65.5 6C58.5 5 54.5 0.5 48 0.5C41.5 0.5 37 4 30.5 6.5C24 9 17.5 7.5 12.5 10.5C7.5 13.5 1 20.5 1.5 29C2 37.5 5.5 45 12 49C18.5 53 20.3 49 30.5 52C40.7 55 38.5 58 47.5 58.5C56.5 59 59.5 55 66 53C72.5 51 78 55.5 83.5 52C89 48.5 88 46 91 41.5C94 37 99.5 37.5 99.5 30C99.5 22.5 92 11 85 8.5C78 6 72.5 7 65.5 6Z" dur="5s" start="0" begin="infinite" repeatCount="indefinite" calcMode="spline" keySplines=".25 0 .75 1"/>
@@ -1707,6 +1708,377 @@
                 <h1 id="slide-142-2">
                     Ihre Aufmerksamkeit
                 </h1>
+            </div>
+            <div id="slide-142-sources">
+                <div class="source">
+                    <h6>
+                        1. W3Techs: Usage statistics of client-side programming languages for websites<br>
+                        w3techs.com/technologies/overview/client_side_language
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 5.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        2. The History of the Web: Web Components Before Web Components<br>
+                        thehistoryoftheweb.com/web-components-before-web-components
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 5.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        3. Code Guppy: How JavaScript got its name?<br>
+                        codeguppy.com/blog/how-javascript-got-its-name
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 5.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        4. Tech Insider: Netscape and Sun Announce JavaScript<br>
+                        tech-insider.org/java/research/1995/1204.html
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 5.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        5. DevX: JScript: Definition, Examples<br>
+                        devx.com/terms/jscript
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 5.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        6. Thought Co: JavaScript and JScript: What's the Difference?<br>
+                        thoughtco.com/javascript-and-jscript-whats-the-difference-2037681
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 5.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        7. Auto0: The Real Story Behind ECMAScript 4<br>
+                        auth0.com/blog/the-real-story-behind-es4
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 5.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        8. Life Hacker: Lifehacker Speed Tests: Safari 4, Chrome 2, and More<br>
+                        lifehacker.com/lifehacker-speed-tests-safari-4-chrome-2-and-more-5286869
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 5.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        9. CSB News: Microsoft permanently disables Internet Explorer for all devices<br>
+                        cbsnews.com/news/microsoft-permanently-disables-internet-explorer
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 5.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        10. Simpli Learn: What Is OOP In JavaScript And How Is It Implemented?<br>
+                        simplilearn.com/tutorials/javascript-tutorial/oop-in-javascript
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 10.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        11. Reintech: What is event-driven programming and how is it used in JavaScript?<br>
+                        reintech.io/blog/what-is-event-driven-programming-in-javascript
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 10.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        12. Elijah Trillionz: Why is JavaScript Single-Threaded and Non-Blocking<br>
+                        elijahtrillionz.com/why-is-javascript-single-threaded-and-non-blocking
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 10.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        13. TypeScript: TypeScript for JavaScript Programmers<br>
+                        typescriptlang.org/docs/handbook/typescript-in-5-minutes
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 10.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        14. scaler Topics: What are First Class Functions in JavaScript?<br>
+                        scaler.com/topics/first-class-function-in-javascript
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 10.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        15. Eloquent JavaScript: Drawing on Canvas<br>
+                        eloquentjavascript.net/17_canvas.html
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 19.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        16. Go Make Things: How to play a sound with JavaScript<br>
+                        gomakethings.com/how-to-play-a-sound-with-javascript
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 19.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        17. Log Rocket: The ultimate guide to iframes<br>
+                        blog.logrocket.com/the-ultimate-guide-to-iframes
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 19.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        18. Google Identity: Sign In with Google for Web<br>
+                        developers.google.com/identity/gsi
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 19.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        19. JavaScript.Info: Cookies, document.cookie<br>
+                        javascript.info/cookie
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 19.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        20. Jivochat: How to Add Ads to Your Website<br>
+                        jivochat.com/blog/marketing/how-to-add-ads-to-your-website
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 19.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        21. Wired: YouTube's Crackdown Spurs Record Uninstalls of Ad Blockers<br>
+                        wired.com/story/youtubes-ad-blocker-crackdown-spurs-record-uninstalls
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 19.10.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        22. The Odin Project: DOM Manipulation and Events<br>
+                        theodinproject.com/lessons/foundations-dom-manipulation-and-events
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 3.11.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        23. Make Use Of: How to Make Your Website Responsive and Interactive With CSS and JavaScript<br>
+                        makeuseof.com/how-to-make-website-responsive
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 3.11.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        24. Geeks for Geeks: How to dynamically create new elements in JavaScript?<br>
+                        geeksforgeeks.org/how-to-dynamically-create-new-elements-in-javascript
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 3.11.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        25. Java T Point: JavaScript addEventListener()<br>
+                        javatpoint.com/javascript-addeventlistener
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 3.11.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        26. Stat Counter: Browser Market Share Worldwide<br>
+                        gs.statcounter.com/browser-market-share
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 13.11.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        27. Codedamn: Fixing JavaScript Compatibility Issues with Internet Explorer<br>
+                        codedamn.com/news/javascript/javascript-not-working-in-internet-explorer
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 13.11.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        28. Browser Stack: How to resolve JavaScript Cross Browser Compatibility Issues<br>
+                        browserstack.com/guide/resolve-javascript-cross-browser-compatibility-issues
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 13.11.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        29. Intuit: Mobile Website Design 101: Build a Mobile‑Friendly Site<br>
+                        mailchimp.com/resources/mobile-website
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 13.11.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        30. Assono: Die Bedeutung von JavaScript-Frameworks<br>
+                        assono.de/blog/die-bedeutung-von-javascript-frameworks
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 21.11.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        31. Angular: Introduction to Angular concepts<br>
+                        angular.io/guide/architecture
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 21.11.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        32. Iteratec: Modern Full-Stack – Warum Svelte anders ist, und ausgezeichnet!<br>
+                        explore.iteratec.com/blog/warum-svelte-anders-ist
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 21.11.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        33. Kinsta: Was ist Next.js? Ein Blick auf das beliebte JavaScript-Framework<br>
+                        kinsta.com/de/wissensdatenbank/next-js
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 21.11.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        34. Digital Ocean: An Introduction to jQuery<br>
+                        digitalocean.com/community/tutorials/an-introduction-to-jquery
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 21.11.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        35. D3 by Observable: What is D3?<br>
+                        d3js.org/what-is-d3
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 21.11.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        36. Educative: What is Lodash?<br>
+                        educative.io/answers/what-is-lodash
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 21.11.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        37. Three.js Journey: What is WebGL and why use Three.js<br>
+                        threejs-journey.com/lessons/what-is-webgl-and-why-use-three-js
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 21.11.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        38. Kirupa: What Is Electron and Why Is It So Polarizing?<br>
+                        kirupa.com/apps/what_is_electron.htm
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 5.12.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        39. Tech Target: What is the Node.js (Node) runtime environment?<br>
+                        techtarget.com/whatis/definition/Nodejs
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 5.12.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        40. Studio by UXPin: What is npm?<br>
+                        uxpin.com/studio/blog/what-is-npm
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 5.12.2023)
+                    </h6>
+                </div>
+                <div class="source">
+                    <h6>
+                        41. Builder.io: Bun vs Node.js: Everything you need to know<br>
+                        builder.io/blog/bun-vs-node-js
+                    </h6>
+                    <h6 class="source-date">
+                        (Stand 5.12.2023)
+                    </h6>
+                </div>
             </div>
         </center>
 

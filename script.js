@@ -1,7 +1,7 @@
 var main = window;
 var controller;
 function openController() {
-    document.getElementById("controller-button").innerText = "STEUERUNG SCHLIEßEN 􀺾";
+    document.getElementById("controller-button").innerText = "STEUERUNG SCHLIEßEN 􀑧";
     document.getElementById("controller-button").setAttribute("onclick", "main.closeController();");
     window.addEventListener("unload", closeController);
     controller = window.open("controller.html", "Controller", "width=1920,height=1080,left=" + (window.outerWidth - 1920) / 2 + ",top=" + (window.outerHeight - 1080) / 2);
@@ -9,7 +9,7 @@ function openController() {
 function closeController() {
     controller.close();
     controller = undefined;
-    document.getElementById("controller-button").innerText = "STEUERUNG ÖFFNEN 􀑍";
+    document.getElementById("controller-button").innerText = "STEUERUNG ÖFFNEN 􀑨";
     document.getElementById("controller-button").setAttribute("onclick", "main.openController();");
 }
 document.body.addEventListener("keydown", onKeyPress);
@@ -31,6 +31,8 @@ function onKeyPress(event) {
     } else if (event.key == "f") {
         toggleFullscreen(event.target.baseURI.includes("controller") ? controller.document : document);
         event.preventDefault();
+    } else if (event.key == "t") {
+        toggleTestScreen();
     }
 }
 function onMouseClick(event) {
@@ -47,8 +49,23 @@ function toggleFullscreen(doc) {
         doc.getElementById("fullscreen-button").innerText = "VOLLBLID DEAKTIVIEREN 􀅋";
     }
 }
+function toggleTestScreen() {
+    querySelect("body").forEach((element) => {
+        element.toggleAttribute("test-screen");
+    });
+    querySelect("#test-screen-button").forEach((element) => {
+        if (document.body.hasAttribute("test-screen")) {
+            element.innerText = "TEST-BILD VERSTECKEN 􀺾";
+        } else {
+            element.innerText = "TEST-BILD ZEIGEN 􀑍";
+        }
+    });
+}
 
 var slide = 0;
+var startTime = 0;
+var timeOffset = "";
+var expectedTime = [0, 0, 0]; // TODO Fill this with all 140 times :(
 function nextSlide() {
     slide++;
     if (document.querySelector(".slide-" + slide) == undefined) {
@@ -79,6 +96,17 @@ function nextSlide() {
             gone[i].setAttribute("long-gone", "");
         }
     }
+    if (slide == 2) {
+        startTime = Math.floor(new Date().getTime() / 1000);
+    }
+    var time = Math.floor(new Date().getTime() / 1000) - startTime - expectedTime[slide];
+    if (time <= -5) {
+        timeOffset = " (-" + Math.floor(time / -60) + ":" + (-time % 60).toString().padStart(2, "0") + ") 􀓐";
+    } else if (time >= 5) {
+        timeOffset = " (+" + Math.floor(time / 60) + ":" + (time % 60).toString().padStart(2, "0") + ") 􀓎";
+    } else {
+        timeOffset = "";
+    }
 }
 function previousSlide() {
     if (--slide < 0) {
@@ -107,6 +135,14 @@ function previousSlide() {
         if (!longGone[i].parentNode.children[i + 1].hasAttribute("gone")) {
             longGone[i].removeAttribute("long-gone");
         }
+    }
+    var time = Math.floor(new Date().getTime() / 1000) - startTime - expectedTime[slide];
+    if (time <= -5) {
+        timeOffset = " (-" + Math.floor(time / -60) + ":" + (-time % 60).toString().padStart(2, "0") + ") 􀓐";
+    } else if (time >= 5) {
+        timeOffset = " (+" + Math.floor(time / 60) + ":" + (time % 60).toString().padStart(2, "0") + ") 􀓎";
+    } else {
+        timeOffset = "";
     }
 }
 
@@ -141,7 +177,6 @@ var startSlide = 0;
 for (var i = 0; i < startSlide; i++) {
     nextSlide();
 }
-
-/* TODO
-- Add Time And Other Important Info (Like Slide Number) To Controller
-*/
+while (expectedTime.length < 142) {
+    expectedTime.push(expectedTime[expectedTime.length - 1] + 4);
+}
