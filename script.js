@@ -15,23 +15,24 @@ function closeController() {
 document.body.addEventListener("keydown", onKeyPress);
 document.body.addEventListener("click", onMouseClick);
 function onKeyPress(event) {
-    if (event.key == " " || event.key == "Enter" || event.key == "Tab" || event.key == "D" || event.key == "d" || event.key == "W" || event.key == "w" || event.key == "ArrowRight" || event.key == "ArrowUp") {
+    var key = event.key.toUpperCase();
+    if (event.key == "ArrowRight" || event.key == "ArrowUp" || event.key == "PageUp" || key == "D" || key == "W" || event.key == " " || event.key == "Enter" || (event.key == "Tab" && !event.shiftKey)) {
         nextSlide();
         event.preventDefault();
-    } else if ((event.key == "ArrowLeft" || event.key == "ArrowDown" || event.key == "A" || event.key == "a" || event.key == "S" || event.key == "s") && slide > 0) {
+    } else if ((event.key == "ArrowLeft" || event.key == "ArrowDown" || event.key == "PageDown" || event.key == "A" || key == "S" || event.key == "Backspace" || (event.key == "Tab" && event.shiftKey)) && slide > 0) {
         previousSlide();
         event.preventDefault();
-    } else if (event.key == "c") {
+    } else if (key == "C") {
         if (controller == undefined) {
             openController();
         } else {
             closeController();
         }
         event.preventDefault();
-    } else if (event.key == "f") {
+    } else if (key == "F") {
         toggleFullscreen(event.target.baseURI.includes("controller") ? controller.document : document);
         event.preventDefault();
-    } else if (event.key == "t") {
+    } else if (key == "T") {
         toggleTestScreen();
     }
 }

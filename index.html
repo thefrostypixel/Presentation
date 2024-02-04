@@ -21,15 +21,17 @@
         <!-- START -->
         <!-- Page 0 - Slide 0 - Start -->
         <center class="slide slide-0">
-            <h1>
-                Drücke 􀄫<br>
-                zum Starten
-            </h1>
-            <button id="controller-button" class="button" onclick="main.openController();">STEUERUNG ÖFFNEN 􀑨</button>
-            <button id="fullscreen-button" class="button" onclick="main.toggleFullscreen(document);">VOLLBILD AKTIVIEREN 􀅊</button>
-            <br>
-            <button id="test-screen-button" class="button" onclick="main.toggleTestScreen();">TEST-BILD ZEIGEN 􀑍</button>
-            <button id="start-button" class="button" onclick="main.nextSlide(); event.stopPropagation();">PRÄSENTATION STARTEN 􁉆</button>
+            <div id="slide-0">
+                <h1 id="slide-0-title">
+                    Drücke 􀄫<br>
+                    zum Starten
+                </h1>
+                <button id="controller-button" class="button" onclick="main.openController();">STEUERUNG ÖFFNEN 􀑨</button>
+                <button id="fullscreen-button" class="button" onclick="main.toggleFullscreen(document);">VOLLBILD AKTIVIEREN 􀅊</button>
+                <br>
+                <button id="test-screen-button" class="button" onclick="main.toggleTestScreen();">TEST-BILD ZEIGEN 􀑍</button>
+                <button id="start-button" class="button" onclick="main.nextSlide(); event.stopPropagation();">PRÄSENTATION STARTEN 􁉆</button>
+            </div>
         </center>
         <!-- Page 1 - Slide 1-2 - Title -->
         <center class="slide slide-1" invisible>
@@ -170,10 +172,10 @@
         <!-- Page 3 - Slide 6-9 - Mosaic -->
         <center class="slide slide-6" invisible>
             <h1 id="slide-6-mosaic">
-                Mosaic war 1993 der erste Browser,
+                Mosaic war 1993 der erste beliebte Browser,
             </h1>
             <h1 id="slide-6-js-css">
-                hatte aber noch kein JavaScript
+                hatte aber noch kein CSS oder JavaScript
             </h1>
             <div class="slide slide-7" invisible>
                 <h1>
@@ -206,7 +208,7 @@
                 und später JavaScript
             </h1>
             <svg id="slide-11-applet" class="slide slide-11" viewBox="0 0 50 50" invisible>
-                <path  d="M1 7V2C1 1.5 1.5 1 2 1H48C48.5 1 49 1.5 49 2V48C49 48.5 48.5 49 48 49H2C1.5 49 1 48.5 1 48Z" fill="#000" stroke="#CCC" stroke-width="0">
+                <path  d="M1 7V2C1 1.5 1.5 1 2 1H48C48.5 1 49 1.5 49 2V48C49 48.5 48.5 49 48 49H2C1.5 49 1 48.5 1 48Z" fill="#0000" stroke="#CCC" stroke-width="0">
                     <animate attributeName="stroke-width" values="0;1.25" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="stroke-dasharray" values="0 190;190 0" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </path>
@@ -308,7 +310,7 @@
                 1996 veröffentlichte Microsoft Internet Explorer
             </h1>
             <h1 id="slide-15-jscript">
-                mit CSS & JScript (umbenanntes JavaScript)
+                mit umbenanntem JavaScript namens JScript
             </h1>
             <h1 id="slide-17" class="slide slide-17" invisible>
                 er wurde schnell der beliebteste
@@ -388,7 +390,7 @@
                 Browser gleich funktionieren
             </h1>
             <h1 id="slide-20" class="slide slide-20" invisible>
-                ECMA entwickelte es weiter
+                ECMA entwickelte ECMAScript weiter
             </h1>
         </center>
         <!-- Page 8 - Slide 21-26 - ECMAScript 2 & 3 -->
@@ -397,25 +399,25 @@
                 1998 erschien ECMAScript 2
             </h1>
             <h1 id="slide-22" class="slide slide-22" invisible>
-                mit dem Modul-System
+                mit vielen Verbesserungen
             </h1>
             <h1 id="slide-23" class="slide slide-23" invisible>
-                und Try, Catch & Finally
-            </h1>
-            <h1 id="slide-24" class="slide slide-24" invisible>
                 1999 erschien ECMAScript 3
             </h1>
+            <h1 id="slide-24" class="slide slide-24" invisible>
+                mit try-catch Fehlerbehandlung
+            </h1>
             <h1 id="slide-25" class="slide slide-25" invisible>
-                mit JavaScript Object Notation
+                und Regulären Ausdrücken kurz RegEx<a class="slide slide-26" invisible>,</a>
             </h1>
             <h1 id="slide-26" class="slide slide-26" invisible>
-                und neuen Datentypen
+                welche das Suchen in Texten erleichtern
             </h1>
         </center>
         <!-- Page 9 - Slide 27-30 - Firefox -->
         <center class="slide slide-27" invisible>
             <h1 id="slide-27">
-                Mozilla veröffentlichte 2004 Firefox
+                Mozilla veröffentlichte 2004 Firefox<a class="slide slide-28" invisible>,</a>
             </h1>
             <h1 id="slide-28" class="slide slide-28" invisible>
                 welcher 2005 ECMAScript unterstützte
@@ -529,7 +531,7 @@
                 </g>
             </svg>
             <h1 id="slide-29" class="slide slide-29" invisible>
-                Mozilla & Adobe arbeiteten an ECMAScript 4
+                Mozilla & Adobe arbeiteten an ECMAScript 4<a class="slide slide-30" invisible>,</a>
             </h1>
             <h1 id="slide-30" class="slide slide-30" invisible>
                 jedoch wurde es nie veröffentlicht
@@ -538,7 +540,7 @@
         <!-- Page 10 - Slide 31-34 - Chrome -->
         <center class="slide slide-31" invisible>
             <h1 id="slide-31">
-                2008 veröffentlichte Google Chrome
+                2008 veröffentlichte Google Chrome<a class="slide slide-32" invisible>,</a>
             </h1>
             <h1 id="slide-32" class="slide slide-32" invisible>
                 der durch ihre V8 Engine sehr schnell war
@@ -582,7 +584,7 @@
                 2022 wurde Internet Explorer eingestellt
             </h1>
             <h1 id="slide-36" class="slide slide-36" invisible>
-                und von Microsoft durch Edge ersetzt
+                und von Microsoft durch Edge ersetzt<a class="slide slide-37" invisible>,</a>
             </h1>
             <h1 id="slide-37" class="slide slide-37" invisible>
                 welcher ebenfalls auf V8 basiert
@@ -639,11 +641,11 @@
         <!-- Page 14 - Slide 45-47 - Single Thread -->
         <center class="slide slide-45" invisible>
             <h1 id="slide-45">
-                JavaScripts nutzt nur einen Thread
+                JavaScripts nutzt nur einen Thread<a class="slide slide-46" invisible>,</a>
             </h1>
             <h1 id="slide-46" class="slide slide-46" invisible>
-                deshalb können mehrere Aufgaben<br>
-                nicht gleichzeitig machen
+                weshalb mehrere Aufgaben nicht<br>
+                gleichzeitig ausgeführt werden können
             </h1>
             <h1 id="slide-47-1" class="slide slide-47" invisible>
                 dieser Thread ist für alles zuständig
@@ -657,20 +659,20 @@
             <h1 id="slide-48">
                 JavaScripts hat keine Typisierung
             </h1>
-            <h1 id="slide-49" class="slide slide-49" invisible>
+            <h1 id="slide-50" class="slide slide-50" invisible>
                 falsche Wert-Typen könne ein Problem sein
             </h1>
             <h1 id="slide-52" class="slide slide-52" invisible>
                 TypeScript fügt Typisierung hinzu
             </h1>
-            <div id="slide-50-code" class="slide slide-50 code" invisible>
-                <p id="slide-50-code-1" class="slide slide-50 code" invisible>
+            <div id="slide-49-code" class="slide slide-49 code" invisible>
+                <p id="slide-49-code-1" class="slide slide-49 code" invisible>
                     <a style="color: #C792EA;">var</a> eineZahl<span id="slide-52-code" class="slide slide-52" invisible><a style="color: #89DDFF;">:</a><a style="color: #C3E88D;">Number</a></span><a style="color: #89DDFF;">=</a><a style="color: #F78C6C;">123</a><a style="color: #89DDFF;">;</a>
                 </p>
                 <p id="slide-51-code" class="slide slide-51 code" invisible>
                     eineZahl<a style="color: #89DDFF;">=</a><a style="color: #FFF0A0;">"Hallo"</a><a style="color: #89DDFF;">;</a>
                 </p>
-                <p id="slide-50-code-2" class="slide slide-50 code" invisible>
+                <p id="slide-49-code-2" class="slide slide-49 code" invisible>
                     <a style="color: #82AAFF;">info</a><a style="color: #89DDFF;">(</a>eineZahl<a style="color: #89DDFF;">-</a><a style="color: #F78C6C;">2</a><a style="color: #89DDFF;">);</a>
                 </p>
             </div>
@@ -872,7 +874,7 @@
                 Passwort: KeinGutesPasswort123!
             </h5>
             <h5 id="slide-63-cookie" class="slide slide-63" invisible>
-                IP Adresse: 12.345.678.90<br>
+                IP Adresse: 12.345<a>.</a>678.90<br>
                 Standort: Deutschland
             </h5>
         </center>
