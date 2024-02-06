@@ -142,7 +142,7 @@ body[test-screen] center.slide {
     background-position: 100% 0;
     box-shadow: 0 0 0 0 #09E;
     display: inline-block;
-    width: calc(var(--scale) * 30);
+    width: calc(var(--scale) * 31);
     padding: var(--scale);
     margin: calc(var(--scale) * 0) calc(var(--scale) * 1) calc(var(--scale) * 3)calc(var(--scale) * 1);
     font-size: calc(var(--scale) * 2);
