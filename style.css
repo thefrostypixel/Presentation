@@ -2180,8 +2180,8 @@ body .slide-120 .slide-129[gone] + a *:not(#slide-124-1, #slide-124-2) {
 /* Corner Sources */
 #corner-sources {
     position: fixed;
-    left: 0;
-    bottom: 0;
+    left: var(--h-padding);
+    bottom: var(--v-padding);
     height: calc(var(--scale) * 4.5);
     padding: calc(var(--scale) * 1);
     text-align: left;
