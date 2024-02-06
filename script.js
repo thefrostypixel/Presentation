@@ -97,6 +97,18 @@ function nextSlide() {
             gone[i].setAttribute("long-gone", "");
         }
     }
+    if (slide == 3) {
+        document.getElementById("corner-sources").removeAttribute("invisible");
+    } else if (slide == 120) {
+        document.getElementById("corner-sources").setAttribute("gone", "");
+    }
+    document.querySelectorAll(".corner-source").forEach((element) => {
+        if (Number(element.getAttribute("to")) < slide) {
+            element.setAttribute("gone", "");
+        } else if (Number(element.getAttribute("from")) <= slide) {
+            element.removeAttribute("invisible");
+        }
+    });
     if (slide == 2) {
         startTime = Math.floor(new Date().getTime() / 1000);
     }
@@ -137,6 +149,18 @@ function previousSlide() {
             longGone[i].removeAttribute("long-gone");
         }
     }
+    if (slide == 2) {
+        document.getElementById("corner-sources").setAttribute("invisible", "");
+    } else if (slide == 119) {
+        document.getElementById("corner-sources").removeAttribute("gone");
+    }
+    document.querySelectorAll(".corner-source").forEach((element) => {
+        if (Number(element.getAttribute("from")) > slide) {
+            element.setAttribute("invisible", "");
+        } else if (Number(element.getAttribute("to")) >= slide){
+            element.removeAttribute("gone");
+        }
+    });
     var time = Math.floor(new Date().getTime() / 1000) - startTime - expectedTime[slide];
     if (time <= -5) {
         timeOffset = " (-" + Math.floor(time / -60) + ":" + (-time % 60).toString().padStart(2, "0") + ") 􀓐";

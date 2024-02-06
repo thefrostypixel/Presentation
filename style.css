@@ -2171,3 +2171,46 @@ body .slide-120 .slide-129[gone] + a *:not(#slide-124-1, #slide-124-2) {
     text-align: right;
     margin-top: calc(var(--scale) * -3.6);
 }
+
+
+
+
+/* CORNER SOURCES */
+
+/* Corner Sources */
+#corner-sources {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: calc(var(--scale) * 4.5);
+    padding: calc(var(--scale) * 1);
+    text-align: left;
+    font-size: 0;
+    font-weight: 200;
+    z-index: 1;
+    transition-duration: .5s;
+}
+#corner-sources a {
+    display: inline-block;
+    font-size: calc(var(--scale) * 4);
+}
+#corner-sources #corner-sources-title {
+    transition-duration: .5s;
+}
+#corner-sources:is([invisible], [gone]) #corner-sources-title {
+    transform: scale(.5);
+    opacity: 0;
+}
+.corner-source {
+    white-space: nowrap;
+    width: 0;
+    transition-duration: .5s;
+}
+.corner-source[invisible] {
+    transform: translateX(calc(var(--scale) * 2));
+    opacity: 0;
+}
+.corner-source[gone] {
+    transform: translateX(calc(var(--scale) * -2));
+    opacity: 0;
+}

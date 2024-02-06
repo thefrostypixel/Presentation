@@ -22,7 +22,7 @@
             document.querySelectorAll("svg:not([invisible])").forEach((svg) => {
                 main.animate(svg);
             });
-            document.body.querySelectorAll("script").forEach((script) => {
+            document.body.querySelectorAll(".slide script").forEach((script) => {
                 eval(script.innerText);
             });
             var updateTimeInfoInterval = setInterval(() => {
