@@ -19,6 +19,7 @@
             });
             document.addEventListener("keydown", main.onKeyPress);
             document.addEventListener("click", main.onMouseClick);
+            document.getElementById("live-sources").remove();
             document.querySelectorAll("svg:not([invisible])").forEach((svg) => {
                 main.animate(svg);
             });

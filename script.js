@@ -98,11 +98,11 @@ function nextSlide() {
         }
     }
     if (slide == 3) {
-        document.getElementById("corner-sources").removeAttribute("invisible");
+        document.getElementById("live-sources").removeAttribute("invisible");
     } else if (slide == 120) {
-        document.getElementById("corner-sources").setAttribute("gone", "");
+        document.getElementById("live-sources").setAttribute("gone", "");
     }
-    document.querySelectorAll(".corner-source").forEach((element) => {
+    document.querySelectorAll(".live-source").forEach((element) => {
         if (Number(element.getAttribute("to")) < slide) {
             element.setAttribute("gone", "");
         } else if (Number(element.getAttribute("from")) <= slide) {
@@ -150,11 +150,11 @@ function previousSlide() {
         }
     }
     if (slide == 2) {
-        document.getElementById("corner-sources").setAttribute("invisible", "");
+        document.getElementById("live-sources").setAttribute("invisible", "");
     } else if (slide == 119) {
-        document.getElementById("corner-sources").removeAttribute("gone");
+        document.getElementById("live-sources").removeAttribute("gone");
     }
-    document.querySelectorAll(".corner-source").forEach((element) => {
+    document.querySelectorAll(".live-source").forEach((element) => {
         if (Number(element.getAttribute("from")) > slide) {
             element.setAttribute("invisible", "");
         } else if (Number(element.getAttribute("to")) >= slide){
@@ -168,6 +168,14 @@ function previousSlide() {
         timeOffset = " (+" + Math.floor(time / 60) + ":" + (time % 60).toString().padStart(2, "0") + ") 􀓎";
     } else {
         timeOffset = "";
+    }
+}
+function goToSlide(number) {
+    while (slide < number) {
+        nextSlide();
+    }
+    while (slide > number) {
+        previousSlide();
     }
 }
 
@@ -195,13 +203,8 @@ function resetAnimation(svg) {
     });
 }
 
-// Debug Options
-var startSlide = 0;
-
-// Debug Code
-for (var i = 0; i < startSlide; i++) {
-    nextSlide();
-}
+// Debug
+goToSlide(0);
 while (expectedTime.length < 142) {
     expectedTime.push(expectedTime[expectedTime.length - 1] + 4);
 }

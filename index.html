@@ -33,7 +33,7 @@
                 <button id="start-button" class="button" onclick="main.nextSlide(); event.stopPropagation();">PRÄSENTATION STARTEN 􁉆</button>
             </div>
         </center>
-        <!-- Page 1 - Slide 1-2 - Title -->
+        <!-- Page 1 - Slide 1-2 - Titel -->
         <center class="slide slide-1" invisible>
             <h1 id="slide-2-1" class="slide slide-2" invisible>
                 Was ist JavaScript und
@@ -156,8 +156,8 @@
             </svg>
         </center>
 
-        <!-- THE CREATION OF JAVASCRIPT-->
-        <!-- Page 2 - Slide 3-5 - Interactivity -->
+        <!-- DIE ENTSTEHUNG VON JAVASCRIPT-->
+        <!-- Page 2 - Slide 3-5 - Interaktivität -->
         <center class="slide slide-3" invisible>
             <h1 id="slide-3">
                 JavaScript, oft als JS abgekürzt,
@@ -399,7 +399,7 @@
                 1998 erschien ECMAScript 2
             </h1>
             <h1 id="slide-22" class="slide slide-22" invisible>
-                mit vielen Verbesserungen
+                mit vielen kleinen Verbesserungen
             </h1>
             <h1 id="slide-23" class="slide slide-23" invisible>
                 1999 erschien ECMAScript 3
@@ -591,8 +591,8 @@
             </h1>
         </center>
 
-        <!-- SYNTAX AND SPECIALTIES -->
-        <!-- Page 12 - Slide 38-39 - OOP -->
+        <!-- SYNTAX UND BESONDERHEITEN -->
+        <!-- Page 12 - Slide 38-39 - Objekt-Orientiert -->
         <center class="slide slide-38" invisible>
             <h1 id="slide-38">
                 JavaScript ist Objekt Orientiert
@@ -610,7 +610,7 @@
                 <a style="color: #89DDFF;">}</a>
             </p>
         </center>
-        <!-- Page 13 - Slide 40-44 - Event-Model -->
+        <!-- Page 13 - Slide 40-44 - Ereignis-Modell -->
         <center class="slide slide-40" invisible>
             <h1 id="slide-40">
                 JavaScripts Ereignis Modell
@@ -638,7 +638,7 @@
                 </h1>
             </div>
         </center>
-        <!-- Page 14 - Slide 45-47 - Single Thread -->
+        <!-- Page 14 - Slide 45-47 - Nur Ein Thread -->
         <center class="slide slide-45" invisible>
             <h1 id="slide-45">
                 JavaScripts nutzt nur einen Thread<a class="slide slide-46" invisible>,</a>
@@ -654,7 +654,7 @@
                 langsame Programme halten alles auf
             </h1>
         </center>
-        <!-- Page 15 - Slide 48-52 - Weakly Typed -->
+        <!-- Page 15 - Slide 48-52 - Keine Typisierung -->
         <center class="slide slide-48" invisible>
             <h1 id="slide-48">
                 JavaScripts hat keine Typisierung
@@ -677,7 +677,7 @@
                 </p>
             </div>
         </center>
-        <!-- Page 16 - Slide 53-54 - Functions As Values -->
+        <!-- Page 16 - Slide 53-54 - Funktionen Als Werte -->
         <center class="slide slide-53" invisible>
             <h1 id="slide-53">
                 Funktionen können wie Werte behandelt werden
@@ -693,8 +693,8 @@
             </div>
         </center>
 
-        <!-- ROLE IN THE INTERNET -->
-        <!-- Page 17 - Slide 55-56 - Canvas -->
+        <!-- ROLLE IM INTERNET -->
+        <!-- Page 17 - Slide 55-56 - Leinwand -->
         <center class="slide slide-55" invisible>
             <h1 id="slide-55">
                 Leinwände ermöglichen freies Zeichnen
@@ -709,6 +709,9 @@
             </canvas>
             <script>
                 setInterval(() => {
+                    if (querySelect == undefined || querySelect(".slide-55:not([invisible], [gone])").length == 0) {
+                        return;
+                    }
                     var rotation = new Date().getTime() / 15 % 90 - 45;
                     var scale = Math.max(1000, document.getElementById("slide-55-canvas").getBoundingClientRect().width);
                     var scale2 = .2 * scale;
@@ -878,7 +881,7 @@
                 Standort: Deutschland
             </h5>
         </center>
-        <!-- Page 21 - Slide 64-65 - Ads -->
+        <!-- Page 21 - Slide 64-65 - Werbung -->
         <center class="slide slide-64" invisible>
             <h1 id="slide-64">
                 JavaScript ermöglicht aber auch Werbung
@@ -892,8 +895,14 @@
             <svg id="slide-65-ad" class="slide slide-65" viewBox="0 0 72.5 20" invisible>
                 <path d="M0 0H72.5V20H0Z" fill="#808"/>
                 <g transform="scale(15)" transform-origin="10 10">
-                    <path d="M10 5L13.535533905932738 6.464466094067262L10 10L15 10L13.535533905932738 13.535533905932738L10 10L10 15L6.464466094067262 13.535533905932738L10 10L5 10L6.464466094067262 6.464466094067262L10 10Z" fill="#A08" transform="rotate(22.5)" transform-origin="10 10">
-                        <animateTransform attributeName="transform" type="rotate" values="22.5;112.5" dur=".75s" start="0" begin="infinite" repeatCount="indefinite"/>
+                    <path d="
+                    M10 5
+                    L13.535533905932738 6.464466094067262L10 10L15 10
+                    L13.535533905932738 13.535533905932738L10 10L10 15
+                    L6.464466094067262 13.535533905932738L10 10L5 10
+                    L6.464466094067262 6.464466094067262L10 10
+                    Z" fill="#A08" transform="rotate(22.5)" transform-origin="10 10">
+                        <animateTransform attributeName="transform" type="rotate" values="0;90" dur=".75s" start="0" begin="infinite" repeatCount="indefinite"/>
                     </path>
                 </g>
                 <g transform="scale(1)" transform-origin="10 10">
@@ -911,7 +920,7 @@
             </svg>
         </center>
 
-        <!-- DOM-MANIPULATION AND EVENT HANDLING -->
+        <!-- DOM-MANIPULATION UND EREIGNIS-VERARBEITUNG -->
         <!-- Page 22 - Slide 66-70 - DOM-Manipulation -->
         <center class="slide slide-66" invisible>
             <h1 id="slide-66">
@@ -944,7 +953,7 @@
                 &nbsp;&nbsp;<a style="color: #89DDFF;">&lt;/</a><a style="color: #F07178;">h1</a><a style="color: #89DDFF;">&gt;</a>
             </div>
         </center>
-        <!-- Page 23 - Slide 71-72 - Switching -->
+        <!-- Page 23 - Slide 71-72 - Kästen Wechseln -->
         <center class="slide slide-71" invisible>
             <h1 id="slide-71">
                 So können Kästen gewechselt werden
@@ -1078,7 +1087,7 @@
                 </text>
             </svg>
         </center>
-        <!-- Page 24 - Slide 73-74 - Enabling -->
+        <!-- Page 24 - Slide 73-74 - Aktivieren -->
         <center class="slide slide-73" invisible>
             <h1 id="slide-73">
                 Oder Knöpfe funktionieren nur
@@ -1115,7 +1124,7 @@
                 </div>
             </div>
         </center>
-        <!-- Page 25 - Slide 75-76 - Color Theme -->
+        <!-- Page 25 - Slide 75-76 - Farbschema -->
         <center class="slide slide-75" invisible>
             <div id="slide-75-background" class="slide slide-76" invisible>
             </div>
@@ -1139,7 +1148,7 @@
                 <path  d="M25 5A20 20 0 1 1 25 45Z" fill="#000"/>
             </svg>
         </center>
-        <!-- Page 26 - Slide 77-78 - Dynamic Loading -->
+        <!-- Page 26 - Slide 77-78 - Dynamisches Laden -->
         <center class="slide slide-77" invisible>
             <h1 id="slide-77">
                 Dynamisches Laden von Inhalten
@@ -1211,7 +1220,7 @@
             </svg>
         </center>
 
-        <!-- JAVASCRIPT-ENGINES AND THE IMPORTANCE OF BROWSER COMPATIBILITY -->
+        <!-- JAVASCRIPT-ENGINES UND DIE WICHTIGKEIT VON BROWSER-KOMPATIBILITÄT -->
         <!-- Page 27 - Slide 79-83 - JS-Engines -->
         <center class="slide slide-79" invisible>
             <h1 id="slide-79">
@@ -1233,7 +1242,7 @@
                 und Edge nutzen Chromes V8
             </h1>
         </center>
-        <!-- Page 28 - Slide 84-87 - Browser Compatibility -->
+        <!-- Page 28 - Slide 84-87 - Browser-Kompatibilität -->
         <center class="slide slide-84" invisible>
             <h1 id="slide-84-1">
                 Es gibt viele JavaScript-Engines
@@ -1257,7 +1266,7 @@
                 Geschwindigkeit und Arbeitsspeicher Verbrauch
             </h1>
         </center>
-        <!-- Page 29 - Slide 88-90 - Mobile -->
+        <!-- Page 29 - Slide 88-90 - Mobile Geräte -->
         <center class="slide slide-88" invisible>
             <h1 id="slide-88">
                 Handys werden immer beliebter
@@ -1273,8 +1282,8 @@
             </h1>
         </center>
 
-        <!-- THE ECOSYSTEM: FRAMEWORKS AND LIBRARIES -->
-        <!-- Page 30 - Slide 91-93 - Frameworks & Libs Title -->
+        <!-- DAS ÖKOSYSTEM: FRAMEWORKS UND BIBLIOTHEKEN -->
+        <!-- Page 30 - Slide 91-93 - Frameworks & Bibliotheken - Einführung -->
         <center class="slide slide-91" invisible>
             <h1 id="slide-91">
                 Frameworks & Bibliotheken
@@ -1286,7 +1295,7 @@
                 Bibliotheken enthalten nützliche Funktionen
             </h1>
         </center>
-        <!-- Page 31 - Slide 94-102 - Frameworks & Libs -->
+        <!-- Page 31 - Slide 94-102 - Frameworks & Bibliotheken -->
         <center class="slide slide-94" invisible>
             <h1 id="slide-99" class="slide slide-99" invisible>
                 Bibliotheken
@@ -1437,7 +1446,7 @@
             </div>
         </center>
 
-        <!-- GRAPHICAL AND SERVER SIDE APPLICATIONS -->
+        <!-- GRAFISCHE UND SERVERSEITIGE ANWENDUNGEN -->
         <!-- Page 32 - Slide 103-107 - Electron -->
         <center class="slide slide-103" invisible>
             <h1 id="slide-103-1">
@@ -1565,8 +1574,8 @@
             </h1>
         </center>
 
-        <!-- SUMMARY -->
-        <!-- Page 36 - Slide 120-130 - Summary -->
+        <!-- ZUSAMMENFASSUNG -->
+        <!-- Page 36 - Slide 120-130 - Zusammenfassung -->
         <center class="slide slide-120" invisible>
             <a class="slide slide-124" invisible>
             </a>
@@ -1617,8 +1626,8 @@
             </a>
         </center>
 
-        <!-- OPINION -->
-        <!-- Page 37 - Slide 131-133 - Opinion JS -->
+        <!-- EIGENE MEINUNG -->
+        <!-- Page 37 - Slide 131-133 - Eigene Meinung - Einführung -->
         <center class="slide slide-131" invisible>
             <h1 id="slide-131">
                 Eigene Meinung
@@ -1630,7 +1639,7 @@
                 ohne es wäre das Internet nicht so beliebt
             </h1>
         </center>
-        <!-- Page 38 - Slide 134-136 - Opinion Electron -->
+        <!-- Page 38 - Slide 134-136 - Eigene Meinung - Electron -->
         <center class="slide slide-134" invisible>
             <h1 id="slide-134-1">
                 Eigene Meinung
@@ -1645,7 +1654,7 @@
                 aber ich verstehe, warum Entwickler sie nutzen
             </h1>
         </center>
-        <!-- Page 39 - Slide 137-138 - Opinion Frameworks & Libs -->
+        <!-- Page 39 - Slide 137-138 - Eigene Meinung - Frameworks & Bibliotheken -->
         <center class="slide slide-137" invisible>
             <h1 id="slide-137-1">
                 Eigene Meinung
@@ -1657,7 +1666,7 @@
                 aber die große Anzahl kann für Anfänger zu viel sein
             </h1>
         </center>
-        <!-- Page 40 - Slide 139-141 - Opinion Summary -->
+        <!-- Page 40 - Slide 139-141 - Eigene Meinung - Zusammenfassung -->
         <center class="slide slide-139" invisible>
             <h1 id="slide-139-1">
                 Eigene Meinung
@@ -1674,8 +1683,8 @@
             </h1>
         </center>
 
-        <!-- END -->
-        <!-- Page 41 - Slide 142-142 - Thanks For Listening -->
+        <!-- ENDE -->
+        <!-- Page 41 - Slide 142-142 - Danke Für Ihre Aufmerksamkeit -->
         <center class="slide slide-142" invisible>
             <div id="slide-142-title">
                 <svg id="slide-142-background" viewBox="0 0 100 60">
@@ -2084,19 +2093,53 @@
             </div>
         </center>
 
-        <!-- Corner Sources -->
-        <div id="corner-sources" invisible>
-            <a id="corner-sources-title">
+        <!-- Live Sources -->
+        <div id="live-sources" invisible>
+            <a id="live-sources-title">
                 Quelle:&nbsp;
             </a>
-            <a class="corner-source" from="3" to="5" invisible>1</a>
-            <a class="corner-source" from="10" to="12" invisible>2</a>
-            <a class="corner-source" from="13" to="14" invisible>3</a>
-            <a class="corner-source" from="15" to="17" invisible>4</a>
-            <a class="corner-source" from="18" to="20" invisible>5</a>
-            <a class="corner-source" from="21" to="23" invisible>6</a>
-            <a class="corner-source" from="27" to="30" invisible>7</a>
-            <a class="corner-source" from="31" to="34" invisible>8</a>
+            <!-- The Creation Of JavaScript -->
+            <a class="live-source" from="3" to="5" invisible>1</a>
+            <a class="live-source" from="10" to="12" invisible>2</a>
+            <a class="live-source" from="13" to="14" invisible>3,4</a>
+            <a class="live-source" from="15" to="17" invisible>5, 6</a>
+            <a class="live-source" from="27" to="30" invisible>7</a>
+            <a class="live-source" from="31" to="34" invisible>8</a>
+            <a class="live-source" from="35" to="37" invisible>9</a>
+            <!-- Syntax And Specialties -->
+            <a class="live-source" from="38" to="39" invisible>10</a>
+            <a class="live-source" from="40" to="44" invisible>11</a>
+            <a class="live-source" from="45" to="47" invisible>12</a>
+            <a class="live-source" from="48" to="52" invisible>13</a>
+            <a class="live-source" from="53" to="54" invisible>14</a>
+            <!-- Role In The Internet -->
+            <a class="live-source" from="55" to="56" invisible>15</a>
+            <a class="live-source" from="57" to="58" invisible>16</a>
+            <a class="live-source" from="59" to="60" invisible>17, 18</a>
+            <a class="live-source" from="61" to="63" invisible>19</a>
+            <a class="live-source" from="64" to="65" invisible>20, 21</a>
+            <!-- DOM-Manipulation And Event Handling -->
+            <a class="live-source" from="66" to="70" invisible>22</a>
+            <a class="live-source" from="75" to="76" invisible>23</a>
+            <a class="live-source" from="77" to="78" invisible>24, 25</a>
+            <!-- JavaScript-Engines And The Importance Of Browser Compatibility -->
+            <a class="live-source" from="79" to="83" invisible>26</a>
+            <a class="live-source" from="84" to="87" invisible>27, 28</a>
+            <a class="live-source" from="88" to="90" invisible>29</a>
+            <!-- The Ecosystem: Frameworks And Libraries -->
+            <a class="live-source" from="91" to="94" invisible>30</a>
+            <a class="live-source" from="95" to="96" invisible>31</a>
+            <a class="live-source" from="97" to="97" invisible>32</a>
+            <a class="live-source" from="98" to="98" invisible>33</a>
+            <a class="live-source" from="99" to="99" invisible>34</a>
+            <a class="live-source" from="100" to="100" invisible>35</a>
+            <a class="live-source" from="101" to="101" invisible>36</a>
+            <a class="live-source" from="102" to="102" invisible>37</a>
+            <!-- Graphical Ans Serverside Applications -->
+            <a class="live-source" from="103" to="107" invisible>38</a>
+            <a class="live-source" from="108" to="110" invisible>39</a>
+            <a class="live-source" from="111" to="114" invisible>40</a>
+            <a class="live-source" from="115" to="119" invisible>41</a>
         </div>
 
         <!-- Main Script -->
