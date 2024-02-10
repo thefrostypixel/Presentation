@@ -26,7 +26,7 @@
                     Drücke 􀄫<br>
                     zum Starten
                 </h1>
-                <button id="controller-button" class="button" onclick="main.openController();">STEUERUNG ÖFFNEN 􀑨</button>
+                <button id="controller-button" class="button" onclick="main.toggleController();">STEUERUNG ÖFFNEN 􀑨</button>
                 <button id="fullscreen-button" class="button" onclick="main.toggleFullscreen(document);">VOLLBILD AKTIVIEREN 􀅊</button>
                 <br>
                 <button id="test-screen-button" class="button" onclick="main.toggleTestScreen();">TEST-BILD ZEIGEN 􀑍</button>
@@ -697,7 +697,7 @@
         <!-- Page 17 - Slide 55-56 - Leinwand -->
         <center class="slide slide-55" invisible>
             <h1 id="slide-55">
-                Leinwände ermöglichen freies Zeichnen
+                Auf Leinwände kann gezeichnet werden
             </h1>
             <h1 id="slide-56-1" class="slide slide-56" invisible>
                 das ermöglicht zum Beispiel
@@ -709,7 +709,9 @@
             </canvas>
             <script>
                 setInterval(() => {
-                    if (querySelect == undefined || querySelect(".slide-55:not([invisible], [gone])").length == 0) {
+                    try {
+                        main.querySelect("center.slide-55:not([invisible] + [invisible], [long-gone])")[0].hasAttribute("invisible");
+                    } catch (e) {
                         return;
                     }
                     var rotation = new Date().getTime() / 15 % 90 - 45;
@@ -1684,7 +1686,7 @@
         </center>
 
         <!-- ENDE -->
-        <!-- Page 41 - Slide 142-142 - Danke Für Ihre Aufmerksamkeit -->
+        <!-- Page 41 - Slide 142-143 - Danke Für Ihre Aufmerksamkeit -->
         <center class="slide slide-142" invisible>
             <div id="slide-142-title">
                 <svg id="slide-142-background" viewBox="0 0 100 60">
@@ -2091,6 +2093,7 @@
                     </h6>
                 </div>
             </div>
+            <img id="slide-143-qrcode" class="slide slide-143" src="qrcode.png" invisible>
         </center>
 
         <!-- Live Sources -->
@@ -2140,6 +2143,16 @@
             <a class="live-source" from="108" to="110" invisible>39</a>
             <a class="live-source" from="111" to="114" invisible>40</a>
             <a class="live-source" from="115" to="119" invisible>41</a>
+        </div>
+
+        <!-- Mobile Controls -->
+        <div id="mobile-controls">
+            <button id="mobile-controls-next" onclick="nextSlide();">
+                􀯻
+            </button>
+            <button id="mobile-controls-previous" onclick="previousSlide();">
+                􀯶
+            </button>
         </div>
 
         <!-- Main Script -->

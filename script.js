@@ -1,44 +1,23 @@
 var main = window;
 var controller;
-function openController() {
-    document.getElementById("controller-button").innerText = "STEUERUNG SCHLIEßEN 􀑧";
-    document.getElementById("controller-button").setAttribute("onclick", "main.closeController();");
-    window.addEventListener("unload", closeController);
-    controller = window.open("controller.html", "Controller", "width=1920,height=1080,left=" + (window.outerWidth - 1920) / 2 + ",top=" + (window.outerHeight - 1080) / 2);
-}
-function closeController() {
-    controller.close();
-    controller = undefined;
-    document.getElementById("controller-button").innerText = "STEUERUNG ÖFFNEN 􀑨";
-    document.getElementById("controller-button").setAttribute("onclick", "main.openController();");
-}
-document.body.addEventListener("keydown", onKeyPress);
-document.body.addEventListener("click", onMouseClick);
-function onKeyPress(event) {
-    var key = event.key.toUpperCase();
-    if (event.key == "ArrowRight" || event.key == "ArrowUp" || event.key == "PageUp" || key == "D" || key == "W" || event.key == " " || event.key == "Enter" || (event.key == "Tab" && !event.shiftKey)) {
-        nextSlide();
-        event.preventDefault();
-    } else if ((event.key == "ArrowLeft" || event.key == "ArrowDown" || event.key == "PageDown" || event.key == "A" || key == "S" || event.key == "Backspace" || (event.key == "Tab" && event.shiftKey)) && slide > 0) {
-        previousSlide();
-        event.preventDefault();
-    } else if (key == "C") {
-        if (controller == undefined) {
-            openController();
-        } else {
-            closeController();
-        }
-        event.preventDefault();
-    } else if (key == "F") {
-        toggleFullscreen(event.target.baseURI.includes("controller") ? controller.document : document);
-        event.preventDefault();
-    } else if (key == "T") {
-        toggleTestScreen();
-    }
-}
-function onMouseClick(event) {
-    if (event.button == 0 && slide > 0) {
-        nextSlide();
+
+var slide = 0;
+var startTime = 0;
+var pausedTime = -1;
+var timeOffset = "";
+var expectedTime = [0, 0, 0]; // TODO Fill this with all 140 times :(
+
+function toggleController() {
+    if (controller == undefined) {
+        document.getElementById("controller-button").innerText = "STEUERUNG SCHLIEßEN 􀑧";
+        window.addEventListener("unload", () => {
+            toggleController();
+        });
+        controller = window.open("controller.html", "Controller", "width=1920,height=1080,left=" + (window.outerWidth - 1920) / 2 + ",top=" + (window.outerHeight - 1080) / 2);
+    } else {
+        controller.close();
+        controller = undefined;
+        document.getElementById("controller-button").innerText = "STEUERUNG ÖFFNEN 􀑨";
     }
 }
 function toggleFullscreen(doc) {
@@ -62,11 +41,33 @@ function toggleTestScreen() {
         }
     });
 }
+function togglePause() {
+    if (pausedTime == -1) {
+        pausedTime = Math.floor(new Date().getTime() / 1000) - main.startTime;
+    } else {
+        main.startTime = Math.floor(new Date().getTime() / 1000) - pausedTime;
+        pausedTime = -1;
+    }
+}
+function onKeyPress(event) {
+    var key = event.key.toUpperCase();
+    event.preventDefault();
+    if (event.key == "ArrowRight" || event.key == "ArrowUp" || event.key == "PageUp" || key == "D" || key == "W" || event.key == " ") {
+        nextSlide();
+    } else if ((event.key == "ArrowLeft" || event.key == "ArrowDown" || event.key == "PageDown" || event.key == "A" || key == "S") && slide > 0) {
+        previousSlide();
+    } else if (key == "C") {
+        toggleController();
+    } else if (key == "F") {
+        toggleFullscreen(event.target.baseURI.includes("controller") ? controller.document : document);
+    } else if (key == "T") {
+        toggleTestScreen();
+    } else if (key == "P" || event.key == "Tab") {
+        togglePause();
+    }
+}
+document.body.addEventListener("keydown", onKeyPress);
 
-var slide = 0;
-var startTime = 0;
-var timeOffset = "";
-var expectedTime = [0, 0, 0]; // TODO Fill this with all 140 times :(
 function nextSlide() {
     slide++;
     if (document.querySelector(".slide-" + slide) == undefined) {
@@ -93,7 +94,7 @@ function nextSlide() {
     });
     var gone = querySelect("center.slide[gone]");
     for (var i = 0; i < gone.length; i++) {
-        if (gone[i].parentNode.children[i + 1].hasAttribute("gone")) {
+        if (gone[i].parentNode.children[Array.from(gone[i].parentNode.children).indexOf(gone[i]) + 1].hasAttribute("gone")) {
             gone[i].setAttribute("long-gone", "");
         }
     }
@@ -109,16 +110,18 @@ function nextSlide() {
             element.removeAttribute("invisible");
         }
     });
-    if (slide == 2) {
-        startTime = Math.floor(new Date().getTime() / 1000);
-    }
-    var time = Math.floor(new Date().getTime() / 1000) - startTime - expectedTime[slide];
-    if (time <= -5) {
-        timeOffset = " (-" + Math.floor(time / -60) + ":" + (-time % 60).toString().padStart(2, "0") + ") 􀓐";
-    } else if (time >= 5) {
-        timeOffset = " (+" + Math.floor(time / 60) + ":" + (time % 60).toString().padStart(2, "0") + ") 􀓎";
-    } else {
-        timeOffset = "";
+    if (pausedTime == -1) {
+        if (slide == 2) {
+            startTime = Math.floor(new Date().getTime() / 1000);
+        }
+        var time = Math.floor(new Date().getTime() / 1000) - startTime - expectedTime[slide];
+        if (time <= -5) {
+            timeOffset = " (-" + Math.floor(time / -60) + ":" + (-time % 60).toString().padStart(2, "0") + ") 􀓐";
+        } else if (time >= 5) {
+            timeOffset = " (+" + Math.floor(time / 60) + ":" + (time % 60).toString().padStart(2, "0") + ") 􀓎";
+        } else {
+            timeOffset = "";
+        }
     }
 }
 function previousSlide() {
@@ -145,7 +148,7 @@ function previousSlide() {
     });
     var longGone = querySelect("center.slide[long-gone]");
     for (var i = 0; i < longGone.length; i++) {
-        if (!longGone[i].parentNode.children[i + 1].hasAttribute("gone")) {
+        if (!longGone[i].parentNode.children[Array.from(longGone[i].parentNode.children).indexOf(longGone[i]) + 1].hasAttribute("gone")) {
             longGone[i].removeAttribute("long-gone");
         }
     }
@@ -161,13 +164,15 @@ function previousSlide() {
             element.removeAttribute("gone");
         }
     });
-    var time = Math.floor(new Date().getTime() / 1000) - startTime - expectedTime[slide];
-    if (time <= -5) {
-        timeOffset = " (-" + Math.floor(time / -60) + ":" + (-time % 60).toString().padStart(2, "0") + ") 􀓐";
-    } else if (time >= 5) {
-        timeOffset = " (+" + Math.floor(time / 60) + ":" + (time % 60).toString().padStart(2, "0") + ") 􀓎";
-    } else {
-        timeOffset = "";
+    if (pausedTime == -1) {
+        var time = Math.floor(new Date().getTime() / 1000) - startTime - expectedTime[slide];
+        if (time <= -5) {
+            timeOffset = " (-" + Math.floor(time / -60) + ":" + (-time % 60).toString().padStart(2, "0") + ") 􀓐";
+        } else if (time >= 5) {
+            timeOffset = " (+" + Math.floor(time / 60) + ":" + (time % 60).toString().padStart(2, "0") + ") 􀓎";
+        } else {
+            timeOffset = "";
+        }
     }
 }
 function goToSlide(number) {

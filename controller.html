@@ -18,7 +18,6 @@
                 clearInterval(updateTimeInfoInterval);
             });
             document.addEventListener("keydown", main.onKeyPress);
-            document.addEventListener("click", main.onMouseClick);
             document.getElementById("live-sources").remove();
             document.querySelectorAll("svg:not([invisible])").forEach((svg) => {
                 main.animate(svg);
@@ -27,13 +26,15 @@
                 eval(script.innerText);
             });
             var updateTimeInfoInterval = setInterval(() => {
-                if (main.slide > 1) {
+                if (main.pausedTime > -1) {
+                    document.getElementById("time-info").innerText = "#" + (main.slide - 1) + " " + Math.floor(main.pausedTime / 60) + ":" + (main.pausedTime % 60).toString().padStart(2, "0") + " 􀊗";
+                } else if (main.slide > 1) {
                     var time = Math.floor(new Date().getTime() / 1000) - main.startTime;
                     document.getElementById("time-info").innerText = "#" + (main.slide - 1) + " " + Math.floor(time / 60) + ":" + (time % 60).toString().padStart(2, "0") + main.timeOffset;
                 } else {
                     document.getElementById("time-info").innerText = "";
                 }
-            }, 1000);
+            }, 100);
         </script>
     </body>
 </html>

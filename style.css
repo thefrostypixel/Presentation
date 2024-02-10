@@ -74,27 +74,27 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 h1 {
-    font-weight: 100;
+    font-weight: 200;
     font-size: calc(var(--scale) * 6);
 }
 h2 {
-    font-weight: 100;
+    font-weight: 200;
     font-size: calc(var(--scale) * 5.4);
 }
 h3 {
-    font-weight: 100;
+    font-weight: 200;
     font-size: calc(var(--scale) * 4.8);
 }
 h4 {
-    font-weight: 200;
+    font-weight: 300;
     font-size: calc(var(--scale) * 4.2);
 }
 h5 {
-    font-weight: 200;
+    font-weight: 300;
     font-size: calc(var(--scale) * 3.6);
 }
 h6 {
-    font-weight: 200;
+    font-weight: 300;
     font-size: calc(var(--scale) * 3);
 }
 
@@ -2176,13 +2176,27 @@ body .slide-120 .slide-129[gone] + a *:not(#slide-124-1, #slide-124-2) {
     text-align: right;
     margin-top: calc(var(--scale) * -3.6);
 }
+#slide-143-qrcode {
+    border-radius: calc(var(--scale) * 1.25);
+    position: fixed;
+    left: calc(var(--h-padding) + var(--scale) * 65);
+    top: calc(var(--v-padding) + var(--scale) * 50);
+    width: calc(var(--scale) * 30);
+    height: calc(var(--scale) * 30);
+    image-rendering: pixelated;
+    opacity: .8;
+}
+#slide-143-qrcode[invisible] {
+    transform: scale(.5);
+    opacity: 0;
+}
 
 
 
 
-/* Live SOURCES */
+/* LIVE SOURCES */
 
-/* Corner Sources */
+/* Live Sources */
 #live-sources {
     position: fixed;
     left: var(--h-padding);
@@ -2225,4 +2239,38 @@ body .slide-120 .slide-129[gone] + a *:not(#slide-124-1, #slide-124-2) {
 .live-source[gone] {
     transform: translateX(calc(var(--scale) * -2)) scale(.25);
     opacity: 0;
+}
+
+
+
+
+/* MOBILE CONTROLS */
+
+/* Mobile Controls */
+@media (pointer: fine) {
+    #mobile-controls {
+        display: none;
+    }
+}
+#mobile-controls-next, #mobile-controls-previous {
+    background: #000;
+    color: #FFF;
+    border: calc(var(--scale) * .5) solid #FFF;
+    position: fixed;
+    right: var(--h-padding);
+    top: calc(50vh - var(--scale) * 5);
+    width: calc(var(--scale) * 9.5);
+    height: calc(var(--scale) * 10);
+    padding: 0;
+    font-size: calc(var(--scale) * 5);
+}
+#mobile-controls-next {
+    border-right-width: 0;
+    border-radius: calc(var(--scale) * 2) 0 0 calc(var(--scale) * 2);
+    right: var(--h-padding);
+}
+#mobile-controls-previous {
+    border-left-width: 0;
+    border-radius: 0 calc(var(--scale) * 2) calc(var(--scale) * 2) 0;
+    left: var(--h-padding);
 }
