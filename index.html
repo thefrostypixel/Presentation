@@ -19,10 +19,10 @@
     </head>
     <body>
         <!-- START -->
-        <!-- Page 0 - Slide 0 - Start -->
-        <center class="slide slide-0">
-            <div id="slide-0">
-                <h1 id="slide-0-title">
+        <!-- Slide 0 - Step 0 - Start -->
+        <center class="step step-0">
+            <div id="step-0">
+                <h1 id="step-0-title">
                     Drücke 􀄫<br>
                     zum Starten
                 </h1>
@@ -30,18 +30,18 @@
                 <button id="fullscreen-button" class="button" onclick="main.toggleFullscreen(document);">VOLLBILD AKTIVIEREN 􀅊</button>
                 <br>
                 <button id="test-screen-button" class="button" onclick="main.toggleTestScreen();">TEST-BILD ZEIGEN 􀑍</button>
-                <button id="start-button" class="button" onclick="main.nextSlide(); event.stopPropagation();">PRÄSENTATION STARTEN 􁉆</button>
+                <button id="start-button" class="button" onclick="main.nextStep(); event.stopPropagation();">PRÄSENTATION STARTEN 􁉆</button>
             </div>
         </center>
-        <!-- Page 1 - Slide 1-2 - Titel -->
-        <center class="slide slide-1" invisible>
-            <h1 id="slide-2-1" class="slide slide-2" invisible>
+        <!-- Slide 1 - Step 1-2 - Titel -->
+        <center class="step step-1" invisible>
+            <h1 id="step-2-1" class="step step-2" invisible>
                 Was ist JavaScript und
             </h1>
-            <h1 id="slide-2-2" class="slide slide-2" invisible>
+            <h1 id="step-2-2" class="step step-2" invisible>
                 warum ist es so beliebt?
             </h1>
-            <svg id="slide-2-js" class="slide slide-2" viewBox="0 0 50 50" invisible>
+            <svg id="step-2-js" class="step step-2" viewBox="0 0 50 50" invisible>
                 <path d="M25 1L40 1C45.53 1 49 4.47 49 10V40C49 45.53 45.53 49 40 49H10C4.47 49 1 45.53 1 40V10C1 4.47 4.47 1 10 1H25" fill="#FFD93200" stroke="#FFD932" stroke-width="0" stroke-dasharray="0 178">
                     <animate attributeName="stroke-width" values="0;2" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="stroke-dasharray" values="0 178;178 0" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
@@ -56,8 +56,8 @@
                     <animate attributeName="stroke-dasharray" values="0 46;46 0" dur=".9s" fill="freeze" start=".5" begin="infinite" calcMode="spline" keySplines="0 0 .3 1"/>
                 </path>
             </svg>
-            <svg id="slide-2-popular" class="slide slide-2" viewBox="0 0 100 72" invisible>
-                <text x="23" y="5" text-anchor="end" fill="#EEE" opacity="0" font-size="5" font-weight="200">
+            <svg id="step-2-popular" class="step step-2" viewBox="0 0 100 72" invisible>
+                <text x="23" y="5" text-anchor="end" fill="#EEE" opacity="0" font-size="5" font-weight="300">
                     JavaScript
                     <animate attributeName="x" values="23;33" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="opacity" values="0;1" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
@@ -66,11 +66,11 @@
                     <animate attributeName="width" values="0;63.61" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="opacity" values="0;1" dur=".8s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </rect>
-                <text x="40" y="5.5" text-anchor="end" fill="#000" font-size="5" font-weight="200">
+                <text x="40" y="5.5" text-anchor="end" fill="#000" font-size="5" font-weight="300">
                     63,61%
                     <animate attributeName="x" values="40;97.61" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </text>
-                <text x="23" y="15" text-anchor="end" fill="#EEEB" opacity="0" font-size="5" font-weight="200">
+                <text x="23" y="15" text-anchor="end" fill="#EEEB" opacity="0" font-size="5" font-weight="300">
                     HTML/CSS
                     <animate attributeName="x" values="23;33" dur=".5s" fill="freeze" start=".1" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="opacity" values="0;1" dur=".5s" fill="freeze" start=".1" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
@@ -79,11 +79,11 @@
                     <animate attributeName="width" values="0;52.97" dur=".5s" fill="freeze" start=".1" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="opacity" values="0;1" dur=".8s" fill="freeze" start=".1" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </rect>
-                <text x="40" y="15.5" text-anchor="end" fill="#000" font-size="5" font-weight="200">
+                <text x="40" y="15.5" text-anchor="end" fill="#000" font-size="5" font-weight="300">
                     52,97%
                     <animate attributeName="x" values="40;86.97" dur=".5s" fill="freeze" start=".1" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </text>
-                <text x="23" y="25" text-anchor="end" fill="#EEEB" opacity="0" font-size="5" font-weight="200">
+                <text x="23" y="25" text-anchor="end" fill="#EEEB" opacity="0" font-size="5" font-weight="300">
                     Python
                     <animate attributeName="x" values="23;33" dur=".5s" fill="freeze" start=".2" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="opacity" values="0;1" dur=".5s" fill="freeze" start=".2" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
@@ -92,11 +92,11 @@
                     <animate attributeName="width" values="0;49.28" dur=".5s" fill="freeze" start=".2" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="opacity" values="0;1" dur=".8s" fill="freeze" start=".2" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </rect>
-                <text x="40" y="25.5" text-anchor="end" fill="#000" font-size="5" font-weight="200">
+                <text x="40" y="25.5" text-anchor="end" fill="#000" font-size="5" font-weight="300">
                     49,48%
                     <animate attributeName="x" values="40;83.28" dur=".5s" fill="freeze" start=".2" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </text>
-                <text x="23" y="35" text-anchor="end" fill="#EEEB" opacity="0" font-size="5" font-weight="200">
+                <text x="23" y="35" text-anchor="end" fill="#EEEB" opacity="0" font-size="5" font-weight="300">
                     SQL
                     <animate attributeName="x" values="23;33" dur=".5s" fill="freeze" start=".3" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="opacity" values="0;1" dur=".5s" fill="freeze" start=".3" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
@@ -105,11 +105,11 @@
                     <animate attributeName="width" values="0;48.66" dur=".5s" fill="freeze" start=".3" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="opacity" values="0;1" dur=".8s" fill="freeze" start=".3" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </rect>
-                <text x="40" y="35.5" text-anchor="end" fill="#000" font-size="5" font-weight="200">
+                <text x="40" y="35.5" text-anchor="end" fill="#000" font-size="5" font-weight="300">
                     48,66%
                     <animate attributeName="x" values="40;82.66" dur=".5s" fill="freeze" start=".3" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </text>
-                <text x="23" y="45" text-anchor="end" fill="#EEEB" opacity="0" font-size="5" font-weight="200">
+                <text x="23" y="45" text-anchor="end" fill="#EEEB" opacity="0" font-size="5" font-weight="300">
                     TypeScript
                     <animate attributeName="x" values="23;33" dur=".5s" fill="freeze" start=".4" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="opacity" values="0;1" dur=".5s" fill="freeze" start=".4" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
@@ -118,11 +118,11 @@
                     <animate attributeName="width" values="0;38.87" dur=".5s" fill="freeze" start=".4" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="opacity" values="0;1" dur=".8s" fill="freeze" start=".4" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </rect>
-                <text x="40" y="45.5" text-anchor="end" fill="#000" font-size="5" font-weight="200">
+                <text x="40" y="45.5" text-anchor="end" fill="#000" font-size="5" font-weight="300">
                     38,87%
                     <animate attributeName="x" values="40;72.87" dur=".5s" fill="freeze" start=".4" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </text>
-                <text x="23" y="55" text-anchor="end" fill="#EEEB" opacity="0" font-size="5" font-weight="200">
+                <text x="23" y="55" text-anchor="end" fill="#EEEB" opacity="0" font-size="5" font-weight="300">
                     Shell
                     <animate attributeName="x" values="23;33" dur=".5s" fill="freeze" start=".5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="opacity" values="0;1" dur=".5s" fill="freeze" start=".5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
@@ -131,11 +131,11 @@
                     <animate attributeName="width" values="0;32.37" dur=".5s" fill="freeze" start=".5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="opacity" values="0;1" dur=".8s" fill="freeze" start=".5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </rect>
-                <text x="40" y="55.5" text-anchor="end" fill="#000" font-size="5" font-weight="200">
+                <text x="40" y="55.5" text-anchor="end" fill="#000" font-size="5" font-weight="300">
                     32,37%
                     <animate attributeName="x" values="40;66.37" dur=".5s" fill="freeze" start=".5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </text>
-                <text x="23" y="65" text-anchor="end" fill="#EEEB" opacity="0" font-size="5" font-weight="200">
+                <text x="23" y="65" text-anchor="end" fill="#EEEB" opacity="0" font-size="5" font-weight="300">
                     Java
                     <animate attributeName="x" values="23;33" dur=".5s" fill="freeze" start=".6" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="opacity" values="0;1" dur=".5s" fill="freeze" start=".6" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
@@ -144,7 +144,7 @@
                     <animate attributeName="width" values="0;30.55" dur=".5s" fill="freeze" start=".6" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="opacity" values="0;1" dur=".8s" fill="freeze" start=".6" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </rect>
-                <text x="40" y="65.5" text-anchor="end" fill="#000" font-size="5" font-weight="200">
+                <text x="40" y="65.5" text-anchor="end" fill="#000" font-size="5" font-weight="300">
                     30,55%
                     <animate attributeName="x" values="40;64.55" dur=".5s" fill="freeze" start=".6" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </text>
@@ -157,57 +157,64 @@
         </center>
 
         <!-- DIE ENTSTEHUNG VON JAVASCRIPT-->
-        <!-- Page 2 - Slide 3-5 - Interaktivität -->
-        <center class="slide slide-3" invisible>
-            <h1 id="slide-3">
+        <!-- Slide 2 - Step 3-5 - Interaktivität -->
+        <center class="step step-3" invisible>
+            <h1 id="step-3">
                 JavaScript, oft als JS abgekürzt,
             </h1>
-            <h1 class="slide slide-4" id="slide-4" invisible>
+            <h1 class="step step-4" id="step-4" invisible>
                 ermöglicht Seiten im Internet interaktivität
             </h1>
-            <h1 class="slide slide-5" id="slide-5" invisible>
+            <h1 class="step step-5" id="step-5" invisible>
                 98,8% aller Internetseiten nutzen es
             </h1>
         </center>
-        <!-- Page 3 - Slide 6-9 - Mosaic -->
-        <center class="slide slide-6" invisible>
-            <h1 id="slide-6-mosaic">
+        <!-- Slide 3 - Step 6-9 - Mosaic -->
+        <center class="step step-6" invisible>
+            <h1 id="step-6-mosaic">
                 Mosaic war 1993 der erste beliebte Browser,
             </h1>
-            <h1 id="slide-6-js-css">
+            <h1 id="step-6-js-css">
                 hatte aber noch kein CSS oder JavaScript
             </h1>
-            <div class="slide slide-7" invisible>
+            <div class="step step-7" invisible>
                 <h1>
                     Ein Titel
                 </h1>
-                <h6>
-                    Ein Untertitel
-                </h6>
                 <p>
                     Darunter steht dann ein Text, der sogar auf etwas <a href="#">verlinken</a>, mehr war allerdings noch nicht möglich.
                 </p>
             </div>
-            <div class="slide slide-8" invisible>
+            <div class="step step-8" invisible>
                 <div>
                     Dekorierter Knopf
                 </div>
             </div>
-            <a class="slide slide-9" invisible>
+            <svg id="step-9-x" class="step step-9" viewBox="0 0 50 13" invisible>
+                <path  d="M1 1L49 12" fill="#0000" stroke="#D44" stroke-width="0" stroke-linecap="round">
+                    <animate attributeName="stroke-width" values="0;1" dur=".5s" fill="freeze" start=".1" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="stroke-dasharray" values="0 50;50 0" dur=".5s" fill="freeze" start=".1" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                </path>
+                <path  d="M49 1L1 12" fill="#0000" stroke="#D44" stroke-width="0" stroke-linecap="round">
+                    <animate attributeName="stroke-width" values="0;1" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="stroke-dasharray" values="0 50;50 0" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                </path>
+            </svg>
+            <a class="step step-9" invisible>
             </a>
         </center>
-        <!-- Page 4 - Slide 10-12 - Netscape Navigator -->
-        <center class="slide slide-10" invisible>
-            <h1 id="slide-10">
-                1994 erschien Netscape Navigator<a id="slide-11-comma" class="slide slide-11" invisible>,</a>
+        <!-- Slide 4 - Step 10-12 - Netscape Navigator -->
+        <center class="step step-10" invisible>
+            <h1 id="step-10">
+                1994 erschien Netscape Navigator<a id="step-11-comma" class="step step-11" invisible>,</a>
             </h1>
-            <h1 class="slide slide-11" id="slide-11" invisible>
+            <h1 class="step step-11" id="step-11" invisible>
                 bekam 1995 Java Applets
             </h1>
-            <h1 class="slide slide-12" id="slide-12" invisible>
+            <h1 class="step step-12" id="step-12" invisible>
                 und später JavaScript
             </h1>
-            <svg id="slide-11-applet" class="slide slide-11" viewBox="0 0 50 50" invisible>
+            <svg id="step-11-applet" class="step step-11" viewBox="0 0 50 50" invisible>
                 <path  d="M1 7V2C1 1.5 1.5 1 2 1H48C48.5 1 49 1.5 49 2V48C49 48.5 48.5 49 48 49H2C1.5 49 1 48.5 1 48Z" fill="#0000" stroke="#CCC" stroke-width="0">
                     <animate attributeName="stroke-width" values="0;1.25" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="stroke-dasharray" values="0 190;190 0" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
@@ -215,7 +222,7 @@
                 <path  d="M1.5 7H49.5" fill="#0000" stroke="#CCC" stroke-width="1.25" stroke-dasharray="0 50">
                     <animate attributeName="stroke-dasharray" values="0 47;47 0" dur="1s" fill="freeze" start=".5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </path>
-                <mask id="slide-11-window-text-mask">
+                <mask id="step-11-window-text-mask">
                     <rect x="-3.5" y="1.5" width="0" height="47" rx=".5" fill="#FFF">
                         <animate attributeName="width" values="0;47" dur="1s" fill="freeze" start=".5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     </rect>
@@ -224,7 +231,7 @@
                     <animate attributeName="opacity" values="0;1" dur=".25s" fill="freeze" start=".5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="width" values="0;47" dur="1s" fill="freeze" start=".5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </rect>
-                <text x="2.25" y="5" text-anchor="start" fill="#FFF" font-size="3.5" font-weight="400" mask="url(#slide-11-window-text-mask)">
+                <text x="2.25" y="5" text-anchor="start" fill="#FFF" font-size="3.5" font-weight="400" mask="url(#step-11-window-text-mask)">
                     Mein Java Applet
                 </text>
                 <g transform="scale(0)" transform-origin="38 4">
@@ -246,26 +253,26 @@
                     <animate attributeName="opacity" values="0;1" dur=".25s" fill="freeze" start=".5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="width" values="0;47" dur="1s" fill="freeze" start=".5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </rect>
-                <text x="5.75" y="13.5" text-anchor="start" fill="#000" font-size="2.5" font-weight="400" mask="url(#slide-11-window-text-mask)" transform="scale(0)" transform-origin="16.25 12.5">
+                <text x="5.75" y="13.5" text-anchor="start" fill="#000" font-size="2.5" font-weight="400" mask="url(#step-11-window-text-mask)" transform="scale(0)" transform-origin="16.25 12.5">
                     Schreibe einen Text:
                     <animateTransform attributeName="transform" type="scale" values="0;1" dur=".25s" fill="freeze" start="1.4" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </text>
                 <!--Helpful for finding the width of the text--><!--<rect x="5.75" y="10.5" width="21" height="4" rx=".5" fill="#0000" stroke="#8AC" stroke-width=".5"/>-->
                 <g transform="scale(0)" transform-origin="25 17.5">
                     <rect x="5.75" y="15.5" width="38.5" height="4" rx=".5" fill="#0000" stroke="#9BC" stroke-width=".5"/>
-                    <text x="6.5" y="18.5" text-anchor="start" fill="#000" font-size="2.5" font-weight="400" mask="url(#slide-11-window-text-mask)">
+                    <text x="6.5" y="18.5" text-anchor="start" fill="#000" font-size="2.5" font-weight="400" mask="url(#step-11-window-text-mask)">
                         Anspielung
                     </text>
                     <animateTransform attributeName="transform" type="scale" values="0;1" dur=".25s" fill="freeze" start="1.5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </g>
-                <text x="5.75" y="26.5" text-anchor="start" fill="#000" font-size="2.5" font-weight="400" mask="url(#slide-11-window-text-mask)" transform="scale(0)" transform-origin="14.75 25.5">
+                <text x="5.75" y="26.5" text-anchor="start" fill="#000" font-size="2.5" font-weight="400" mask="url(#step-11-window-text-mask)" transform="scale(0)" transform-origin="14.75 25.5">
                     Wähle etwas aus:
                     <animateTransform attributeName="transform" type="scale" values="0;1" dur=".25s" fill="freeze" start="1.7" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </text>
                 <!--Helpful for finding the width of the text--><!--<rect x="5.75" y="23.5" width="18" height="4" rx=".5" fill="#0000" stroke="#8AC" stroke-width=".5"/>-->
                 <g transform="scale(0)" transform-origin="25 30">
                     <rect x="5.75" y="27.5" width="38.5" height="5" rx=".5" fill="#0000" stroke="#9BC" stroke-width=".5"/>
-                    <text x="6.5" y="31" text-anchor="start" fill="#000" font-size="2.5" font-weight="400" mask="url(#slide-11-window-text-mask)">
+                    <text x="6.5" y="31" text-anchor="start" fill="#000" font-size="2.5" font-weight="400" mask="url(#step-11-window-text-mask)">
                         Hier
                     </text>
                     <rect x="40.75" y="28" width="3" height="4" rx=".5" fill="#BCF"/>
@@ -274,53 +281,53 @@
                 </g>
                 <g transform="scale(0)" transform-origin="25 40">
                     <rect x="19.75" y="37.5" width="11" height="5" rx=".5" fill="#9BC4" stroke="#9BC" stroke-width=".5"/>
-                    <text x="20.5" y="41" text-anchor="start" fill="#000" font-size="2.5" font-weight="400" mask="url(#slide-11-window-text-mask)">
+                    <text x="20.5" y="41" text-anchor="start" fill="#000" font-size="2.5" font-weight="400" mask="url(#step-11-window-text-mask)">
                         Einfügen
                     </text>
                     <animateTransform attributeName="transform" type="scale" values="0;1" dur=".25s" fill="freeze" start="2" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </g>
             </svg>
-            <svg id="slide-12-js" class="slide slide-12" viewBox="0 0 50 50" invisible>
+            <svg id="step-12-js" class="step step-12" viewBox="0 0 50 50" invisible>
                 <path d="M25 1L40 1C45.53 1 49 4.47 49 10V40C49 45.53 45.53 49 40 49H10C4.47 49 1 45.53 1 40V10C1 4.47 4.47 1 10 1H25" fill="#FFD932" stroke="#FFD932" stroke-width="2"/>
                 <path d="M14.8 40.8Q16.8 44.2 20 44.2C22.9 44.2 24.7 42.4 24.7 39.5V22.9M43.1 27.5Q41.3 24.6 38.2 24.6C35.1 24.6 33.3 26.4 33.3 29.5Q33.3 33 38.6 34.5Q43.9 36 43.9 39.6C43.9 43 40.8 44.2 38.2 44.2Q33.9 44.2 31.6 40.3" fill="#0000" stroke="#000" stroke-width="4.3"/>
             </svg>
         </center>
-        <!-- Page 5 - Slide 13-14 - LiveScript -->
-        <center class="slide slide-13" invisible>
-            <h1 id="slide-13-js">
-                JavaScript, anfangs LiveScript genannt<a id="slide-14-comma" class="slide slide-14" invisible>,</a>
+        <!-- Slide 5 - Step 13-14 - LiveScript -->
+        <center class="step step-13" invisible>
+            <h1 id="step-13-js">
+                JavaScript, anfangs LiveScript genannt<a id="step-14-comma" class="step step-14" invisible>,</a>
             </h1>
-            <h1 class="slide slide-14" id="slide-14" invisible>
+            <h1 class="step step-14" id="step-14" invisible>
                 wurde wegen Javas Beliebtheit umbenannt
             </h1>
-            <svg id="slide-13-ls" viewBox="0 0 50 50">
+            <svg id="step-13-ls" viewBox="0 0 50 50">
                 <path d="M25 1L40 1C45.53 1 49 4.47 49 10V40C49 45.53 45.53 49 40 49H10C4.47 49 1 45.53 1 40V10C1 4.47 4.47 1 10 1H25" fill="#FFD932" stroke="#FFD932" stroke-width="2"/>
                 <path d="M14.8 40.8Q16.8 44.2 20 44.2C22.9 44.2 24.7 42.4 24.7 39.5L24.7 22.9" fill="#0000" stroke="#000" stroke-width="4.3">
-                    <animate attributeName="d" values="M14.8 40.8Q16.8 44.2 20 44.2C22.9 44.2 24.7 42.4 24.7 39.5L24.7 22.9;M15.8 44.2Q15.8 41.2 15.8 38.2C15.8 35.2 15.8 32.2 15.8 29.2L15.8 22.9" dur=".5s" fill="freeze" start=".5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="d" values="M14.8 40.8Q16.8 44.2 20 44.2C22.9 44.2 24.7 42.4 24.7 39.5L24.7 22.9;M15.8 44.2Q15.8 41.2 15.8 38.2C15.8 35.2 15.8 32.2 15.8 29.2L15.8 22.9" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </path>
                 <path d="M14.8 40.8Q16.8 44.2 20 44.2" fill="#0000" stroke="#000" stroke-width="4.3">
-                    <animate attributeName="d" values="M14.8 40.8Q16.8 44.2 20 44.2;M13.65 44.2Q20.225 44.2 26.8 44.2" dur=".5s" fill="freeze" start=".5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="d" values="M14.8 40.8Q16.8 44.2 20 44.2;M13.65 44.2Q20.225 44.2 26.8 44.2" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </path>
                 <path d="M43.1 27.5Q41.3 24.6 38.2 24.6C35.1 24.6 33.3 26.4 33.3 29.5Q33.3 33 38.6 34.5Q43.9 36 43.9 39.6C43.9 43 40.8 44.2 38.2 44.2Q33.9 44.2 31.6 40.3" fill="#0000" stroke="#000" stroke-width="4.3"/>
             </svg>
         </center>
-        <!-- Page 6 - Slide 15-17 - IE -->
-        <center class="slide slide-15" invisible>
-            <h1 id="slide-15-ie">
+        <!-- Slide 6 - Step 15-17 - Internet Explorer -->
+        <center class="step step-15" invisible>
+            <h1 id="step-15-ie">
                 1996 veröffentlichte Microsoft Internet Explorer
             </h1>
-            <h1 id="slide-15-jscript">
+            <h1 id="step-15-jscript">
                 mit umbenanntem JavaScript namens JScript
             </h1>
-            <h1 id="slide-17" class="slide slide-17" invisible>
+            <h1 id="step-17" class="step step-17" invisible>
                 er wurde schnell der beliebteste
             </h1>
-            <div class="slide slide-16" id="slide-16-button" invisible>
+            <div class="step step-16" id="step-16-button" invisible>
                 <div>
                     Dekorierter Knopf
                 </div>
             </div>
-            <svg class="slide slide-16" id="slide-16-animation" viewBox="0 0 50 50" invisible>
+            <svg class="step step-16" id="step-16-animation" viewBox="0 0 50 50" invisible>
                 <g transform="rotate(0)" transform-origin="25 8.5">
                     <circle cx="25" cy="1" r="1" fill="#FFF" transform="rotate(0)" transform-origin="25 8.5"/>
                     <circle cx="25" cy="1" r="1" fill="#FFFD" transform="rotate(22.5)" transform-origin="25 8.5"/>
@@ -336,19 +343,19 @@
                     Animation
                 </text>
             </svg>
-            <svg class="slide slide-17" id="slide-17-graph" viewBox="0 -1 21 14" invisible>
-                <mask id="slide-17-graph-guides-mask">
+            <svg class="step step-17" id="step-17-graph" viewBox="0 -1 21 14" invisible>
+                <mask id="step-17-graph-guides-mask">
                     <rect x="0" y="-1" width="0" height="15" fill="#FFF">
                         <animate attributeName="width" values="0;13" dur="1s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     </rect>
                 </mask>
-                <mask id="slide-17-graph-lines-mask">
+                <mask id="step-17-graph-lines-mask">
                     <rect x="0" y="-1" width="0" height="15" fill="#FFF">
                         <animate attributeName="width" values="0;13" dur="2s" fill="freeze" start=".25" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     </rect>
                 </mask>
-                <path d="M.95 0H12.05M.95 2.5H12.05M.95 5H12.05M.95 7.5H12.05M.95 10H12.05" fill="#0000" stroke="#FFF8" stroke-width=".125" stroke-linecap="round" stroke-linejoin="round" mask="url(#slide-17-graph-guides-mask)"/>
-                <g mask="url(#slide-17-graph-lines-mask)">
+                <path d="M.95 0H12.05M.95 2.5H12.05M.95 5H12.05M.95 7.5H12.05M.95 10H12.05" fill="#0000" stroke="#FFF8" stroke-width=".125" stroke-linecap="round" stroke-linejoin="round" mask="url(#step-17-graph-guides-mask)"/>
+                <g mask="url(#step-17-graph-lines-mask)">
                     <path d="M1 10L8 10L9 9.8L10 9.5L11 9.4L12 9.2" fill="#0000" stroke="#F80" stroke-width=".25" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M1 10L2 10L3 9L4 7L5 5.5L6 3.5L7 2L8 1.2L9 1L10 .8L11 .8L12 1" fill="#0000" stroke="#08F" stroke-width=".25" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M1 8L2 4.5L3 2L4 3L5 4.5L6 7L7 8L8 9L9 9.4L10 9.8L11 10L12 10" fill="#0000" stroke="#0E0" stroke-width=".25" stroke-linecap="round" stroke-linejoin="round"/>
@@ -375,54 +382,54 @@
                 </text>
             </svg>
         </center>
-        <!-- Page 7 - Slide 18-20 - ECMAScript -->
-        <center class="slide slide-18" invisible>
-            <h1 id="slide-18-1">
+        <!-- Slide 7 - Step 18-20 - ECMAScript -->
+        <center class="step step-18" invisible>
+            <h1 id="step-18-1">
                 1997 wurde JavaScript von ECMA
             </h1>
-            <h1 id="slide-18-2">
+            <h1 id="step-18-2">
                 als ECMAScript standardisiert
             </h1>
-            <h1 id="slide-19-1" class="slide slide-19" invisible>
+            <h1 id="step-19-1" class="step step-19" invisible>
                 so kann JavaScript in jedem
             </h1>
-            <h1 id="slide-19-2" class="slide slide-19" invisible>
+            <h1 id="step-19-2" class="step step-19" invisible>
                 Browser gleich funktionieren
             </h1>
-            <h1 id="slide-20" class="slide slide-20" invisible>
+            <h1 id="step-20" class="step step-20" invisible>
                 ECMA entwickelte ECMAScript weiter
             </h1>
         </center>
-        <!-- Page 8 - Slide 21-26 - ECMAScript 2 & 3 -->
-        <center class="slide slide-21" invisible>
-            <h1 id="slide-21">
+        <!-- Slide 8 - Step 21-26 - ECMAScript 2 & 3 -->
+        <center class="step step-21" invisible>
+            <h1 id="step-21">
                 1998 erschien ECMAScript 2
             </h1>
-            <h1 id="slide-22" class="slide slide-22" invisible>
+            <h1 id="step-22" class="step step-22" invisible>
                 mit vielen kleinen Verbesserungen
             </h1>
-            <h1 id="slide-23" class="slide slide-23" invisible>
+            <h1 id="step-23" class="step step-23" invisible>
                 1999 erschien ECMAScript 3
             </h1>
-            <h1 id="slide-24" class="slide slide-24" invisible>
+            <h1 id="step-24" class="step step-24" invisible>
                 mit try-catch Fehlerbehandlung
             </h1>
-            <h1 id="slide-25" class="slide slide-25" invisible>
-                und Regulären Ausdrücken kurz RegEx<a class="slide slide-26" invisible>,</a>
+            <h1 id="step-25" class="step step-25" invisible>
+                und Regulären Ausdrücken kurz RegEx<a class="step step-26" invisible>,</a>
             </h1>
-            <h1 id="slide-26" class="slide slide-26" invisible>
+            <h1 id="step-26" class="step step-26" invisible>
                 welche das Suchen in Texten erleichtern
             </h1>
         </center>
-        <!-- Page 9 - Slide 27-30 - Firefox -->
-        <center class="slide slide-27" invisible>
-            <h1 id="slide-27">
-                Mozilla veröffentlichte 2004 Firefox<a class="slide slide-28" invisible>,</a>
+        <!-- Slide 9 - Step 27-30 - Firefox -->
+        <center class="step step-27" invisible>
+            <h1 id="step-27">
+                Mozilla veröffentlichte 2004 Firefox<a class="step step-28" invisible>,</a>
             </h1>
-            <h1 id="slide-28" class="slide slide-28" invisible>
+            <h1 id="step-28" class="step step-28" invisible>
                 welcher 2005 ECMAScript unterstützte
             </h1>
-            <svg id="slide-27-firefox" viewBox="0 0 77.42 79.97">
+            <svg id="step-27-firefox" viewBox="0 0 77.42 79.97">
                 <defs>
                     <linearGradient id="firefox-a" x1="70.79" x2="6.447" y1="12.39" y2="74.47" gradientTransform="translate(-1.3 -.004086)" gradientUnits="userSpaceOnUse">
                         <stop stop-color="#fff44f" offset=".048"/>
@@ -530,22 +537,22 @@
                     <path d="m74.62 26.83c-1.684-4.052-5.1-8.427-7.775-9.81a40.27 40.27 0 0 1 3.925 11.76l7e-3 0.065c-4.382-10.92-11.81-15.33-17.88-24.92-0.307-0.485-0.614-0.971-0.913-1.484-0.171-0.293-0.308-0.557-0.427-0.8a7.053 7.053 0 0 1-0.578-1.535 0.1 0.1 0 0 0-0.088-0.1 0.138 0.138 0 0 0-0.073 0c-5e-3 0-0.013 9e-3 -0.019 0.011s-0.019 0.011-0.028 0.015l0.015-0.026c-9.735 5.7-13.04 16.25-13.34 21.53 0.452-0.031 0.9-0.069 1.362-0.069a19.56 19.56 0 0 1 16.98 9.917 13.38 13.38 0 0 0-9.345-2.269c13.94 6.97 10.2 30.97-9.119 30.07a17.24 17.24 0 0 1-5.043-0.973q-0.569-0.213-1.138-0.466c-0.219-0.1-0.438-0.2-0.654-0.312l0.027 0.017q-0.282-0.135-0.564-0.281c0.181 0.087 0.351 0.181 0.537 0.264-4.733-2.446-8.641-7.07-9.129-12.68 0 0 1.789-6.667 12.81-6.667 1.191 0 4.6-3.325 4.661-4.289-0.015-0.315-6.76-3-9.39-5.59-1.405-1.385-2.072-2.052-2.663-2.553a11.59 11.59 0 0 0-1-0.758 17.97 17.97 0 0 1-0.109-9.473 28.7 28.7 0 0 0-9.329 7.21h-0.018c-1.536-1.947-1.428-8.367-1.34-9.708a6.928 6.928 0 0 0-1.294 0.687 28.22 28.22 0 0 0-3.788 3.245 33.84 33.84 0 0 0-3.623 4.347v6e-3 -7e-3a32.73 32.73 0 0 0-5.2 11.74l-0.052 0.256c-0.073 0.341-0.4 2.073-0.447 2.445a45.09 45.09 0 0 0-0.572 5.403v0.2a38.76 38.76 0 0 0 76.95 6.554c0.065-0.5 0.118-0.995 0.176-1.5a39.86 39.86 0 0 0-2.514-19.47zm-3.845 1.991 7e-3 0.041z" fill="url(#firefox-l)"/>
                 </g>
             </svg>
-            <h1 id="slide-29" class="slide slide-29" invisible>
-                Mozilla & Adobe arbeiteten an ECMAScript 4<a class="slide slide-30" invisible>,</a>
+            <h1 id="step-29" class="step step-29" invisible>
+                Mozilla & Adobe arbeiteten an ECMAScript 4<a class="step step-30" invisible>,</a>
             </h1>
-            <h1 id="slide-30" class="slide slide-30" invisible>
+            <h1 id="step-30" class="step step-30" invisible>
                 jedoch wurde es nie veröffentlicht
             </h1>
         </center>
-        <!-- Page 10 - Slide 31-34 - Chrome -->
-        <center class="slide slide-31" invisible>
-            <h1 id="slide-31">
-                2008 veröffentlichte Google Chrome<a class="slide slide-32" invisible>,</a>
+        <!-- Slide 10 - Step 31-34 - Chrome -->
+        <center class="step step-31" invisible>
+            <h1 id="step-31">
+                2008 veröffentlichte Google Chrome<a class="step step-32" invisible>,</a>
             </h1>
-            <h1 id="slide-32" class="slide slide-32" invisible>
+            <h1 id="step-32" class="step step-32" invisible>
                 der durch ihre V8 Engine sehr schnell war
             </h1>
-            <svg id="slide-31-chrome" viewBox="0 0 48 48">
+            <svg id="step-31-chrome" viewBox="0 0 48 48">
                 <defs>
                     <linearGradient id="chrome-a" x1="3.2173" y1="15" x2="44.7812" y2="15" gradientUnits="userSpaceOnUse">
                         <stop offset="0" stop-color="#d93025"/>
@@ -567,40 +574,40 @@
                 <circle cx="24" cy="24" r="12" style="fill:#fff"/>
                 <circle cx="24" cy="24" r="9.5" style="fill:#1a73e8"/>
             </svg>
-            <h1 id="slide-33-1" class="slide slide-33" invisible>
+            <h1 id="step-33-1" class="step step-33" invisible>
                 Googles neue Engine kompilierte
             </h1>
-            <h1 id="slide-33-2" class="slide slide-33" invisible>
+            <h1 id="step-33-2" class="step step-33" invisible>
                 während ältere Engines interpretierten
             </h1>
-            <h1 id="slide-34" class="slide slide-34" invisible>
+            <h1 id="step-34" class="step step-34" invisible>
                 um mitzuhalten, wechselten viele zu V8,<br>
                 oder verbesserten ihre eigenen Engines
             </h1>
         </center>
-        <!-- Page 11 - Slide 35-37 - Edge -->
-        <center class="slide slide-35" invisible>
-            <h1 id="slide-35">
+        <!-- Slide 11 - Step 35-37 - Edge -->
+        <center class="step step-35" invisible>
+            <h1 id="step-35">
                 2022 wurde Internet Explorer eingestellt
             </h1>
-            <h1 id="slide-36" class="slide slide-36" invisible>
-                und von Microsoft durch Edge ersetzt<a class="slide slide-37" invisible>,</a>
+            <h1 id="step-36" class="step step-36" invisible>
+                und von Microsoft durch Edge ersetzt<a class="step step-37" invisible>,</a>
             </h1>
-            <h1 id="slide-37" class="slide slide-37" invisible>
+            <h1 id="step-37" class="step step-37" invisible>
                 welcher ebenfalls auf V8 basiert
             </h1>
         </center>
 
         <!-- SYNTAX UND BESONDERHEITEN -->
-        <!-- Page 12 - Slide 38-39 - Objekt-Orientiert -->
-        <center class="slide slide-38" invisible>
-            <h1 id="slide-38">
+        <!-- Slide 12 - Step 38-39 - Objekt-Orientiert -->
+        <center class="step step-38" invisible>
+            <h1 id="step-38">
                 JavaScript ist Objekt Orientiert
             </h1>
-            <h1 id="slide-39" class="slide slide-39" invisible>
+            <h1 id="step-39" class="step step-39" invisible>
                 Objekte haben Werte und Funktionen
             </h1>
-            <p id="slide-39-code" class="slide slide-39 code" invisible>
+            <p id="step-39-code" class="step step-39 code" invisible>
                 <a style="color: #89DDFF;">{</a><br>
                 &nbsp;&nbsp;<a style="color: #82AAFF;">eineZahl</a><a style="color: #89DDFF;">:</a><a style="color: #F78C6C;">-123.45</a><a style="color: #89DDFF;">,</a><br>
                 &nbsp;&nbsp;<a style="color: #82AAFF;">einText</a><a style="color: #89DDFF;">:</a><a style="color: #FFF0A0;">"Hallo"</a><a style="color: #89DDFF;">,</a><br>
@@ -610,83 +617,83 @@
                 <a style="color: #89DDFF;">}</a>
             </p>
         </center>
-        <!-- Page 13 - Slide 40-44 - Ereignis-Modell -->
-        <center class="slide slide-40" invisible>
-            <h1 id="slide-40">
+        <!-- Slide 13 - Step 40-44 - Ereignis-Modell -->
+        <center class="step step-40" invisible>
+            <h1 id="step-40">
                 JavaScripts Ereignis Modell
             </h1>
-            <div class="slide slide-41" invisible>
-                <h1 id="slide-41">
+            <div class="step step-41" invisible>
+                <h1 id="step-41">
                     andere Sprachen fragen ständig nach Ereignissen
                 </h1>
-                <h1 id="slide-42" class="slide slide-42" invisible>
+                <h1 id="step-42" class="step step-42" invisible>
                     in JavaScript kann einfach darauf gewartet werden
                 </h1>
             </div>
-            <div class="slide slide-43" invisible>
-                <h1 id="slide-43-1">
+            <div class="step step-43" invisible>
+                <h1 id="step-43-1">
                     Funktionen können auch nach einer
                 </h1>
-                <h1 id="slide-43-2" class="slide slide-43" invisible>
+                <h1 id="step-43-2" class="step step-43" invisible>
                     bestimmten Zeit ausgeführt werden
                 </h1>
-                <h1 id="slide-44-1" class="slide slide-44" invisible>
+                <h1 id="step-44-1" class="step step-44" invisible>
                     oder in
                 </h1>
-                <h1 id="slide-44-2" class="slide slide-44" invisible>
+                <h1 id="step-44-2" class="step step-44" invisible>
                     einem Intervall ausgeführt werden
                 </h1>
             </div>
         </center>
-        <!-- Page 14 - Slide 45-47 - Nur Ein Thread -->
-        <center class="slide slide-45" invisible>
-            <h1 id="slide-45">
-                JavaScripts nutzt nur einen Thread<a class="slide slide-46" invisible>,</a>
+        <!-- Slide 14 - Step 45-47 - Nur Ein Thread -->
+        <center class="step step-45" invisible>
+            <h1 id="step-45">
+                JavaScripts nutzt nur einen Thread<a class="step step-46" invisible>,</a>
             </h1>
-            <h1 id="slide-46" class="slide slide-46" invisible>
+            <h1 id="step-46" class="step step-46" invisible>
                 weshalb mehrere Aufgaben nicht<br>
                 gleichzeitig ausgeführt werden können
             </h1>
-            <h1 id="slide-47-1" class="slide slide-47" invisible>
+            <h1 id="step-47-1" class="step step-47" invisible>
                 dieser Thread ist für alles zuständig
             </h1>
-            <h1 id="slide-47-2" class="slide slide-47" invisible>
+            <h1 id="step-47-2" class="step step-47" invisible>
                 langsame Programme halten alles auf
             </h1>
         </center>
-        <!-- Page 15 - Slide 48-52 - Keine Typisierung -->
-        <center class="slide slide-48" invisible>
-            <h1 id="slide-48">
+        <!-- Slide 15 - Step 48-52 - Keine Typisierung -->
+        <center class="step step-48" invisible>
+            <h1 id="step-48">
                 JavaScripts hat keine Typisierung
             </h1>
-            <h1 id="slide-50" class="slide slide-50" invisible>
+            <h1 id="step-50" class="step step-50" invisible>
                 falsche Wert-Typen könne ein Problem sein
             </h1>
-            <h1 id="slide-52" class="slide slide-52" invisible>
+            <h1 id="step-52" class="step step-52" invisible>
                 TypeScript fügt Typisierung hinzu
             </h1>
-            <div id="slide-49-code" class="slide slide-49 code" invisible>
-                <p id="slide-49-code-1" class="slide slide-49 code" invisible>
-                    <a style="color: #C792EA;">var</a> eineZahl<span id="slide-52-code" class="slide slide-52" invisible><a style="color: #89DDFF;">:</a><a style="color: #C3E88D;">Number</a></span><a style="color: #89DDFF;">=</a><a style="color: #F78C6C;">123</a><a style="color: #89DDFF;">;</a>
+            <div id="step-49-code" class="step step-49 code" invisible>
+                <p id="step-49-code-1" class="step step-49 code" invisible>
+                    <a style="color: #C792EA;">var</a> eineZahl<span id="step-52-code" class="step step-52" invisible><a style="color: #89DDFF;">:</a><a style="color: #C3E88D;">Number</a></span><a style="color: #89DDFF;">=</a><a style="color: #F78C6C;">123</a><a style="color: #89DDFF;">;</a>
                 </p>
-                <p id="slide-51-code" class="slide slide-51 code" invisible>
+                <p id="step-51-code" class="step step-51 code" invisible>
                     eineZahl<a style="color: #89DDFF;">=</a><a style="color: #FFF0A0;">"Hallo"</a><a style="color: #89DDFF;">;</a>
                 </p>
-                <p id="slide-49-code-2" class="slide slide-49 code" invisible>
+                <p id="step-49-code-2" class="step step-49 code" invisible>
                     <a style="color: #82AAFF;">info</a><a style="color: #89DDFF;">(</a>eineZahl<a style="color: #89DDFF;">-</a><a style="color: #F78C6C;">2</a><a style="color: #89DDFF;">);</a>
                 </p>
             </div>
         </center>
-        <!-- Page 16 - Slide 53-54 - Funktionen Als Werte -->
-        <center class="slide slide-53" invisible>
-            <h1 id="slide-53">
+        <!-- Slide 16 - Step 53-54 - Funktionen Als Werte -->
+        <center class="step step-53" invisible>
+            <h1 id="step-53">
                 Funktionen können wie Werte behandelt werden
             </h1>
-            <h1 id="slide-54" class="slide slide-54" invisible>
+            <h1 id="step-54" class="step step-54" invisible>
                 sie können gespeichert oder weiter gegeben werden
             </h1>
-            <div id="slide-54-code" class="slide slide-54 code" invisible>
-                <a style="color: #C792EA;">var</a> eineFunktion<a style="color: #89DDFF;">=</a><a style="color: #C792EA;">function</a><a style="color: #89DDFF;">(){</a><br>
+            <div id="step-54-code" class="step step-54 code" invisible>
+                <a style="color: #C792EA;">var</a> eineFunktion <a style="color: #89DDFF;">=</a> <a style="color: #C792EA;">function</a><a style="color: #89DDFF;">(){</a><br>
                 &nbsp;&nbsp;<a style="color: #82AAFF;">info</a><a style="color: #89DDFF;">(</a><a style="color: #FFF0A0;">"Hallo"</a><a style="color: #89DDFF;">);</a><br>
                 <a style="color: #89DDFF;">}</a><br><br>
                 <a style="color: #82AAFF;">andereFunktion</a><a style="color: #89DDFF;">(</a>eineFunktion<a style="color: #89DDFF;">);</a>
@@ -694,36 +701,36 @@
         </center>
 
         <!-- ROLLE IM INTERNET -->
-        <!-- Page 17 - Slide 55-56 - Leinwand -->
-        <center class="slide slide-55" invisible>
-            <h1 id="slide-55">
+        <!-- Slide 17 - Step 55-56 - Leinwand -->
+        <center class="step step-55" invisible>
+            <h1 id="step-55">
                 Auf Leinwände kann gezeichnet werden
             </h1>
-            <h1 id="slide-56-1" class="slide slide-56" invisible>
+            <h1 id="step-56-1" class="step step-56" invisible>
                 das ermöglicht zum Beispiel
             </h1>
-            <h1 id="slide-56-2" class="slide slide-56" invisible>
+            <h1 id="step-56-2" class="step step-56" invisible>
                 Grafik-Rechner oder 3D-Spiele
             </h1>
-            <canvas id="slide-55-canvas" class="slide slide-55" width="1000" height="1000" invisible>
+            <canvas id="step-55-canvas" class="step step-55" width="1000" height="1000" invisible>
             </canvas>
             <script>
                 setInterval(() => {
                     try {
-                        main.querySelect("center.slide-55:not([invisible] + [invisible], [long-gone])")[0].hasAttribute("invisible");
+                        main.querySelect("center.step-55:not([invisible] + [invisible], [long-gone])")[0].hasAttribute("invisible");
                     } catch (e) {
                         return;
                     }
                     var rotation = new Date().getTime() / 15 % 90 - 45;
-                    var scale = Math.max(1000, document.getElementById("slide-55-canvas").getBoundingClientRect().width);
+                    var scale = Math.max(1000, document.getElementById("step-55-canvas").getBoundingClientRect().width);
                     var scale2 = .2 * scale;
                     var scale25 = .25 * scale;
                     var scale4 = .4 * scale;
                     var scale5 = .5 * scale;
                     var scale75 = .75 * scale;
-                    document.getElementById("slide-55-canvas").setAttribute("width", scale);
-                    document.getElementById("slide-55-canvas").setAttribute("height", scale);
-                    var c = document.getElementById("slide-55-canvas").getContext("2d");
+                    document.getElementById("step-55-canvas").setAttribute("width", scale);
+                    document.getElementById("step-55-canvas").setAttribute("height", scale);
+                    var c = document.getElementById("step-55-canvas").getContext("2d");
                     c.clearRect(0, 0, 1000, 1000);
                     c.beginPath();
                     c.moveTo(Math.cos(rotation * Math.PI / 180) * scale4 + scale5, Math.sin(rotation * Math.PI / 180) * scale2 + scale25);
@@ -752,15 +759,15 @@
                 }, 20);
             </script>
         </center>
-        <!-- Page 18 - Slide 57-58 - Video & Audio -->
-        <center class="slide slide-57" invisible>
-            <h1 id="slide-57">
+        <!-- Slide 18 - Step 57-58 - Video & Audio -->
+        <center class="step step-57" invisible>
+            <h1 id="step-57">
                 Audios und Videos können abgespielt werden
             </h1>
-            <h1 id="slide-58" class="slide slide-58" invisible>
+            <h1 id="step-58" class="step step-58" invisible>
                 und JavaScript ermöglicht es, sie zu steuern
             </h1>
-            <svg id="slide-57-audio" class="slide slide-57" viewBox="0 0 50 50" invisible>
+            <svg id="step-57-audio" class="step step-57" viewBox="0 0 50 50" invisible>
                 <rect x="0" y="25" width="3" height="0" rx="1.5" fill="#DDD">
                     <animate attributeName="y" values="25;22.5" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="height" values="0;5" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
@@ -802,7 +809,7 @@
                     <animate attributeName="height" values="0;10" dur=".5s" fill="freeze" start=".9" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </rect>
             </svg>
-            <svg id="slide-57-video" class="slide slide-57" viewBox="0 0 60 50" invisible>
+            <svg id="step-57-video" class="step step-57" viewBox="0 0 60 50" invisible>
                 <path d="M1 25V15A10 10 0 0 1 11 5H49A10 10 0 0 1 59 15V35A10 10 0 0 1 49 45H11A10 10 0 0 1 1 35Z" fill="#0000" stroke="#AAA" stroke-width="2" stroke-dasharray="0 200">
                     <animate attributeName="stroke-dasharray" values="0 200;200 0" dur="1.5s" fill="freeze" start="" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </path>
@@ -812,22 +819,22 @@
                     <animateTransform attributeName="transform" type="scale" values="0;1" dur=".5s" fill="freeze" start=".75" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </g>
             </svg>
-            <div id="slide-58-audio-code" class="slide slide-58 code" invisible>
+            <div id="step-58-audio-code" class="step step-58 code" invisible>
                 audio<a style="color: #89DDFF;">.</a><a style="color: #82AAFF;">play</a><a style="color: #89DDFF;">();</a>
             </div>
-            <div id="slide-58-video-code" class="slide slide-58 code" invisible>
+            <div id="step-58-video-code" class="step step-58 code" invisible>
                 video<a style="color: #89DDFF;">.</a><a style="color: #82AAFF;">pause</a><a style="color: #89DDFF;">();</a>
             </div>
         </center>
-        <!-- Page 19 - Slide 59-60 - IFrame -->
-        <center class="slide slide-59" invisible>
-            <h1 id="slide-59">
+        <!-- Slide 19 - Step 59-60 - IFrame -->
+        <center class="step step-59" invisible>
+            <h1 id="step-59">
                 IFrames erlauben, Webseiten einzubetten
             </h1>
-            <h1 id="slide-60" class="slide slide-60" invisible>
+            <h1 id="step-60" class="step step-60" invisible>
                 zum Beispiel Karten oder Videos
             </h1>
-            <svg id="slide-60-iframe" class="slide slide-60" viewBox="0 0 60 50" invisible>
+            <svg id="step-60-iframe" class="step step-60" viewBox="0 0 60 50" invisible>
                 <path d="M.5 25V10A5 5 0 0 1 5.5 5H54.5A5 5 0 0 1 59.5 10V40A5 5 0 0 1 54.5 45H5.5A5 5 0 0 1 .5 40Z" fill="#0000" stroke="#AAA" stroke-width="1" stroke-dasharray="0 200">
                     <animate attributeName="stroke-dasharray" values="0 200;200 0" dur="1.5s" fill="freeze" start="" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </path>
@@ -847,10 +854,10 @@
                     <animateTransform attributeName="transform" type="scale" values="0;1" dur=".25s" fill="freeze" start="1.5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </path>
                 <!-- Adds the YouTube Logo to the IFrame Video-->
-                <!--<mask id="slide-60-iframe-text-mask">
+                <!--<mask id="step-60-iframe-text-mask">
                     <rect x="21" y="0" width="60" height="50" fill="#FFF"/>
                 </mask>
-                <g mask="url(#slide-60-iframe-text-mask)">
+                <g mask="url(#step-60-iframe-text-mask)">
                     <text x="-7.5" y="22.8" font-size="8" fill="#FFF">
                         YouTube
                         <animate attributeName="x" values="-7.5;23.75" dur=".5s" fill="freeze" start="1.25" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
@@ -863,38 +870,38 @@
                 </g>-->
             </svg>
         </center>
-        <!-- Page 20 - Slide 61-63 - Cookies -->
-        <center class="slide slide-61" invisible>
-            <h1 id="slide-61">
+        <!-- Slide 20 - Step 61-63 - Cookies -->
+        <center class="step step-61" invisible>
+            <h1 id="step-61">
                 Cookies können Informationen speichern
             </h1>
-            <h1 id="slide-62" class="slide slide-62" invisible>
+            <h1 id="step-62" class="step step-62" invisible>
                 zum Beispiel Anmeldedaten
             </h1>
-            <h1 id="slide-63" class="slide slide-63" invisible>
+            <h1 id="step-63" class="step step-63" invisible>
                 aber auch Unerwünschtes
             </h1>
-            <h5 id="slide-62-cookie" class="slide slide-62" invisible>
+            <h5 id="step-62-cookie" class="step step-62" invisible>
                 Benutzername: Mein Name<br>
                 Passwort: KeinGutesPasswort123!
             </h5>
-            <h5 id="slide-63-cookie" class="slide slide-63" invisible>
+            <h5 id="step-63-cookie" class="step step-63" invisible>
                 IP Adresse: 12.345<a>.</a>678.90<br>
                 Standort: Deutschland
             </h5>
         </center>
-        <!-- Page 21 - Slide 64-65 - Werbung -->
-        <center class="slide slide-64" invisible>
-            <h1 id="slide-64">
+        <!-- Slide 21 - Step 64-65 - Werbung -->
+        <center class="step step-64" invisible>
+            <h1 id="step-64">
                 JavaScript ermöglicht aber auch Werbung
             </h1>
-            <h1 id="slide-65-1" class="slide slide-65" invisible>
+            <h1 id="step-65-1" class="step step-65" invisible>
                 indem es diese von einem Anbieter lädt
             </h1>
-            <h1 id="slide-65-2" class="slide slide-65" invisible>
+            <h1 id="step-65-2" class="step step-65" invisible>
                 und in die Seite einbettet
             </h1>
-            <svg id="slide-65-ad" class="slide slide-65" viewBox="0 0 72.5 20" invisible>
+            <svg id="step-65-ad" class="step step-65" viewBox="0 0 72.5 20" invisible>
                 <path d="M0 0H72.5V20H0Z" fill="#808"/>
                 <g transform="scale(15)" transform-origin="10 10">
                     <path d="
@@ -923,194 +930,141 @@
         </center>
 
         <!-- DOM-MANIPULATION UND EREIGNIS-VERARBEITUNG -->
-        <!-- Page 22 - Slide 66-70 - DOM-Manipulation -->
-        <center class="slide slide-66" invisible>
-            <h1 id="slide-66">
+        <!-- Slide 22 - Step 66-70 - DOM-Manipulation -->
+        <center class="step step-66" invisible>
+            <h1 id="step-66">
                 JavaScript kann Elemente
             </h1>
-            <h1 id="slide-67" class="slide slide-67" invisible>
-                finden<a id="slide-68" class="slide slide-68" invisible>, verändern</a> <a id="slide-69" class="slide slide-69" invisible>und löschen</a>
+            <h1 id="step-67" class="step step-67" invisible>
+                finden<a id="step-68" class="step step-68" invisible>, verändern</a> <a id="step-69" class="step step-69" invisible>und löschen</a>
             </h1>
-            <h1 id="slide-70" class="slide slide-70" invisible>
+            <h1 id="step-70" class="step step-70" invisible>
                 und neue Elemente erstellen
             </h1>
-            <div id="slide-66-dom-manipulation" class="code">
+            <div id="step-66-dom-manipulation" class="code">
                 <a style="color: #89DDFF;">&lt;</a><a style="color: #F07178;">div</a> <a style="color: #82AAFF;">id</a><a style="color: #89DDFF;">=</a><a style="color: #FFF0A0;">"kasten"</a><a style="color: #89DDFF;">&gt;</a><br>
                 &nbsp;&nbsp;<a style="color: #89DDFF;">&lt;</a><a style="color: #F07178;">p</a> <a style="color: #82AAFF;">id</a><a style="color: #89DDFF;">=</a><a style="color: #FFF0A0;">"text"</a><a style="color: #89DDFF;">&gt;</a><br>
                 &nbsp;&nbsp;&nbsp;&nbsp;Hallo Welt!<br>
                 &nbsp;&nbsp;<a style="color: #89DDFF;">&lt;/</a><a style="color: #F07178;">p</a><a style="color: #89DDFF;">&gt;</a><br>
                 <a style="color: #89DDFF;">&lt;/</a><a style="color: #F07178;">div</a><a style="color: #89DDFF;">&gt;</a><br>
             </div>
-            <div id="slide-66-dom-manipulation-text" class="slide slide-68 code" invisible>
+            <div id="step-66-dom-manipulation-text" class="step step-68 code" invisible>
                 Was anderes
             </div>
-            <div id="slide-66-dom-manipulation-highlight" class="slide slide-67" invisible>
+            <div id="step-66-dom-manipulation-highlight" class="step step-67" invisible>
             </div>
-            <div id="slide-66-dom-manipulation-black" class="slide slide-69" invisible>
+            <div id="step-66-dom-manipulation-black" class="step step-69" invisible>
             </div>
-            <div id="slide-66-dom-manipulation-new" class="slide slide-70 code" invisible>
+            <div id="step-66-dom-manipulation-new" class="step step-70 code" invisible>
                 <br>
                 &nbsp;&nbsp;<a style="color: #89DDFF;">&lt;</a><a style="color: #F07178;">h1</a> <a style="color: #82AAFF;">id</a><a style="color: #89DDFF;">=</a><a style="color: #FFF0A0;">"neuer-titel"</a><a style="color: #89DDFF;">&gt;</a><br>
                 &nbsp;&nbsp;&nbsp;&nbsp;Ein Titel<br>
                 &nbsp;&nbsp;<a style="color: #89DDFF;">&lt;/</a><a style="color: #F07178;">h1</a><a style="color: #89DDFF;">&gt;</a>
             </div>
         </center>
-        <!-- Page 23 - Slide 71-72 - Kästen Wechseln -->
-        <center class="slide slide-71" invisible>
-            <h1 id="slide-71">
-                So können Kästen gewechselt werden
+        <!-- Slide 23 - Step 71-72 - Tabs Wechseln -->
+        <center class="step step-71" invisible>
+            <h1 id="step-71">
+                So können Tabs gewechselt werden
             </h1>
-            <h1 id="slide-72-1" class="slide slide-72" invisible>
-                indem eines versteckt und
+            <h1 id="step-72-1" class="step step-72" invisible>
+                indem einer versteckt und
             </h1>
-            <h1 id="slide-72-2" class="slide slide-72" invisible>
-                das andere gezeigt wird
+            <h1 id="step-72-2" class="step step-72" invisible>
+                der andere gezeigt wird
             </h1>
-            <svg id="slide-71-switching" class="slide slide-71" viewBox="0 0 50 50" invisible>
-                <path  d="M1 7V2C1 1.5 1.5 1 2 1H48C48.5 1 49 1.5 49 2V48C49 48.5 48.5 49 48 49H2C1.5 49 1 48.5 1 48Z" fill="#000" stroke="#F87" stroke-width="0">
-                    <animate attributeName="stroke-width" values="0;1.25" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
-                    <animate attributeName="stroke-dasharray" values="0 190;190 0" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+            <svg id="step-71-switching" class="step step-71" viewBox="0 0 50 50" invisible>
+                <path  d="M25 8V3.5A1.5 1.5 0 0 1 26.5 2H47.5A1.5 1.5 0 0 1 49 3.5V8" fill="#000" stroke="#BBB" stroke-width="0">
+                    <animate attributeName="stroke-width" values="0;1" dur=".35s" fill="freeze" start=".75" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="stroke-dasharray" values="0 40;40 0" dur=".5s" fill="freeze" start=".75" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="fill" values="#000;#DDD" dur=".25s" fill="freeze" start="1" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </path>
-                <rect x="1.5" y="1.5" width="0" height="47" rx=".5" fill="#FBA" opacity="0">
-                    <animate attributeName="opacity" values="0;1" dur=".25s" fill="freeze" start=".5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
-                    <animate attributeName="width" values="0;47" dur="1s" fill="freeze" start=".5" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
-                </rect>
-                <text x="2.25" y="5" text-anchor="start" fill="#000" font-size="3.5" font-weight="300">
-                    Mein erstes Panel
+                <text x="37" y="6" text-anchor="middle" fill="#000" font-size="3.5" font-weight="400">
+                    Tab #2
                 </text>
-                <text x="2.25" y="7.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    JavaScript, auch als JS bekannt, ermöglicht es
+                <path  d="M1 7.5V2.5A1.5 1.5 0 0 1 2.5 1H23.5A1.5 1.5 0 0 1 25 2.5V7.5H49V47.5A1.5 1.5 0 0 1 47.5 49H2.5A1.5 1.5 0 0 1 1 47.5Z" fill="#000" stroke="#BBB" stroke-width="0">
+                    <animate attributeName="stroke-width" values="0;1" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="stroke-dasharray" values="0 190;190 0" dur="1s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="fill" values="#000;#FFF" dur=".5s" fill="freeze" start=".75" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                </path>
+                <text x="13" y="6" text-anchor="middle" fill="#000" font-size="3.5" font-weight="400">
+                    Tab #1
                 </text>
-                <text x="2.25" y="10" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    Internetseiten, ihren Inhalt dynamisch zu verändern
+                <text x="25" y="30" text-anchor="middle" fill="#000" font-size="10" font-weight="200">
+                    Hallo
                 </text>
-                <text x="2.25" y="12.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    und Nutzern die Möglichkeit zu bieten, mit ihnen zu
-                </text>
-                <text x="2.25" y="15" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    interagieren. Beispielsweise könnte beim Drücken
-                </text>
-                <text x="2.25" y="17.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    eines Knopfes JavaScript ausgeführt werden, welches
-                </text>
-                <text x="2.25" y="20" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    daraufhin ein Menü anzeigt. Fast nichts, das wir
-                </text>
-                <text x="2.25" y="22.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    heutzutage im Internet unternehmen, wäre ohne
-                </text>
-                <text x="2.25" y="25" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    JavaScript möglich. Es wird von allen modernen
-                </text>
-                <text x="2.25" y="27.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    Webbrowsern unterstützt und von über 98% aller
-                </text>
-                <text x="2.25" y="30" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    Webseiten benutzt. Der erste Webbrowser, Mosaic,
-                </text>
-                <text x="2.25" y="32.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    wurde 1993 veröffentlicht, doch damals waren
-                </text>
-                <text x="2.25" y="35" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    Webseiten nur statisch und die Interaktion von
-                </text>
-                <text x="2.25" y="37.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    Nutzern mit ihnen war auf das Klicken auf Links
-                </text>
-                <text x="2.25" y="40" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    beschränkt. Ein Jahr später wurde der Netscape
-                </text>
-                <text x="2.25" y="42.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    Navigator veröffentlicht, welcher ein weiteres Jahr
-                </text>
-                <text x="2.25" y="45" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    später die Möglichkeit hinzugefügt bekam, Java in
-                </text>
-                <text x="2.25" y="47.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    Webseiten einzubetten.
-                </text>
+                <rect x="12.5" y="14.5" width="25" height="25" rx="2" fill="#0000" stroke="#000" stroke-width=".4"/>
             </svg>
-            <svg id="slide-72-switching" class="slide slide-72" viewBox="0 0 50 50" invisible>
-                <path  d="M1 7V2C1 1.5 1.5 1 2 1H48C48.5 1 49 1.5 49 2V48C49 48.5 48.5 49 48 49H2C1.5 49 1 48.5 1 48Z" fill="#000" stroke="#7C7" stroke-width="1.25"/>
-                <rect x="1.5" y="1.5" width="47" height="47" rx=".5" fill="#AEA"/>
-                <text x="2.25" y="5" text-anchor="start" fill="#000" font-size="3.5" font-weight="300">
-                    Mein zweites Panel
+            <svg id="step-72-switching" class="step step-72" viewBox="0 0 50 50" invisible>
+                <path  d="M25 8V3.5A1.5 1.5 0 0 1 26.5 2H47.5A1.5 1.5 0 0 1 49 3.5V8" fill="#DDD" stroke="#BBB" stroke-width="1">
+                    <animate attributeName="d" values="M25 9V3.5A1.5 1.5 0 0 1 26.5 2H47.5A1.5 1.5 0 0 1 49 3.5V9;M25 9V2.5A1.5 1.5 0 0 1 26.5 1H47.5A1.5 1.5 0 0 1 49 2.5V9" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="fill" values="#DDD;#FFF" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                </path>
+                <text x="37" y="6" text-anchor="middle" fill="#000" font-size="3.5" font-weight="400">
+                    Tab #2
                 </text>
-                <text x="2.25" y="7.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    JavaScript ist eine Objekt-Orientierte
+                <path  d="M49 7.5V47.5A1.5 1.5 0 0 1 47.5 49H2.5A1.5 1.5 0 0 1 1 47.5V7.5" fill="#FFF" stroke="#BBB" stroke-width="1">
+                </path>
+                <path  d="M1 8V2.5A1.5 1.5 0 0 1 2.5 1H23.5A1.5 1.5 0 0 1 25 2.5V8" fill="#FFF" stroke="#BBB" stroke-width="1">
+                    <animate attributeName="d" values="M1 8V2.5A1.5 1.5 0 0 1 2.5 1H23.5A1.5 1.5 0 0 1 25 2.5V8;M1 8V3.5A1.5 1.5 0 0 1 2.5 2H23.5A1.5 1.5 0 0 1 25 3.5V8" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                    <animate attributeName="fill" values="#FFF;#DDD" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                </path>
+                <text x="13" y="6" text-anchor="middle" fill="#000" font-size="3.5" font-weight="400">
+                    Tab #1
                 </text>
-                <text x="2.25" y="10" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    Programmiersprache was bedeutet, dass Programme
-                </text>
-                <text x="2.25" y="12.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    in JavaScript hauptsächlich aus Objekten bestehen.
-                </text>
-                <text x="2.25" y="15" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    Diese Objekte enthalten sowohl Werte, die für jedes
-                </text>
-                <text x="2.25" y="17.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    Objekt einer Objektart, auch Klasse genannt,
-                </text>
-                <text x="2.25" y="20" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    unterschiedlich sein können, als auch Funktionen, die
-                </text>
-                <text x="2.25" y="22.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    auf diese Werte zugreifen können. Zusätzlich zeichnet
-                </text>
-                <text x="2.25" y="25" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    sich JavaScript durch sein Ereignis-Modell aus. Im
-                </text>
-                <text x="2.25" y="27.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    Gegensatz zu anderen Programmiersprachen, in denen
-                </text>
-                <text x="2.25" y="30" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    alle Paar Millisekunden überprüft werden muss, ob
-                </text>
-                <text x="2.25" y="32.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    etwas passiert ist, werden in JavaScript sogenannte
-                </text>
-                <text x="2.25" y="35" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    „Ereignishörer“ registriert, die der Browser erst dann
-                </text>
-                <text x="2.25" y="37.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    aufruft, wenn das jeweilige Ereignis aufgetreten ist, wie
-                </text>
-                <text x="2.25" y="40" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    zum Beispiel, dass ein Nutzer auf einen Knopf drückt
-                </text>
-                <text x="2.25" y="42.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    oder etwas eintippt. Es können auch sogenannte
-                </text>
-                <text x="2.25" y="45" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    Auszeiten registriert werden, die eine Funktion nach
-                </text>
-                <text x="2.25" y="47.5" text-anchor="start" fill="#000" font-size="2" font-weight="400">
-                    einer bestimmten Zeitspanne ausführen.
-                </text>
+                <mask id="step-72-switching-border-mask">
+                    <path  d="M1 7H49V47.5A1.5 1.5 0 0 1 47.5 49H2.5A1.5 1.5 0 0 1 1 47.5" fill="#FFF"/>
+                </mask>
+                <path  d="M25 7.5H49V49" fill="#0000" stroke="#BBB" stroke-width="1" mask="url(#step-72-switching-border-mask)">
+                    <animate attributeName="d" values="M25 7.5H49V49;M25 7.5H1V49" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                </path>
+                <mask id="step-72-switching-tab-1-mask">
+                    <rect  x="1" y="1" width="48" height="48" fill="#FFF">
+                        <animate attributeName="width" values="48;0" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                    </rect>
+                </mask>
+                <g mask="url(#step-72-switching-tab-1-mask)">
+                    <text x="25" y="30" text-anchor="middle" fill="#000" font-size="10" font-weight="200">
+                        Hallo
+                    </text>
+                    <rect x="12.5" y="14.5" width="25" height="25" rx="2" fill="#0000" stroke="#000" stroke-width=".4"/>
+                </g>
+                <mask id="step-72-switching-tab-2-mask">
+                    <rect  x="49" y="1" width="0" height="48" fill="#FFF">
+                        <animate attributeName="x" values="49;1" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                        <animate attributeName="width" values="0;48" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
+                    </rect>
+                </mask>
+                <g mask="url(#step-72-switching-tab-2-mask)">
+                    <text x="25" y="30" text-anchor="middle" fill="#000" font-size="10" font-weight="200">
+                        Welt
+                    </text>
+                    <rect x="14.5" y="16.5" width="21" height="21" rx="2" fill="#0000" stroke="#000" stroke-width=".4" transform-origin="25 27" transform="rotate(45)"/>
+                </g>
             </svg>
         </center>
-        <!-- Page 24 - Slide 73-74 - Aktivieren -->
-        <center class="slide slide-73" invisible>
-            <h1 id="slide-73">
+        <!-- Slide 24 - Step 73-74 - Aktivieren -->
+        <center class="step step-73" invisible>
+            <h1 id="step-73">
                 Oder Knöpfe funktionieren nur
             </h1>
-            <h1 id="slide-74" class="slide slide-74" invisible>
+            <h1 id="step-74" class="step step-74" invisible>
                 wenn ein Kästchen angekreuzt ist
             </h1>
-            <svg id="slide-73-checkbox" class="slide slide-73" viewBox="0 0 50 10" invisible>
+            <svg id="step-73-checkbox" class="step step-73" viewBox="0 0 50 10" invisible>
                 <path  d="M1 5V3C1 2 2 1 3 1H7C8 1 9 2 9 3V7C9 8 8 9 7 9H3C2 9 1 8 1 7Z" fill="#0000" stroke="#FFF" stroke-width="0">
                     <animate attributeName="stroke-width" values="0;.5" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="stroke-dasharray" values="0 29;29 0" dur=".75s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </path>
-                <mask id="slide-73-checkbox-text-mask">
+                <mask id="step-73-checkbox-text-mask">
                     <rect x="9" y="0" width="41" height="10" fill="#FFF"/>
                 </mask>
-                <text x="-30" y="6.7" text-anchor="start" fill="#FFF" font-size="5" font-weight="200" mask="url(#slide-73-checkbox-text-mask)">
+                <text x="-30" y="6.7" text-anchor="start" fill="#FFF" font-size="5" font-weight="200" mask="url(#step-73-checkbox-text-mask)">
                     Aktiviere den Knopf
                     <animate attributeName="x" values="-30;10.5" dur=".75s" fill="freeze" start=".25" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </text>
             </svg>
-            <svg id="slide-74-checkbox" class="slide slide-74" viewBox="0 0 50 10" invisible>
+            <svg id="step-74-checkbox" class="step step-74" viewBox="0 0 50 10" invisible>
                 <path  d="M1 5V3C1 2 2 1 3 1H7C8 1 9 2 9 3V7C9 8 8 9 7 9H3C2 9 1 8 1 7Z" fill="#4B40" stroke="#4B4" stroke-width=".5">
                     <animate attributeName="stroke-dasharray" values="0 29;29 0" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="fill" values="#4B40;#4B4" dur=".5s" fill="freeze" start=".35" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
@@ -1120,23 +1074,23 @@
                     <animate attributeName="stroke-dasharray" values="0 9;9 0" dur=".5s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </path>
             </svg>
-            <div class="slide slide-73" id="slide-73-button" invisible>
+            <div class="step step-73" id="step-73-button" invisible>
                 <div>
                     Lustiger Knopf
                 </div>
             </div>
         </center>
-        <!-- Page 25 - Slide 75-76 - Farbschema -->
-        <center class="slide slide-75" invisible>
-            <div id="slide-75-background" class="slide slide-76" invisible>
+        <!-- Slide 25 - Step 75-76 - Farbschema -->
+        <center class="step step-75" invisible>
+            <div id="step-75-background" class="step step-76" invisible>
             </div>
-            <h1 id="slide-75">
+            <h1 id="step-75">
                 JavaScript ermöglicht Anpassungsfähigkeit
             </h1>
-            <h1 id="slide-76" class="slide slide-76" invisible>
+            <h1 id="step-76" class="step step-76" invisible>
                 zum Beispiel mit einem Themen-Knopf
             </h1>
-            <svg id="slide-75-color-theme" class="slide slide-75" viewBox="0 0 50 50" invisible>
+            <svg id="step-75-color-theme" class="step step-75" viewBox="0 0 50 50" invisible>
                 <path  d="M25 5A20 20 0 1 1 25 45A20 20 0 1 1 25 5V45" fill="#0000" stroke="#FFF" stroke-width="0" stroke-linecap="round" stroke-linejoin="round">
                     <animate attributeName="stroke-width" values="0;5" dur="1s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                     <animate attributeName="stroke-dasharray" values="0 170;170 0" dur="1s" fill="freeze" start="0" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
@@ -1145,62 +1099,62 @@
                     <animate attributeName="fill" values="#FFF0;#FFF" dur=".25s" fill="freeze" start=".825" begin="infinite" calcMode="spline" keySplines="0 0 .5 1"/>
                 </path>
             </svg>
-            <svg id="slide-76-color-theme" class="slide slide-76" viewBox="0 0 50 50" invisible>
+            <svg id="step-76-color-theme" class="step step-76" viewBox="0 0 50 50" invisible>
                 <path  d="M25 5A20 20 0 1 1 25 45A20 20 0 1 1 25 5V45" fill="#FFF" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path  d="M25 5A20 20 0 1 1 25 45Z" fill="#000"/>
             </svg>
         </center>
-        <!-- Page 26 - Slide 77-78 - Dynamisches Laden -->
-        <center class="slide slide-77" invisible>
-            <h1 id="slide-77">
+        <!-- Slide 26 - Step 77-78 - Dynamisches Laden -->
+        <center class="step step-77" invisible>
+            <h1 id="step-77">
                 Dynamisches Laden von Inhalten
             </h1>
-            <h1 id="slide-78-1" class="slide slide-78" invisible>
+            <h1 id="step-78-1" class="step step-78" invisible>
                 ermöglicht Seiten wie TikTok
             </h1>
-            <h1 id="slide-78-2" class="slide slide-78" invisible>
+            <h1 id="step-78-2" class="step step-78" invisible>
                 die unendlich Rollen können
             </h1>
-            <svg id="slide-78-tiktok" class="slide slide-78" viewBox="0 0 27 93" invisible>
-                <mask id="slide-78-tiktok-mask">
+            <svg id="step-78-tiktok" class="step step-78" viewBox="0 0 27 93" invisible>
+                <mask id="step-78-tiktok-mask">
                     <rect x="2" y="2" width="23" height="98" rx="5" fill="#FFF"/>
                 </mask>
-                <g mask="url(#slide-78-tiktok-mask)">
+                <g mask="url(#step-78-tiktok-mask)">
                     <g transform="translate(0, 0)">
                         <g transform="scale(0)" transform-origin="12.5 71">
                             <rect x="2.9" y="48.9" width="21.2" height="44.2" rx="4" fill="#468"/>
                             <path d="M10 66L17 71L10 76Z" fill="#DDD" stroke="#DDD" stroke-width="2" stroke-linejoin="round"/>
-                            <animateTransform id="slide-78-tiktok-animation" attributeName="transform" type="scale" values="0;1" dur=".5s" fill="freeze" start="1" begin="slide-78-tiktok-animation.begin+4s"/>
-                            <animateTransform attributeName="transform" type="scale" values="1;0" dur=".5s" fill="freeze" start="4" begin="slide-78-tiktok-animation.begin+3s"/>
+                            <animateTransform id="step-78-tiktok-animation" attributeName="transform" type="scale" values="0;1" dur=".5s" fill="freeze" start="1" begin="step-78-tiktok-animation.begin+4s"/>
+                            <animateTransform attributeName="transform" type="scale" values="1;0" dur=".5s" fill="freeze" start="4" begin="step-78-tiktok-animation.begin+3s"/>
                         </g>
-                        <animateTransform attributeName="transform" type="translate" values="0 0;0 -138" dur="3s" start="1.5" begin="slide-78-tiktok-animation.begin+4.5s"/>
+                        <animateTransform attributeName="transform" type="translate" values="0 0;0 -138" dur="3s" start="1.5" begin="step-78-tiktok-animation.begin+4.5s"/>
                     </g>
                     <g transform="translate(0, 0)">
                         <g transform="scale(0)" transform-origin="12.5 71">
                             <rect x="2.9" y="48.9" width="21.2" height="44.2" rx="4" fill="#844"/>
                             <path d="M10 66L17 71L10 76Z" fill="#DDD" stroke="#DDD" stroke-width="2" stroke-linejoin="round"/>
-                            <animateTransform attributeName="transform" type="scale" values="0;1" dur=".5s" fill="freeze" start="2" begin="slide-78-tiktok-animation.begin+5s"/>
-                            <animateTransform attributeName="transform" type="scale" values="1;0" dur=".5s" fill="freeze" start="5" begin="slide-78-tiktok-animation.begin+4s"/>
+                            <animateTransform attributeName="transform" type="scale" values="0;1" dur=".5s" fill="freeze" start="2" begin="step-78-tiktok-animation.begin+5s"/>
+                            <animateTransform attributeName="transform" type="scale" values="1;0" dur=".5s" fill="freeze" start="5" begin="step-78-tiktok-animation.begin+4s"/>
                         </g>
-                        <animateTransform attributeName="transform" type="translate" values="0 0;0 -138" dur="3s" start="2.5" begin="slide-78-tiktok-animation.begin+5.5s"/>
+                        <animateTransform attributeName="transform" type="translate" values="0 0;0 -138" dur="3s" start="2.5" begin="step-78-tiktok-animation.begin+5.5s"/>
                     </g>
                     <g transform="translate(0, 0)">
                         <g transform="scale(0)" transform-origin="12.5 71">
                             <rect x="2.9" y="48.9" width="21.2" height="44.2" rx="4" fill="#484"/>
                             <path d="M10 66L17 71L10 76Z" fill="#DDD" stroke="#DDD" stroke-width="2" stroke-linejoin="round"/>
-                            <animateTransform attributeName="transform" type="scale" values="0;1" dur=".5s" fill="freeze" start="3" begin="slide-78-tiktok-animation.begin+6s"/>
-                            <animateTransform attributeName="transform" type="scale" values="1;0" dur=".5s" fill="freeze" start="6" begin="slide-78-tiktok-animation.begin+5s"/>
+                            <animateTransform attributeName="transform" type="scale" values="0;1" dur=".5s" fill="freeze" start="3" begin="step-78-tiktok-animation.begin+6s"/>
+                            <animateTransform attributeName="transform" type="scale" values="1;0" dur=".5s" fill="freeze" start="6" begin="step-78-tiktok-animation.begin+5s"/>
                         </g>
-                        <animateTransform attributeName="transform" type="translate" values="0 0;0 -138" dur="3s" start="3.5" begin="slide-78-tiktok-animation.begin+6.5s"/>
+                        <animateTransform attributeName="transform" type="translate" values="0 0;0 -138" dur="3s" start="3.5" begin="step-78-tiktok-animation.begin+6.5s"/>
                     </g>
                     <g transform="translate(0, 0)">
                         <g transform="scale(0)" transform-origin="12.5 71">
                             <rect x="2.9" y="48.9" width="21.2" height="44.2" rx="4" fill="#848"/>
                             <path d="M10 66L17 71L10 76Z" fill="#DDD" stroke="#DDD" stroke-width="2" stroke-linejoin="round"/>
-                            <animateTransform attributeName="transform" type="scale" values="0;1" dur=".5s" fill="freeze" start="4" begin="slide-78-tiktok-animation.begin+7s"/>
-                            <animateTransform attributeName="transform" type="scale" values="1;0" dur=".5s" fill="freeze" start="7" begin="slide-78-tiktok-animation.begin+6s"/>
+                            <animateTransform attributeName="transform" type="scale" values="0;1" dur=".5s" fill="freeze" start="4" begin="step-78-tiktok-animation.begin+7s"/>
+                            <animateTransform attributeName="transform" type="scale" values="1;0" dur=".5s" fill="freeze" start="7" begin="step-78-tiktok-animation.begin+6s"/>
                         </g>
-                        <animateTransform attributeName="transform" type="translate" values="0 0;0 -138" dur="3s" start="4.5" begin="slide-78-tiktok-animation.begin+7.5s"/>
+                        <animateTransform attributeName="transform" type="translate" values="0 0;0 -138" dur="3s" start="4.5" begin="step-78-tiktok-animation.begin+7.5s"/>
                     </g>
                 </g>
                 <path  d="M2 15V7A5 5 0 0 1 7 2H20A5 5 0 0 1 25 7V43A5 5 0 0 1 20 48H7A5 5 0 0 1 2 43Z" fill="#0000" stroke="#FFF" stroke-width="0" stroke-linecap="round" stroke-linejoin="round">
@@ -1223,266 +1177,116 @@
         </center>
 
         <!-- JAVASCRIPT-ENGINES UND DIE WICHTIGKEIT VON BROWSER-KOMPATIBILITÄT -->
-        <!-- Page 27 - Slide 79-83 - JS-Engines -->
-        <center class="slide slide-79" invisible>
-            <h1 id="slide-79">
+        <!-- Slide 27 - Step 79-83 - JS-Engines -->
+        <center class="step step-79" invisible>
+            <h1 id="step-79">
                 Es gibt viele JavaScript-Engines
             </h1>
-            <h1 id="slide-80" class="slide slide-80" invisible>
+            <h1 id="step-80" class="step step-80" invisible>
                 Firefox nutzt SpiderMonkey
             </h1>
-            <h1 id="slide-81" class="slide slide-81" invisible>
+            <h1 id="step-81" class="step step-81" invisible>
                 Safari nutzt JavaScriptCore
             </h1>
-            <h1 id="slide-82" class="slide slide-82" invisible>
+            <h1 id="step-82" class="step step-82" invisible>
                 Internet Explorer nutzte Chakra
             </h1>
-            <h1 id="slide-83-1" class="slide slide-83" invisible>
+            <h1 id="step-83-1" class="step step-83" invisible>
                 alle anderen wie Opera, Brave
             </h1>
-            <h1 id="slide-83-2" class="slide slide-83" invisible>
+            <h1 id="step-83-2" class="step step-83" invisible>
                 und Edge nutzen Chromes V8
             </h1>
         </center>
-        <!-- Page 28 - Slide 84-87 - Browser-Kompatibilität -->
-        <center class="slide slide-84" invisible>
-            <h1 id="slide-84-1">
+        <!-- Slide 28 - Step 84-87 - Browser-Kompatibilität -->
+        <center class="step step-84" invisible>
+            <h1 id="step-84-1">
                 Es gibt viele JavaScript-Engines
             </h1>
-            <h1 id="slide-84-2">
+            <h1 id="step-84-2">
                 die alle gleich funktionieren sollen
             </h1>
-            <h1 id="slide-85" class="slide slide-85" invisible>
+            <h1 id="step-85" class="step step-85" invisible>
                 IE hatte lange Zeit andere Funktionen
             </h1>
-            <h1 id="slide-86-1" class="slide slide-86" invisible>
+            <h1 id="step-86-1" class="step step-86" invisible>
                 doch das hatte auch Gutes, da
             </h1>
-            <h1 id="slide-86-2" class="slide slide-86" invisible>
+            <h1 id="step-86-2" class="step step-86" invisible>
                 Vorteile übernommen wurden
             </h1>
-            <h1 id="slide-87-1" class="slide slide-87" invisible>
+            <h1 id="step-87-1" class="step step-87" invisible>
                 Heutzutage sind die einzigen Unterschiede
             </h1>
-            <h1 id="slide-87-2" class="slide slide-87" invisible>
+            <h1 id="step-87-2" class="step step-87" invisible>
                 Geschwindigkeit und Arbeitsspeicher Verbrauch
             </h1>
         </center>
-        <!-- Page 29 - Slide 88-90 - Mobile Geräte -->
-        <center class="slide slide-88" invisible>
-            <h1 id="slide-88">
+        <!-- Slide 29 - Step 88-90 - Mobile Geräte -->
+        <center class="step step-88" invisible>
+            <h1 id="step-88">
                 Handys werden immer beliebter
             </h1>
-            <h1 id="slide-89" class="slide slide-89" invisible>
+            <h1 id="step-89" class="step step-89" invisible>
                 rund die Hälfte aller Nutzer nutzen sie
             </h1>
-            <h1 id="slide-90-1" class="slide slide-90" invisible>
+            <h1 id="step-90-1" class="step step-90" invisible>
                 kleine Bildschirme und Touchscreens
             </h1>
-            <h1 id="slide-90-2" class="slide slide-90" invisible>
+            <h1 id="step-90-2" class="step step-90" invisible>
                 müssen daher auch unterstützt werden
             </h1>
         </center>
 
         <!-- DAS ÖKOSYSTEM: FRAMEWORKS UND BIBLIOTHEKEN -->
-        <!-- Page 30 - Slide 91-93 - Frameworks & Bibliotheken - Einführung -->
-        <center class="slide slide-91" invisible>
-            <h1 id="slide-91">
+        <!-- Slide 30 - Step 91-93 - Frameworks & Bibliotheken -->
+        <center class="step step-91" invisible>
+            <h1 id="step-91">
                 Frameworks & Bibliotheken
             </h1>
-            <h1 id="slide-92" class="slide slide-92" invisible>
+            <h1 id="step-92" class="step step-92" invisible>
                 Frameworks sind strukturierte Grundlagen
             </h1>
-            <h1 id="slide-93" class="slide slide-93" invisible>
+            <h1 id="step-93" class="step step-93" invisible>
                 Bibliotheken enthalten nützliche Funktionen
             </h1>
         </center>
-        <!-- Page 31 - Slide 94-102 - Frameworks & Bibliotheken -->
-        <center class="slide slide-94" invisible>
-            <h1 id="slide-99" class="slide slide-99" invisible>
-                Bibliotheken
-            </h1>
-            <h1 id="slide-94">
-                Frameworks
-            </h1>
-            <div class="slide slide-94 scrolling-box" invisible>
-                <svg viewBox="-10.5 -9.45 21 18.9">
-                    <circle cx="0" cy="0" r="2" fill="#149ECA"/>
-                    <g stroke="#149ECA" stroke-width="1" fill="none">
-                        <ellipse rx="10" ry="4.5"/>
-                        <ellipse rx="10" ry="4.5" transform="rotate(60)"/>
-                        <ellipse rx="10" ry="4.5" transform="rotate(120)"/>
-                    </g>
-                </svg>
-                <h3>React</h3>
-                <h6>- Ist das beliebteste Framework</h6>
-                <h6>- Nutzt ein modulares System</h6>
-                <h6>- Wird von Facebook entwickelt</h6>
-                <h6>- Der Quelltext ist frei verfügbar</h6>
-                <h6>- Nutzt JSX für Benutzeroberflächen</h6>
-                <h6>- Hat ein Ökosystem mit vielen<br>&nbsp;&nbsp;&nbsp;Bibliotheken und Werkzeugen</h6>
-            </div>
-            <div class="slide slide-95 scrolling-box" invisible>
-                <svg style="transform: scale(1.3);" viewBox="0 0 250 250">
-                    <g>
-                        <polygon fill="#FF0031" points="125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2"/>
-                        <polygon fill="#C3002F" points="125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30"/>
-                        <path fill="#FFF" d="M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1L125,52.1z M142,135.4H108l17-40.9L142,135.4z"/>
-                    </g>
-                </svg>
-                <h3>Angular</h3>
-                <h6>- Wird von Google entwickelt</h6>
-                <h6>- Hat viele integrierte Funktionen und<br>&nbsp;&nbsp;&nbsp;hilfreiche Werkzeuge</h6>
-                <h6>- Ist für Anwendungen mit nur einer Seite</h6>
-                <h6>- Nutzt hauptsächlich TypeScript</h6>
-                <h6>- Nutzt Dekoratoren und Annotationen für<br>&nbsp;&nbsp;&nbsp;die Konfiguration von Komponenten</h6>
-            </div>
-            <div class="slide slide-96 scrolling-box" invisible>
-                <svg viewBox="0 0 128 128">
-                    <path fill="#42b883" d="M78.8,10L64,35.4L49.2,10H0l64,110l64-110C128,10,78.8,10,78.8,10z"/>
-                    <path fill="#35495e" d="M78.8,10L64,35.4L49.2,10H25.6L64,76l38.4-66H78.8z"/>
-                </svg>
-                <h3>Vue.js</h3>
-                <h6>- Sehr kompakt und leichtgewichtig</h6>
-                <h6>- Ist sehr leicht zu lernen</h6>
-                <h6>- Kann schrittweise integriert werden</h6>
-                <h6>- Benutzt ebenfalls Komponente</h6>
-                <h6>- Der Server kann leicht mit dem<br>&nbsp;&nbsp;&nbsp;Terminal bedient werden</h6>
-            </div>
-            <div class="slide slide-97 scrolling-box" invisible>
-                <svg viewBox="0 0 93.224 112">
-                    <path fill="#FF3E00" d="M87.269,14.819C76.869-.066,56.328-4.478,41.477,4.984L15.4,21.608A29.921,29.921,0,0,0,1.876,41.651,31.514,31.514,0,0,0,4.984,61.882,30.006,30.006,0,0,0,.507,73.065,31.892,31.892,0,0,0,5.955,97.181c10.4,14.887,30.942,19.3,45.791,9.835L77.829,90.392A29.915,29.915,0,0,0,91.347,70.349a31.522,31.522,0,0,0-3.1-20.232,30.019,30.019,0,0,0,4.474-11.182,31.878,31.878,0,0,0-5.447-24.116"/>
-                    <path fill="#FFF" d="M38.929,98.582a20.72,20.72,0,0,1-22.237-8.243,19.176,19.176,0,0,1-3.276-14.5,18.143,18.143,0,0,1,.623-2.435l.491-1.5,1.337.981a33.633,33.633,0,0,0,10.2,5.1l.969.294-.089.968A5.844,5.844,0,0,0,28,83.122a6.24,6.24,0,0,0,6.7,2.485,5.748,5.748,0,0,0,1.6-.7L62.382,68.281a5.43,5.43,0,0,0,2.451-3.631,5.794,5.794,0,0,0-.988-4.371,6.244,6.244,0,0,0-6.7-2.487,5.755,5.755,0,0,0-1.6.7l-9.953,6.345a19.06,19.06,0,0,1-5.3,2.326,20.719,20.719,0,0,1-22.237-8.243,19.171,19.171,0,0,1-3.277-14.5A17.992,17.992,0,0,1,22.915,32.37L49,15.747a19.03,19.03,0,0,1,5.3-2.329,20.72,20.72,0,0,1,22.237,8.243,19.176,19.176,0,0,1,3.277,14.5,18.453,18.453,0,0,1-.624,2.435l-.491,1.5-1.336-.979a33.616,33.616,0,0,0-10.2-5.1l-.97-.294.09-.968a5.859,5.859,0,0,0-1.052-3.878,6.241,6.241,0,0,0-6.7-2.485,5.748,5.748,0,0,0-1.6.7L30.842,43.719a5.421,5.421,0,0,0-2.449,3.63,5.79,5.79,0,0,0,.986,4.372,6.245,6.245,0,0,0,6.7,2.487,5.773,5.773,0,0,0,1.6-.7l9.952-6.342a18.978,18.978,0,0,1,5.3-2.328,20.718,20.718,0,0,1,22.236,8.243,19.171,19.171,0,0,1,3.277,14.5,18,18,0,0,1-8.13,12.054L44.229,96.253a19.017,19.017,0,0,1-5.3,2.329"/>
-                </svg>
-                <h3>Svelte</h3>
-                <h6>- Wird kompiliert, wodurch es schneller<br>&nbsp;&nbsp;&nbsp;und leichtgewichtiger ist</h6>
-                <h6>- Erleichter das Erstellen von Animationen</h6>
-                <h6>- Hat einen sehr kompakten Syntax</h6>
-                <h6>- Vereinfacht das Teilen von Quelltext<br>&nbsp;&nbsp;&nbsp;in kleinere Module</h6>
-            </div>
-            <div class="slide slide-98 scrolling-box" invisible>
-                <svg style="background: #000 !important; border-radius: calc(var(--scale) * 10); outline: 2px solid #FFF; outline-offset: -1px; filter: invert(1); transform: scale(1.5); margin-right: calc(var(--scale) * 7.5);" viewBox=".5 -.2 1023 1024.1">
-                    <path fill="#FFF" d="m478.5.6c-2.2.2-9.2.9-15.5 1.4-145.3 13.1-281.4 91.5-367.6 212-48 67-78.7 143-90.3 223.5-4.1 28.1-4.6 36.4-4.6 74.5s.5 46.4 4.6 74.5c27.8 192.1 164.5 353.5 349.9 413.3 33.2 10.7 68.2 18 108 22.4 15.5 1.7 82.5 1.7 98 0 68.7-7.6 126.9-24.6 184.3-53.9 8.8-4.5 10.5-5.7 9.3-6.7-.8-.6-38.3-50.9-83.3-111.7l-81.8-110.5-102.5-151.7c-56.4-83.4-102.8-151.6-103.2-151.6-.4-.1-.8 67.3-1 149.6-.3 144.1-.4 149.9-2.2 153.3-2.6 4.9-4.6 6.9-8.8 9.1-3.2 1.6-6 1.9-21.1 1.9h-17.3l-4.6-2.9c-3-1.9-5.2-4.4-6.7-7.3l-2.1-4.5.2-200.5.3-200.6 3.1-3.9c1.6-2.1 5-4.8 7.4-6.1 4.1-2 5.7-2.2 23-2.2 20.4 0 23.8.8 29.1 6.6 1.5 1.6 57 85.2 123.4 185.9s157.2 238.2 201.8 305.7l81 122.7 4.1-2.7c36.3-23.6 74.7-57.2 105.1-92.2 64.7-74.3 106.4-164.9 120.4-261.5 4.1-28.1 4.6-36.4 4.6-74.5s-.5-46.4-4.6-74.5c-27.8-192.1-164.5-353.5-349.9-413.3-32.7-10.6-67.5-17.9-106.5-22.3-9.6-1-75.7-2.1-84-1.3zm209.4 309.4c4.8 2.4 8.7 7 10.1 11.8.8 2.6 1 58.2.8 183.5l-.3 179.8-31.7-48.6-31.8-48.6v-130.7c0-84.5.4-132 1-134.3 1.6-5.6 5.1-10 9.9-12.6 4.1-2.1 5.6-2.3 21.3-2.3 14.8 0 17.4.2 20.7 2z"/>
-                </svg>
-                <svg viewBox="0 0 300 200">
-                    <path d="M168 200H279C282.542 200 285.932 198.756 289 197C292.068 195.244 295.23 193.041 297 190C298.77 186.959 300.002 183.51 300 179.999C299.998 176.488 298.773 173.04 297 170.001L222 41C220.23 37.96 218.067 35.7552 215 34C211.933 32.2448 207.542 31 204 31C200.458 31 197.067 32.2448 194 34C190.933 35.7552 188.77 37.96 187 41L168 74L130 9.99764C128.228 6.95784 126.068 3.75491 123 2C119.932 0.245087 116.542 0 113 0C109.458 0 106.068 0.245087 103 2C99.9323 3.75491 96.7717 6.95784 95 9.99764L2 170.001C0.226979 173.04 0.00154312 176.488 1.90993e-06 179.999C-0.0015393 183.51 0.229648 186.959 2 190C3.77035 193.04 6.93245 195.244 10 197C13.0675 198.756 16.4578 200 20 200H90C117.737 200 137.925 187.558 152 164L186 105L204 74L259 168H186L168 200ZM89 168H40L113 42L150 105L125.491 147.725C116.144 163.01 105.488 168 89 168Z" fill="#00DC82"/>
-                </svg>
-                <h3>Next.js & Nuxt.js</h3>
-                <h6>- Next.js erleichtert die Nutzung von React,</h6>
-                <h6>&nbsp;&nbsp;&nbsp;Nuxt.js hingegen vereinfacht Vue.js</h6>
-                <h6>- Können die Seite als eine Datei liefern</h6>
-                <h6>- Sind durch Erweiterungen anpassbar</h6>
-                <h6>- Komprimieren den JavaScript Quelltext</h6>
-                <h6>- Ermöglichen komplexe URLs, die unter<br>&nbsp;&nbsp;&nbsp;anderem Variablen enthalten können</h6>
-            </div>
-            <div class="slide slide-99 scrolling-box" invisible>
-                <svg viewBox="0 0 32 32" fill="#0868ac">
-                    <path d="M2.144 7.705c-2.83 4.07-2.48 9.364-.316 13.7.05.104.105.206.158.308l.1.195c.02.038.042.075.063.112.037.07.075.134.113.202l.207.354.118.194.24.375.102.158c.113.168.228.336.347.5l.068.092a16.39 16.39 0 0 0 .316.42l.12.152.292.36.112.134c.133.157.27.313.407.465.014.015.02.02.024.026a20.44 20.44 0 0 0 .414.436l.133.134.33.324.135.13a16.98 16.98 0 0 0 .453.412l.496.42.17.136.343.268.183.14.385.276.18.127c.123.085.248.166.374.247l.162.108a20.81 20.81 0 0 0 .585.358l.162.1.44.246c.08.043.162.084.243.125l.314.163.073.035.13.062.498.23.105.047a17.83 17.83 0 0 0 .581.241l.14.056.548.203.07.024a21.72 21.72 0 0 0 .61.2l.148.044c.2.063.416.14.63.178 13.694 2.497 17.67-8.23 17.67-8.23-3.34 4.352-9.27 5.5-14.9 4.222-.213-.048-.42-.114-.627-.176l-.156-.047a18.62 18.62 0 0 1-.604-.197l-.083-.03a20.87 20.87 0 0 1-.532-.197l-.15-.06a15.16 15.16 0 0 1-.575-.24l-.115-.05-.485-.226-.14-.067c-.126-.06-.25-.127-.375-.2l-.25-.13c-.152-.08-.3-.166-.45-.252l-.152-.085a21.76 21.76 0 0 1-.585-.358c-.053-.034-.105-.07-.158-.105l-.416-.277c-.046-.03-.1-.064-.134-.094l-.394-.285-.175-.132-.355-.278-.158-.127-.442-.373a.73.73 0 0 0-.05-.04l-.465-.423-.13-.126-.332-.33-.13-.13c-.14-.143-.276-.287-.4-.434-.007-.007-.014-.014-.02-.022a16.98 16.98 0 0 1-.416-.474l-.1-.13-.3-.37-.1-.137-.346-.46C2.982 15.6 1.86 9.722 4.354 4.902m6.58-.625c-2.048 2.947-1.937 6.9-.34 10.008a13.06 13.06 0 0 0 .906 1.512c.307.44.647.963 1.054 1.316.148.163.302.32.46.477l.12.12a13.41 13.41 0 0 0 .469.436c.007.005.012.012.02.017.182.16.366.3.553.458l.124.097a13.46 13.46 0 0 0 .574.419l.017.012c.086.06.174.115.262.173.042.027.082.056.124.082a11.64 11.64 0 0 0 .425.26l.06.035.376.2c.044.025.1.046.134.07l.263.136c.013.007.027.012.04.018a11.39 11.39 0 0 0 .548.255l.12.05a14.16 14.16 0 0 0 .45.182l.192.07a14.26 14.26 0 0 0 .413.143l.187.06c.197.06.4.14.597.173 10.573 1.752 13.014-6.4 13.014-6.4-2.2 3.17-6.46 4.68-11.008 3.5a13.06 13.06 0 0 1-.599-.173c-.06-.018-.12-.038-.18-.058l-.42-.144-.2-.07a15.08 15.08 0 0 1-.45-.182l-.122-.05a12.58 12.58 0 0 1-.552-.256l-.277-.14-.16-.082a13.16 13.16 0 0 1-.35-.197l-.084-.047a12.34 12.34 0 0 1-.424-.26c-.043-.027-.085-.057-.128-.085l-.275-.182a13.24 13.24 0 0 1-.57-.418l-.13-.1c-2-1.572-3.568-3.72-4.318-6.154-.786-2.525-.617-5.36.745-7.66m5.732-.183C17.12 3.5 17 5.698 17.838 7.66c.883 2.083 2.693 3.716 4.806 4.5l.262.1.116.036.377.1c5.838 1.128 7.42-2.996 7.843-3.603-1.387 1.997-3.718 2.476-6.578 1.782-.226-.055-.474-.137-.692-.214a8.46 8.46 0 0 1-.822-.341 8.5 8.5 0 0 1-1.441-.879C19.15 7.2 17.56 3.486 19.23.47"/>
-                </svg>
-                <h3>jQuery</h3>
-                <h6>- Vereinfacht DOM-Manipulation<br>&nbsp;&nbsp;&nbsp;und Ereignis-Verarbeitung</h6>
-                <h6>- Reduziert Schreibaufwand und Quelltext</h6>
-                <h6>- Unterstützt CSS-Selektoren</h6>
-                <h6>- Ermöglicht asynchrone Kommunikation<br>&nbsp;&nbsp;&nbsp;mit dem Server</h6>
-                <h6>- Vielen Frameworks enthalten Ähnliches</h6>
-            </div>
-            <div class="slide slide-100 scrolling-box" invisible>
-                <svg viewBox="-10 -10 116 111">
-                    <clipPath id="d3js-logo-clip">
-                        <path d="M0,0h7.75a45.5,45.5 0 1 1 0,91h-7.75v-20h7.75a25.5,25.5 0 1 0 0,-51h-7.75zm36.2510,0h32a27.75,27.75 0 0 1 21.331,45.5a27.75,27.75 0 0 1 -21.331,45.5h-32a53.6895,53.6895 0 0 0 18.7464,-20h13.2526a7.75,7.75 0 1 0 0,-15.5h-7.75a53.6895,53.6895 0 0 0 0,-20h7.75a7.75,7.75 0 1 0 0,-15.5h-13.2526a53.6895,53.6895 0 0 0 -18.7464,-20z"/>
-                    </clipPath>
-                    <linearGradient id="d3js-logo-gradient-1" gradientUnits="userSpaceOnUse" x1="7" y1="64" x2="50" y2="107">
-                        <stop offset="0" stop-color="#f9a03c"/>
-                        <stop offset="1" stop-color="#f7974e"/>
-                    </linearGradient>
-                    <linearGradient id="d3js-logo-gradient-2" gradientUnits="userSpaceOnUse" x1="2" y1="-2" x2="87" y2="84">
-                        <stop offset="0" stop-color="#f26d58"/>
-                        <stop offset="1" stop-color="#f9a03c"/>
-                    </linearGradient>
-                    <linearGradient id="d3js-logo-gradient-3" gradientUnits="userSpaceOnUse" x1="45" y1="-10" x2="108" y2="53">
-                        <stop offset="0" stop-color="#b84e51"/>
-                        <stop offset="1" stop-color="#f68e48"/>
-                    </linearGradient>
-                    <g clip-path="url(#d3js-logo-clip)">
-                        <path d="M-100,-102m-28,0v300h300z" fill="url(#d3js-logo-gradient-1)"/>
-                        <path d="M-100,-102m28,0h300v300z" fill="url(#d3js-logo-gradient-3)"/>
-                        <path d="M-100,-102l300,300" fill="none" stroke="url(#d3js-logo-gradient-2)" stroke-width="40"/>
-                    </g>
-                </svg>
-                <h3>D3.js</h3>
-                <h6>- Ermöglicht Visualisierung von Daten</h6>
-                <h6>- Kann Elemente mit Daten verknüpfen</h6>
-                <h6>- Kann die Daten als SVGs darstellen</h6>
-                <h6>- Enthält hilfreiche Werkzeuge für<br>&nbsp;&nbsp;&nbsp;das Arbeiten mit Daten</h6>
-                <h6>- Sehr kompakt und leichtgewichtig</h6>
-                <h6>- Der Quelltext ist frei verfügbar</h6>
-            </div>
-            <div class="slide slide-101 scrolling-box" invisible>
-                <svg viewBox="0 0 2500 2500">
-                    <path d="M70 188.5h220v1460h870v180H70v-1640zm1776 396c-225-3-450 140-520 357-100 250-54 564 142 755 190 158 476 170 690 58 147-78 240-233 260-396 26-170 13-356-70-510-98-164-290-270-480-263l-22-3zm20 174c165 0 313 126 340 288 50 183 20 407-130 536-140 114-365 98-480-43-140-150-140-380-68-560 50-130 183-223 323-220h18z" fill="#FFF"/>
-                    <path d="M70 2061.5h2360v250H70v-250z" fill="#3492ff"/>
-                </svg>
-                <h3>Lodash</h3>
-                <h6>- Erleichtert die Arbeit mit Datenstrukturen<br>&nbsp;&nbsp;&nbsp;wie Listen und Objekte</h6>
-                <h6>- Sehr schnell und effizient</h6>
-                <h6>- Besteht aus Modulen, die einzeln<br>&nbsp;&nbsp;&nbsp;genutzt werden können</h6>
-                <h6>- Mehrere Funktionen für Objekte können<br>&nbsp;&nbsp;&nbsp;aneinander gereiht werden</h6>
-            </div>
-            <div class="slide slide-102 scrolling-box" invisible>
-                <svg style="transform: scale(1.2);" viewBox="0 0 226.77 226.77">
-                    <g transform="translate(8.964 4.2527)" fill-rule="evenodd" stroke="#FFF" stroke-linecap="butt" stroke-linejoin="round" stroke-width="4">
-                        <path d="m63.02 200.61-43.213-174.94 173.23 49.874z"/>
-                        <path d="m106.39 50.612 21.591 87.496-86.567-24.945z"/>
-                        <path d="m84.91 125.03-10.724-43.465 43.008 12.346z"/>
-                        <path d="m63.458 38.153 10.724 43.465-43.008-12.346z"/>
-                        <path d="m149.47 62.93 10.724 43.465-43.008-12.346z"/>
-                        <path d="m84.915 125.06 10.724 43.465-43.008-12.346z"/>
-                    </g>
-                </svg>
-                <h3>Three.js</h3>
-                <h6>- Ermöglicht die Darstellung von<br>&nbsp;&nbsp;&nbsp;3D Objekten im Webbrowser</h6>
-                <h6>- Kann Modelle aus einer Datei Laden</h6>
-                <h6>- Erlaubt das Abspielen von Animationen</h6>
-                <h6>- Unterstützt komplexe Texturen</h6>
-                <h6>- Nutzt WebGL und damit die deutlich<br>&nbsp;&nbsp;&nbsp;schnellere Grafikkarte</h6>
-            </div>
-        </center>
 
         <!-- GRAFISCHE UND SERVERSEITIGE ANWENDUNGEN -->
-        <!-- Page 32 - Slide 103-107 - Electron -->
-        <center class="slide slide-103" invisible>
-            <h1 id="slide-103-1">
+        <!-- Slide 31 - Step 94-98 - Electron -->
+        <center class="step step-94" invisible>
+            <h1 id="step-94-1">
                 Electron ermöglicht es, aus Webseiten
             </h1>
-            <h1 id="slide-103-2">
+            <h1 id="step-94-2">
                 Desktop Anwendungen zu erstellen
             </h1>
-            <h1 id="slide-104" class="slide slide-104" invisible>
+            <h1 id="step-95" class="step step-95" invisible>
                 diese funktionieren auf allen Betriebssystemen
             </h1>
-            <h1 id="slide-105" class="slide slide-105" invisible>
+            <h1 id="step-96" class="step step-96" invisible>
                 und können zum Beispiel auf Dateien zugreifen
             </h1>
-            <h1 id="slide-106" class="slide slide-106" invisible>
+            <h1 id="step-97" class="step step-97" invisible>
                 Allerdings ist Electron langsamer und ineffizienter
             </h1>
-            <h1 id="slide-107" class="slide slide-107" invisible>
+            <h1 id="step-98" class="step step-98" invisible>
                 und jedes Programm enthält Google Chrome
             </h1>
         </center>
-        <!-- Page 33 - Slide 108-110 - Node.js -->
-        <center class="slide slide-108" invisible>
-            <h1 id="slide-108-1">
+        <!-- Slide 32 - Step 99-101 - Node.js -->
+        <center class="step step-99" invisible>
+            <h1 id="step-99-1">
                 Node.js ermöglicht es, JavaScript und
             </h1>
-            <h1 id="slide-108-2">
+            <h1 id="step-99-2">
                 TypeScript auf einem Server auszuführen
             </h1>
-            <h1 id="slide-109" class="slide slide-109" invisible>
+            <h1 id="step-100" class="step step-100" invisible>
                 es wird über die Konsole gesteuert
             </h1>
-            <svg id="slide-108-node" viewBox="0 0 111 33">
-                <g clip-path="url(#slide-108-node-clip0_8323_10753)">
+            <svg id="step-99-node" viewBox="0 0 111 33">
+                <g clip-path="url(#step-108-node-clip0_8323_10753)">
                     <path d="M97.6894 32.7407C97.4024 32.7407 97.1345 32.6637 96.8858 32.5289L94.3412 31.0081C93.9586 30.7963 94.1499 30.7193 94.2647 30.6808C94.7813 30.5075 94.8769 30.469 95.4126 30.161C95.47 30.1225 95.5466 30.1418 95.604 30.1803L97.5555 31.3546C97.632 31.3931 97.7276 31.3931 97.785 31.3546L105.419 26.9075C105.495 26.869 105.534 26.792 105.534 26.6958V17.8209C105.534 17.7247 105.495 17.6477 105.419 17.6092L97.785 13.1814C97.7085 13.1429 97.6128 13.1429 97.5555 13.1814L89.9217 17.6092C89.8451 17.6477 89.8069 17.7439 89.8069 17.8209V26.6958C89.8069 26.7728 89.8451 26.869 89.9217 26.9075L92.0071 28.1204C93.1359 28.6979 93.8438 28.0241 93.8438 27.3503V18.591C93.8438 18.4755 93.9394 18.36 94.0734 18.36H95.0491C95.1639 18.36 95.2787 18.4562 95.2787 18.591V27.3503C95.2787 28.8712 94.456 29.7567 93.0211 29.7567C92.5811 29.7567 92.2367 29.7567 91.2609 29.2755L89.252 28.1204C88.7546 27.8316 88.4485 27.2926 88.4485 26.715V17.8402C88.4485 17.2626 88.7546 16.7236 89.252 16.4348L96.8858 11.9878C97.3641 11.7183 98.0146 11.7183 98.4929 11.9878L106.127 16.4348C106.624 16.7236 106.93 17.2626 106.93 17.8402V26.715C106.93 27.2926 106.624 27.8316 106.127 28.1204L98.4929 32.5674C98.2633 32.6637 97.9764 32.7407 97.6894 32.7407Z" fill="#5FA04E"/>
                     <path d="M100.062 26.6379C96.7134 26.6379 96.0247 25.0978 96.0247 23.7887C96.0247 23.6732 96.1203 23.5577 96.2542 23.5577H97.2491C97.3639 23.5577 97.4596 23.6347 97.4596 23.7502C97.6126 24.7705 98.0527 25.2711 100.081 25.2711C101.688 25.2711 102.377 24.9053 102.377 24.039C102.377 23.5385 102.185 23.1727 99.6789 22.9224C97.5935 22.7106 96.2925 22.2486 96.2925 20.5737C96.2925 19.0144 97.5935 18.0903 99.7746 18.0903C102.224 18.0903 103.429 18.9374 103.582 20.7855C103.582 20.8433 103.563 20.901 103.525 20.9588C103.486 20.9973 103.429 21.0358 103.371 21.0358H102.357C102.262 21.0358 102.166 20.9588 102.147 20.8625C101.917 19.8037 101.324 19.4572 99.7555 19.4572C97.9953 19.4572 97.7848 20.0732 97.7848 20.5352C97.7848 21.0935 98.0335 21.2668 100.406 21.5748C102.759 21.8828 103.869 22.3256 103.869 23.9812C103.869 25.6753 102.472 26.6379 100.062 26.6379Z" fill="#5FA04E"/>
                     <path d="M111.083 17.3202C111.083 18.1288 110.413 18.8026 109.609 18.8026C108.806 18.8026 108.136 18.148 108.136 17.3202C108.136 16.4732 108.825 15.8379 109.609 15.8379C110.394 15.8379 111.083 16.4924 111.083 17.3202ZM108.366 17.3202C108.366 18.0133 108.921 18.5716 109.59 18.5716C110.279 18.5716 110.834 17.994 110.834 17.3202C110.834 16.6272 110.279 16.0882 109.59 16.0882C108.94 16.0882 108.366 16.6272 108.366 17.3202ZM109.055 16.4924H109.629C109.82 16.4924 110.203 16.4924 110.203 16.9352C110.203 17.2432 110.011 17.301 109.896 17.3395C110.126 17.3587 110.145 17.5128 110.164 17.7245C110.183 17.8593 110.203 18.0903 110.241 18.1673H109.896C109.896 18.0903 109.839 17.6668 109.839 17.6475C109.82 17.5513 109.782 17.5128 109.667 17.5128H109.38V18.1865H109.055V16.4924ZM109.361 17.224H109.609C109.82 17.224 109.858 17.07 109.858 16.993C109.858 16.762 109.705 16.762 109.609 16.762H109.342V17.224H109.361Z" fill="#5FA04E"/>
@@ -1490,66 +1294,66 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M57.1482 0.0577539C56.9951 -0.0192513 56.8038 -0.0192513 56.6698 0.0577539C56.5168 0.15401 56.4211 0.308021 56.4211 0.481283V12.9946C56.4211 13.1101 56.3637 13.2256 56.2489 13.3027C56.1341 13.3604 56.0194 13.3604 55.9046 13.3027L53.8765 12.1283C53.5704 11.9551 53.2069 11.9551 52.9008 12.1283L44.7887 16.8449C44.4826 17.0182 44.2913 17.3454 44.2913 17.6919V27.1058C44.2913 27.4524 44.4826 27.7796 44.7887 27.9529L52.9008 32.6695C53.2069 32.8427 53.5704 32.8427 53.8765 32.6695L61.9886 27.9529C62.2947 27.7796 62.4861 27.4524 62.4861 27.1058V3.6385C62.4861 3.27272 62.2947 2.94545 61.9886 2.77219L57.1482 0.0577539ZM56.402 24.0064C56.402 24.1026 56.3637 24.1796 56.2872 24.2181L53.513 25.8353C53.4365 25.8738 53.3408 25.8738 53.2643 25.8353L50.4901 24.2181C50.4136 24.1796 50.3753 24.0834 50.3753 24.0064V20.7722C50.3753 20.6759 50.4136 20.5989 50.4901 20.5604L53.2643 18.9433C53.3408 18.9048 53.4365 18.9048 53.513 18.9433L56.2872 20.5604C56.3637 20.5989 56.402 20.6952 56.402 20.7722V24.0064Z" fill="white"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M84.1431 20.6951C84.4493 20.5218 84.6214 20.1946 84.6214 19.848V17.5571C84.6214 17.2106 84.4301 16.8833 84.1431 16.7101L76.0884 12.0128C75.7823 11.8395 75.4188 11.8395 75.1127 12.0128L67.0006 16.7293C66.6945 16.9026 66.5032 17.2299 66.5032 17.5764V26.9903C66.5032 27.3368 66.6945 27.6641 67.0006 27.8373L75.0553 32.4576C75.3614 32.6309 75.7249 32.6309 76.0119 32.4576L80.8906 29.724C81.0437 29.647 81.1394 29.4737 81.1394 29.3004C81.1394 29.1272 81.0437 28.9539 80.8906 28.8769L72.7403 24.1603C72.5872 24.0641 72.4916 23.9101 72.4916 23.7368V20.7914C72.4916 20.6181 72.5872 20.4448 72.7403 20.3678L75.2849 18.9047C75.438 18.8085 75.6293 18.8085 75.7823 18.9047L78.3269 20.3678C78.48 20.4641 78.5756 20.6181 78.5756 20.7914V23.1015C78.5756 23.2748 78.6713 23.448 78.8244 23.525C78.9774 23.6213 79.1687 23.6213 79.3218 23.525L84.1431 20.6951Z" fill="white"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M75.4764 20.2525C75.5338 20.214 75.6104 20.214 75.6678 20.2525L77.2175 21.1573C77.2749 21.1958 77.3131 21.2536 77.3131 21.3306V23.1402C77.3131 23.2172 77.2749 23.275 77.2175 23.3135L75.6678 24.2183C75.6104 24.2568 75.5338 24.2568 75.4764 24.2183L73.9267 23.3135C73.8693 23.275 73.8311 23.2172 73.8311 23.1402V21.3306C73.8311 21.2536 73.8693 21.1958 73.9267 21.1573L75.4764 20.2525Z" fill="#5FA04E"/>
-                    <path d="M31.7207 12.0513C31.4145 11.8781 31.051 11.8781 30.7449 12.0513L22.6902 16.7294C22.3841 16.9027 22.2119 17.2299 22.2119 17.5765V26.9518C22.2119 27.2984 22.4032 27.6256 22.6902 27.7989L30.7449 32.477C31.051 32.6502 31.4145 32.6502 31.7207 32.477L39.7753 27.7989C40.0815 27.6256 40.2536 27.2984 40.2536 26.9518V17.5765C40.2536 17.2299 40.0623 16.9027 39.7753 16.7294L31.7207 12.0513Z" fill="url(#slide-108-node-paint0_linear_8323_10753)"/>
-                    <path d="M39.7946 16.7294L31.7017 12.0513C31.6252 12.0128 31.5295 11.9743 31.453 11.9551L22.3843 27.5679C22.4608 27.6641 22.5565 27.7411 22.6521 27.7989L30.7451 32.477C30.9747 32.6117 31.2425 32.6502 31.4912 32.5732L40.0051 16.9027C39.9477 16.8257 39.8712 16.7679 39.7946 16.7294Z" fill="url(#slide-108-node-paint1_linear_8323_10753)"/>
-                    <path d="M39.7947 27.7986C40.0243 27.6638 40.1965 27.4328 40.273 27.1825L31.4147 11.9355C31.1852 11.897 30.9364 11.9162 30.726 12.051L22.6904 16.7098L31.3573 32.6114C31.4721 32.5921 31.6061 32.5536 31.7209 32.4959L39.7947 27.7986Z" fill="url(#slide-108-node-paint2_linear_8323_10753)"/>
+                    <path d="M31.7207 12.0513C31.4145 11.8781 31.051 11.8781 30.7449 12.0513L22.6902 16.7294C22.3841 16.9027 22.2119 17.2299 22.2119 17.5765V26.9518C22.2119 27.2984 22.4032 27.6256 22.6902 27.7989L30.7449 32.477C31.051 32.6502 31.4145 32.6502 31.7207 32.477L39.7753 27.7989C40.0815 27.6256 40.2536 27.2984 40.2536 26.9518V17.5765C40.2536 17.2299 40.0623 16.9027 39.7753 16.7294L31.7207 12.0513Z" fill="url(#step-108-node-paint0_linear_8323_10753)"/>
+                    <path d="M39.7946 16.7294L31.7017 12.0513C31.6252 12.0128 31.5295 11.9743 31.453 11.9551L22.3843 27.5679C22.4608 27.6641 22.5565 27.7411 22.6521 27.7989L30.7451 32.477C30.9747 32.6117 31.2425 32.6502 31.4912 32.5732L40.0051 16.9027C39.9477 16.8257 39.8712 16.7679 39.7946 16.7294Z" fill="url(#step-108-node-paint1_linear_8323_10753)"/>
+                    <path d="M39.7947 27.7986C40.0243 27.6638 40.1965 27.4328 40.273 27.1825L31.4147 11.9355C31.1852 11.897 30.9364 11.9162 30.726 12.051L22.6904 16.7098L31.3573 32.6114C31.4721 32.5921 31.6061 32.5536 31.7209 32.4959L39.7947 27.7986Z" fill="url(#step-108-node-paint2_linear_8323_10753)"/>
                 </g>
                 <defs>
-                    <linearGradient id="slide-108-node-paint0_linear_8323_10753" x1="34.5132" y1="15.5354" x2="27.1574" y2="30.4484" gradientUnits="userSpaceOnUse">
+                    <linearGradient id="step-108-node-paint0_linear_8323_10753" x1="34.5132" y1="15.5354" x2="27.1574" y2="30.4484" gradientUnits="userSpaceOnUse">
                         <stop stop-color="#3F873F"/>
                         <stop offset="0.3296" stop-color="#3F8B3D"/>
                         <stop offset="0.6367" stop-color="#3E9638"/>
                         <stop offset="0.9341" stop-color="#3DA92E"/>
                         <stop offset="1" stop-color="#3DAE2B"/>
                     </linearGradient>
-                    <linearGradient id="slide-108-node-paint1_linear_8323_10753" x1="30.0088" y1="23.3589" x2="50.5328" y2="8.28841" gradientUnits="userSpaceOnUse">
+                    <linearGradient id="step-108-node-paint1_linear_8323_10753" x1="30.0088" y1="23.3589" x2="50.5328" y2="8.28841" gradientUnits="userSpaceOnUse">
                         <stop offset="0.1376" stop-color="#3F873F"/>
                         <stop offset="0.4016" stop-color="#52A044"/>
                         <stop offset="0.7129" stop-color="#64B749"/>
                         <stop offset="0.9081" stop-color="#6ABF4B"/>
                     </linearGradient>
-                    <linearGradient id="slide-108-node-paint2_linear_8323_10753" x1="21.9168" y1="22.2608" x2="40.5549" y2="22.2608" gradientUnits="userSpaceOnUse">
+                    <linearGradient id="step-108-node-paint2_linear_8323_10753" x1="21.9168" y1="22.2608" x2="40.5549" y2="22.2608" gradientUnits="userSpaceOnUse">
                         <stop offset="0.0919165" stop-color="#6ABF4B"/>
                         <stop offset="0.2871" stop-color="#64B749"/>
                         <stop offset="0.5984" stop-color="#52A044"/>
                         <stop offset="0.8624" stop-color="#3F873F"/>
                     </linearGradient>
-                    <clipPath id="slide-108-node-clip0_8323_10753">
+                    <clipPath id="step-108-node-clip0_8323_10753">
                         <rect width="111" height="33" fill="white"/>
                     </clipPath>
                 </defs>
             </svg>
-            <h1 id="slide-110" class="slide slide-110" invisible>
+            <h1 id="step-101" class="step step-101" invisible>
                 und nutzt Googles V8 Engine
             </h1>
         </center>
-        <!-- Page 34 - Slide 111-114 - npm -->
-        <center class="slide slide-111" invisible>
-            <h1 id="slide-111">
+        <!-- Slide 33 - Step 102-105 - npm -->
+        <center class="step step-102" invisible>
+            <h1 id="step-102">
                 Ein wichtiger Teil von Node.js ist npm
             </h1>
-            <h1 id="slide-112" class="slide slide-112" invisible>
+            <h1 id="step-103" class="step step-103" invisible>
                 der Node Package Manager
             </h1>
-            <h1 id="slide-113" class="slide slide-113" invisible>
+            <h1 id="step-104" class="step step-104" invisible>
                 Nutzer können Module hochladen
             </h1>
-            <h1 id="slide-114-1" class="slide slide-114" invisible>
+            <h1 id="step-105-1" class="step step-105" invisible>
                 und Andere können diese nutzen
             </h1>
-            <h1 id="slide-114-2" class="slide slide-114" invisible>
+            <h1 id="step-105-2" class="step step-105" invisible>
                 wodurch sie sich Arbeit sparen
             </h1>
         </center>
-        <!-- Page 35 - Slide 115-119 - Bun -->
-        <center class="slide slide-115" invisible>
-            <h1 id="slide-115">
+        <!-- Slide 34 - Step 106-110 - Bun -->
+        <center class="step step-106" invisible>
+            <h1 id="step-106">
                 Kürzlich wurde Bun veröffentlicht
             </h1>
-            <h1 id="slide-116" class="slide slide-116" invisible>
+            <h1 id="step-107" class="step step-107" invisible>
                 welches eine Alternative zu Node.js ist
             </h1>
-            <svg id="slide-115-bun" viewBox="0 0 80 70">
+            <svg id="step-106-bun" viewBox="0 0 80 70">
                 <path d="M71.09,20.74c-.16-.17-.33-.34-.5-.5s-.33-.34-.5-.5-.33-.34-.5-.5-.33-.34-.5-.5-.33-.34-.5-.5-.33-.34-.5-.5-.33-.34-.5-.5A26.46,26.46,0,0,1,75.5,35.7c0,16.57-16.82,30.05-37.5,30.05-11.58,0-21.94-4.23-28.83-10.86l.5.5.5.5.5.5.5.5.5.5.5.5.5.5C19.55,65.3,30.14,69.75,42,69.75c20.68,0,37.5-13.48,37.5-30C79.5,32.69,76.46,26,71.09,20.74Z"/>
                 <path d="M73,35.7c0,15.21-15.67,27.54-35,27.54S3,50.91,3,35.7C3,26.27,9,17.94,18.22,13S33.18,3,38,3s8.94,4.13,19.78,10C67,17.94,73,26.27,73,35.7Z" fill="#FBF0DF"/>
                 <path d="M73,35.7a21.67,21.67,0,0,0-.8-5.78c-2.73,33.3-43.35,34.9-59.32,24.94A40,40,0,0,0,38,63.24C57.3,63.24,73,50.89,73,35.7Z" fill="#F6DECE"/>
@@ -1565,131 +1369,79 @@
                 <path d="M25.7,38.8a5.51,5.51,0,1,0-5.5-5.51A5.51,5.51,0,0,0,25.7,38.8Zm24.77,0A5.51,5.51,0,1,0,45,33.29,5.5,5.5,0,0,0,50.47,38.8Z" fill-rule="evenodd"/>
                 <path d="M24,33.64a2.07,2.07,0,1,0-2.06-2.07A2.07,2.07,0,0,0,24,33.64Zm24.77,0a2.07,2.07,0,1,0-2.06-2.07A2.07,2.07,0,0,0,48.75,33.64Z" fill="#FFF" fill-rule="evenodd"/>
             </svg>
-            <h1 id="slide-117" class="slide slide-117" invisible>
+            <h1 id="step-108" class="step step-108" invisible>
                 und Apples JavaScriptCore nutzt
             </h1>
-            <h1 id="slide-118" class="slide slide-118" invisible>
+            <h1 id="step-109" class="step step-109" invisible>
                 Es enthält eine eigene, oft einfachere, API
             </h1>
-            <h1 id="slide-119" class="slide slide-119" invisible>
+            <h1 id="step-110" class="step step-110" invisible>
                 und einen eigenen Package Manager
             </h1>
         </center>
 
-        <!-- ZUSAMMENFASSUNG -->
-        <!-- Page 36 - Slide 120-130 - Zusammenfassung -->
-        <center class="slide slide-120" invisible>
-            <a class="slide slide-124" invisible>
-            </a>
-            <a class="slide slide-126" invisible>
-            </a>
-            <a class="slide slide-129" invisible>
-            </a>
-            <a>
-                <h1 id="slide-120">
-                    JavaScript wurde 1995 entwickelt
-                </h1>
-                <h1 id="slide-121" class="slide slide-121" invisible>
-                    um Webseiten interaktiv zu gestalten
-                </h1>
-                <h1 id="slide-122" class="slide slide-122" invisible>
-                    es kann den Inhalt von Seiten ändern
-                </h1>
-                <h1 id="slide-123" class="slide slide-123" invisible>
-                    und auf Ereignisse reagieren
-                </h1>
-                <h1 id="slide-124-1" class="slide slide-124" invisible>
-                    es kann für reguläre Anwendungen
-                </h1>
-                <h1 id="slide-124-2" class="slide slide-124" invisible>
-                    und Server genutzt werden
-                </h1>
-                <h1 id="slide-125" class="slide slide-125" invisible>
-                    es gibt viele Frameworks & Bibliotheken
-                </h1>
-                <h1 id="slide-126" class="slide slide-126" invisible>
-                    die das Entwickeln vereinfachen
-                </h1>
-                <h1 id="slide-127" class="slide slide-127" invisible>
-                    aber es hat auch viele Nachteile
-                </h1>
-                <h1 id="slide-128" class="slide slide-128" invisible>
-                    wie dass es viel Arbeitsspeicher braucht
-                </h1>
-                <h1 id="slide-129" class="slide slide-129" invisible>
-                    und keine Typisierung hat
-                </h1>
-                <h1 id="slide-130-1" class="slide slide-130" invisible>
-                    trotzdem ist JavaScript seit 11
-                </h1>
-                <h1 id="slide-130-2" class="slide slide-130" invisible>
-                    Jahren die beliebteste Sprache
-                </h1>
-            </a>
-        </center>
-
         <!-- EIGENE MEINUNG -->
-        <!-- Page 37 - Slide 131-133 - Eigene Meinung - Einführung -->
-        <center class="slide slide-131" invisible>
-            <h1 id="slide-131">
+        <!-- Slide 35 - Step 111-113 - Eigene Meinung - Einführung -->
+        <center class="step step-111" invisible>
+            <h1 id="step-111">
                 Eigene Meinung
             </h1>
-            <h1 id="slide-132" class="slide slide-132" invisible>
+            <h1 id="step-112" class="step step-112" invisible>
                 JavaScript hat Internetseiten revolutioniert
             </h1>
-            <h1 id="slide-133" class="slide slide-133" invisible>
+            <h1 id="step-113" class="step step-113" invisible>
                 ohne es wäre das Internet nicht so beliebt
             </h1>
         </center>
-        <!-- Page 38 - Slide 134-136 - Eigene Meinung - Electron -->
-        <center class="slide slide-134" invisible>
-            <h1 id="slide-134-1">
+        <!-- Slide 36 - Step 114-116 - Eigene Meinung - Electron -->
+        <center class="step step-114" invisible>
+            <h1 id="step-114-1">
                 Eigene Meinung
             </h1>
-            <h1 id="slide-134-2">
+            <h1 id="step-114-2">
                 Electron Anwendungen finde ich nicht so gut
             </h1>
-            <h1 id="slide-135" class="slide slide-135" invisible>
+            <h1 id="step-115" class="step step-115" invisible>
                 da sie eher langsam und unnötig groß sind
             </h1>
-            <h1 id="slide-136" class="slide slide-136" invisible>
+            <h1 id="step-116" class="step step-116" invisible>
                 aber ich verstehe, warum Entwickler sie nutzen
             </h1>
         </center>
-        <!-- Page 39 - Slide 137-138 - Eigene Meinung - Frameworks & Bibliotheken -->
-        <center class="slide slide-137" invisible>
-            <h1 id="slide-137-1">
+        <!-- Slide 37 - Step 117-118 - Eigene Meinung - Frameworks & Bibliotheken -->
+        <center class="step step-117" invisible>
+            <h1 id="step-117-1">
                 Eigene Meinung
             </h1>
-            <h1 id="slide-137-2">
+            <h1 id="step-117-2">
                 Es gibt viele nützliche Frameworks & Bibliotheken
             </h1>
-            <h1 id="slide-138" class="slide slide-138" invisible>
+            <h1 id="step-118" class="step step-118" invisible>
                 aber die große Anzahl kann für Anfänger zu viel sein
             </h1>
         </center>
-        <!-- Page 40 - Slide 139-141 - Eigene Meinung - Zusammenfassung -->
-        <center class="slide slide-139" invisible>
-            <h1 id="slide-139-1">
+        <!-- Slide 38 - Step 119-121 - Eigene Meinung - Zusammenfassung -->
+        <center class="step step-119" invisible>
+            <h1 id="step-119-1">
                 Eigene Meinung
             </h1>
-            <h1 id="slide-139-2">
+            <h1 id="step-119-2">
                 Insgesamt finde ich JavaScript gut geeignet
             </h1>
-            <a class="slide slide-141" invisible></a>
-            <h1 id="slide-140" class="slide slide-140" invisible>
-                da es viel kann und einfach zu lernen ist <a class="slide slide-141" invisible>und</a>
+            <a class="step step-121" invisible></a>
+            <h1 id="step-120" class="step step-120" invisible>
+                da es viel kann und einfach zu lernen ist <a class="step step-121" invisible>und</a>
             </h1>
-            <h1 id="slide-141" class="slide slide-141" invisible>
+            <h1 id="step-121" class="step step-121" invisible>
                 Internetseiten oft nicht viel Leistung brauchen
             </h1>
         </center>
 
         <!-- ENDE -->
-        <!-- Page 41 - Slide 142-143 - Danke Für Ihre Aufmerksamkeit -->
-        <center class="slide slide-142" invisible>
-            <div id="slide-142-title">
-                <svg id="slide-142-background" viewBox="0 0 100 60">
+        <!-- Slide 39 - Step 122-124 - Danke Für Ihre Aufmerksamkeit -->
+        <center class="step step-122" invisible>
+            <div id="step-122-title">
+                <svg id="step-122-background" viewBox="0 0 100 60">
                     <path d="" fill="#034" opacity="0" transform="scale(0)" transform-origin="50 30">
                         <animate attributeName="d" values="M67.5 1.5C60.3 -1 53.5 3 48 3.5C42.5 4 34.5 0 28 2.4C21.5 4.9 19.5 9 12.5 11C5.5 13 0.5 21 0.5 30C0.5 39 6.5 48.5 14.5 48.5C22.5 48.5 22.5 54.5 31 57C39.5 59.5 40.5 52.5 48 53C55.5 53.5 57.5 57 63 57.5C68.5 58 73 56.5 77.5 51.5C82 46.5 88.5 49 93.5 45C98.5 41 100 35.5 99 28C98 20.5 93 12.5 85.5 11.5C78 10.5 74.7357 3.9 67.5 1.5Z;M65.5 6C58.5 5 54.5 0.5 48 0.5C41.5 0.5 37 4 30.5 6.5C24 9 17.5 7.5 12.5 10.5C7.5 13.5 1 20.5 1.5 29C2 37.5 5.5 45 12 49C18.5 53 20.3 49 30.5 52C40.7 55 38.5 58 47.5 58.5C56.5 59 59.5 55 66 53C72.5 51 78 55.5 83.5 52C89 48.5 88 46 91 41.5C94 37 99.5 37.5 99.5 30C99.5 22.5 92 11 85 8.5C78 6 72.5 7 65.5 6Z" dur="5s" start="0" begin="infinite" repeatCount="indefinite" calcMode="spline" keySplines=".25 0 .75 1"/>
                         <animate attributeName="opacity" values="1;1;0" dur="5s" start="0" begin="infinite" repeatCount="indefinite" calcMode="spline" keySplines="0 0 1 1;.5 0 1 .75"/>
@@ -1715,14 +1467,16 @@
                         </path>
                     </g>
                 </svg>
-                <h1 id="slide-142-1">
+                <h1 id="step-122-1">
                     Vielen Dank für
                 </h1>
-                <h1 id="slide-142-2">
+                <h1 id="step-122-2">
                     Ihre Aufmerksamkeit
                 </h1>
             </div>
-            <div id="slide-142-sources">
+            <a class="step step-123" invisible>
+            </a>
+            <div id="step-122-sources">
                 <div class="source">
                     <h6>
                         1. W3Techs: Usage statistics of client-side programming languages for websites<br>
@@ -2093,9 +1847,10 @@
                     </h6>
                 </div>
             </div>
-            <img id="slide-143-qrcode" class="slide slide-143" src="qrcode.png" invisible>
+            <img id="step-124-qrcode" class="step step-124" src="qrcode.png" invisible>
         </center>
 
+        <!-- OTHER -->
         <!-- Live Sources -->
         <div id="live-sources" invisible>
             <a id="live-sources-title">
@@ -2130,28 +1885,20 @@
             <a class="live-source" from="84" to="87" invisible>27, 28</a>
             <a class="live-source" from="88" to="90" invisible>29</a>
             <!-- The Ecosystem: Frameworks And Libraries -->
-            <a class="live-source" from="91" to="94" invisible>30</a>
-            <a class="live-source" from="95" to="96" invisible>31</a>
-            <a class="live-source" from="97" to="97" invisible>32</a>
-            <a class="live-source" from="98" to="98" invisible>33</a>
-            <a class="live-source" from="99" to="99" invisible>34</a>
-            <a class="live-source" from="100" to="100" invisible>35</a>
-            <a class="live-source" from="101" to="101" invisible>36</a>
-            <a class="live-source" from="102" to="102" invisible>37</a>
+            <!--<a class="live-source" from="91" to="93" invisible>30, 31, 32, 33, 34, 35, 36, 37</a>-->
             <!-- Graphical Ans Serverside Applications -->
-            <a class="live-source" from="103" to="107" invisible>38</a>
-            <a class="live-source" from="108" to="110" invisible>39</a>
-            <a class="live-source" from="111" to="114" invisible>40</a>
-            <a class="live-source" from="115" to="119" invisible>41</a>
+            <a class="live-source" from="94" to="98" invisible>38</a>
+            <a class="live-source" from="99" to="101" invisible>39</a>
+            <a class="live-source" from="102" to="105" invisible>40</a>
+            <a class="live-source" from="106" to="110" invisible>41</a>
         </div>
-
         <!-- Mobile Controls -->
         <div id="mobile-controls">
-            <button id="mobile-controls-next" onclick="nextSlide();">
-                􀯻
-            </button>
-            <button id="mobile-controls-previous" onclick="previousSlide();">
+            <button id="mobile-controls-previous" onclick="previousStep();" style="filter: brightness(.5);">
                 􀯶
+            </button>
+            <button id="mobile-controls-next" onclick="nextStep();">
+                􀯻
             </button>
         </div>
 
@@ -2159,3 +1906,6 @@
         <script src="script.js"></script>
     </body>
 </html>
+<!--
+Mobile
+-->
