@@ -21,11 +21,6 @@ body {
 /* Text */
 @font-face {
     font-family: "Font";
-    font-weight: 100;
-    src: url(font/100.otf);
-}
-@font-face {
-    font-family: "Font";
     font-weight: 200;
     src: url(font/200.otf);
 }
@@ -38,31 +33,6 @@ body {
     font-family: "Font";
     font-weight: 400;
     src: url(font/400.otf);
-}
-@font-face {
-    font-family: "Font";
-    font-weight: 500;
-    src: url(font/500.otf);
-}
-@font-face {
-    font-family: "Font";
-    font-weight: 600;
-    src: url(font/600.otf);
-}
-@font-face {
-    font-family: "Font";
-    font-weight: 700;
-    src: url(font/700.otf);
-}
-@font-face {
-    font-family: "Font";
-    font-weight: 800;
-    src: url(font/800.otf);
-}
-@font-face {
-    font-family: "Font";
-    font-weight: 900;
-    src: url(font/900.otf);
 }
 * {
     font-family: "Font";
