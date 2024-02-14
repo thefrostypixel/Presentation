@@ -153,9 +153,9 @@ function nextStep() {
             startTime = Math.floor(new Date().getTime() / 1000);
         }
         var time = Math.floor(new Date().getTime() / 1000) - startTime - expectedTime[step];
-        if (time <= -5) {
+        if (time <= -2) {
             timeOffset = " (-" + Math.floor(time / -60) + ":" + (-time % 60).toString().padStart(2, "0") + ") 􀓐";
-        } else if (time >= 5) {
+        } else if (time >= 2) {
             timeOffset = " (+" + Math.floor(time / 60) + ":" + (time % 60).toString().padStart(2, "0") + ") 􀓎";
         } else {
             timeOffset = "";
@@ -211,9 +211,9 @@ function previousStep() {
     });
     if (pausedTime == -1) {
         var time = Math.floor(new Date().getTime() / 1000) - startTime - expectedTime[step];
-        if (time <= -5) {
+        if (time <= -2) {
             timeOffset = " (-" + Math.floor(time / -60) + ":" + (-time % 60).toString().padStart(2, "0") + ") 􀓐";
-        } else if (time >= 5) {
+        } else if (time >= 2) {
             timeOffset = " (+" + Math.floor(time / 60) + ":" + (time % 60).toString().padStart(2, "0") + ") 􀓎";
         } else {
             timeOffset = "";
